@@ -6,7 +6,17 @@ using namespace std;
 int main()
 {
     int a = 5, b = 10;
-    /*std::*/cout << "Hello World!\n";
+    unsigned char c;
+    char d;
+    short int e;
+    unsigned int f;
+    unsigned long g;
+    long h;
+    enum i;
+    float j;
+    double k;
+    long double l;
+    /*std::*/cout << "Hello World!\n" << a + b;
     cout << a+b;
     system("pause");
 }
