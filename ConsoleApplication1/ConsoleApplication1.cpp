@@ -16,8 +16,12 @@ int main()
     float j;
     double k;
     long double l;
-    /*std::*/cout << "Hello World!\n" << a + b;
-    cout << a+b;
+    /*std::*/cout << "Hello World!\n";
+    cout << a + b << "\n";
+    cout << a - b << "\n";
+    cout << a * b << "\n";
+    cout << a / b << "\n";
+    cout << a % b << "\n";
     system("pause");
 }
 

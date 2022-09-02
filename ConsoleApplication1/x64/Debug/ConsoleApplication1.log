@@ -1,2 +1,11 @@
 ﻿  ConsoleApplication1.cpp
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(17,12): warning C4101: 'k': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(11,15): warning C4101: 'e': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(12,18): warning C4101: 'f': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,17): warning C4101: 'l': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(16,11): warning C4101: 'j': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(9,19): warning C4101: 'c': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(14,10): warning C4101: 'h': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(13,19): warning C4101: 'g': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(10,10): warning C4101: 'd': unreferenced local variable
   ConsoleApplication1.vcxproj -> C:\Users\Adam\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
