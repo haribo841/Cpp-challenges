@@ -8,20 +8,30 @@ int main()
     int a = 5, b = 10;
     unsigned char c;
     char d;
+    wchar_t d2;
     short int e;
+    short e2;
     unsigned int f;
     unsigned long g;
     long h;
+    long int h2;
     enum i;
     float j;
     double k;
     long double l;
+    bool m;
     /*std::*/cout << "Hello World!\n";
-    cout << a + b << "\n";
-    cout << a - b << "\n";
-    cout << a * b << "\n";
-    cout << a / b << "\n";
-    cout << a % b << "\n";
+    a += b;
+    cout << a /* + b */ << "\n";
+    a -= b;
+    cout << a /* - b */ << "\n";
+    a *= b;
+    cout << a /* * b */ << "\n";
+    a /= b;
+    cout << a /* / b */ << "\n";
+    a %= b;
+    cout << a /* % b */ << "\n";
+
     system("pause");
 }
 
