@@ -31,6 +31,12 @@ int main()
     cout << a /* / b */ << "\n";
     a %= b;
     cout << a /* % b */ << "\n";
+    a++;//a+=1
+    cout << a /* = a + 1 */ << "\n";
+    cout << ++a << "\n";
+    a--;//a-=1
+    cout << a /* = a - 1 */ << "\n";
+    cout << --a << "\n";
 
     system("pause");
 }
