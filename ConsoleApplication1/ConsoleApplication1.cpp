@@ -37,7 +37,8 @@ int main()
     a--;//a-=1
     cout << a /* = a - 1 */ << "\n";
     cout << --a << "\n";
-
+    cin >> a;
+    cout << "Wartosc a to: " << a << "\n";
     system("pause");
 }
 
