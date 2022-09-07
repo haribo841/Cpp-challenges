@@ -5,7 +5,8 @@
 using namespace std;
 int main()
 {
-    int a = 5, b = 10;
+    int a = 5;
+    const int b = 10;
     unsigned char c;
     char d;
     wchar_t d2;
