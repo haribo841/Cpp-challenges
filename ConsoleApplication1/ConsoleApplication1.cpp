@@ -3,6 +3,13 @@
 
 #include <iostream>
 using namespace std;
+enum seasons
+{
+    spring,
+    summer,
+    autumn = 2137,
+    winter
+};
 int main()
 {
     int a = 5;
@@ -21,6 +28,7 @@ int main()
     double k;
     long double l;
     bool m;
+    seasons n = autumn;//not a season value of type "int" cannot be used to initialize an entity of type "seasons"	
     /*std::*/cout << "Hello World!\n";
     a += b;
     cout << a /* + b */ << "\n";
@@ -40,6 +48,7 @@ int main()
     cout << --a << "\n";
     cin >> a;
     cout << "Wartosc a to: " << a << "\n";
+    cout << "Wartosc n to: " << n << "\n";
     system("pause");
 }
 
