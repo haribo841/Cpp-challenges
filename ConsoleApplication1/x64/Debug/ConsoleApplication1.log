@@ -1,15 +1,15 @@
 ﻿  ConsoleApplication1.cpp
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(30,10): warning C4101: 'm': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,11): warning C4101: 'e2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(28,12): warning C4101: 'k': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(20,15): warning C4101: 'e': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,18): warning C4101: 'f': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(29,17): warning C4101: 'l': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(27,11): warning C4101: 'j': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(17,19): warning C4101: 'c': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25,14): warning C4101: 'h2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,10): warning C4101: 'h': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(23,19): warning C4101: 'g': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,10): warning C4101: 'd': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,13): warning C4101: 'd2': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(31,10): warning C4101: 'm': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,11): warning C4101: 'e2': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(29,12): warning C4101: 'k': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,15): warning C4101: 'e': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(23,18): warning C4101: 'f': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(30,17): warning C4101: 'l': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(28,11): warning C4101: 'j': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,19): warning C4101: 'c': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(26,14): warning C4101: 'h2': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25,10): warning C4101: 'h': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,19): warning C4101: 'g': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,10): warning C4101: 'd': unreferenced local variable
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(20,13): warning C4101: 'd2': unreferenced local variable
   ConsoleApplication1.vcxproj -> C:\Users\Adam\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

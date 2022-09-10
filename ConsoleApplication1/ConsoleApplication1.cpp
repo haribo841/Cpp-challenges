@@ -12,7 +12,8 @@ enum seasons
 };
 int main()
 {
-    int a = 5;
+    typedef long hint;
+    hint a = 5;
     const int b = 10;
     unsigned char c;
     char d;
@@ -49,6 +50,8 @@ int main()
     cin >> a;
     cout << "Wartosc a to: " << a << "\n";
     cout << "Wartosc n to: " << n << "\n";
+    cout << "Rozmiar a to: " << sizeof(a) << "\n";
+    cout << "Rozmiar n to: " << sizeof(n) << "\n";
     system("pause");
 }
 
