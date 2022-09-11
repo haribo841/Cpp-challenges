@@ -13,8 +13,8 @@ enum seasons
 int main()
 {
     typedef long hint;
-    hint a = 5;
-    const int b = 10;
+    hint a = 5;//reference of type cannot be initialized with a value of type hint
+    const int b = 10;//qualifiers dropped in binding reference of type string to initializer of type const int
     unsigned char c;
     char d;
     wchar_t d2;
@@ -22,14 +22,15 @@ int main()
     short e2;
     unsigned int f;
     unsigned long g;
-    long h;
+    long h = 21.37;
     long int h2;
     enum i;
     float j;
     double k;
     long double l;
     bool m;
-    seasons n = autumn;//not a season value of type "int" cannot be used to initialize an entity of type "seasons"	
+    seasons n = autumn;//not a season value of type "int" cannot be used to initialize an entity of type "seasons", E0110, E0020, C2332, C2440
+    long & h_ref = h;//reference, new name for an existing object
     /*std::*/cout << "Hello World!\n";
     a += b;
     cout << a /* + b */ << "\n";
@@ -50,8 +51,16 @@ int main()
     cin >> a;
     cout << "Wartosc a to: " << a << "\n";
     cout << "Wartosc n to: " << n << "\n";
+    cout << "Wartosc h to: " << h << "\n";
+    cout << "Wartosc h_ref to: " << h_ref << "\n";
     cout << "Rozmiar a to: " << sizeof(a) << "\n";
     cout << "Rozmiar n to: " << sizeof(n) << "\n";
+    cout << "Rozmiar h to: " << sizeof(h) << "\n";
+    cout << "Rozmiar h_ref to: " << sizeof(h_ref) << "\n";
+    cout << "Adres a to: " << &a << "\n";
+    cout << "Adres n to: " << &n << "\n";
+    cout << "Adres h to: " << &h << "\n";
+    cout << "Adres h_ref to: " << &h_ref << "\n";
     system("pause");
 }
 

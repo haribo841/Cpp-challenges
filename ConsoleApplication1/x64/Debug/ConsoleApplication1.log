@@ -1,4 +1,5 @@
 ﻿  ConsoleApplication1.cpp
+C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25,12): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(31,10): warning C4101: 'm': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,11): warning C4101: 'e2': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(29,12): warning C4101: 'k': unreferenced local variable
@@ -8,7 +9,6 @@ C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplic
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(28,11): warning C4101: 'j': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,19): warning C4101: 'c': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(26,14): warning C4101: 'h2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25,10): warning C4101: 'h': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,19): warning C4101: 'g': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,10): warning C4101: 'd': unreferenced local variable
 C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(20,13): warning C4101: 'd2': unreferenced local variable
