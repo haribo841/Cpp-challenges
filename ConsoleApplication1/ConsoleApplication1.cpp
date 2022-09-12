@@ -22,7 +22,7 @@ int main()
     short e2;
     unsigned int f;
     unsigned long g;
-    long h = 21.37;
+    long h = 21.37;//conversion from 'double' to 'long', possible loss of data
     long int h2;
     enum i;
     float j;
@@ -31,6 +31,7 @@ int main()
     bool m;
     seasons n = autumn;//not a season value of type "int" cannot be used to initialize an entity of type "seasons", E0110, E0020, C2332, C2440
     long & h_ref = h;//reference, new name for an existing object
+    int integers[1]{};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
     /*std::*/cout << "Hello World!\n";
     a += b;
     cout << a /* + b */ << "\n";
