@@ -12,26 +12,46 @@ enum seasons
 };
 int main()
 {
-    typedef long hint;
+    typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
     hint a = 5;//reference of type cannot be initialized with a value of type hint
     const int b = 10;//qualifiers dropped in binding reference of type string to initializer of type const int
-    unsigned char c;
-    char d;
-    wchar_t d2;
-    short int e;
+    signed b2;//-2,147,483,648 to 2,147,483,647
+    signed int b3;
+    __int32 b4;
+    unsigned char c;//0 to 255
+    unsigned __int8 c2;
+    char d;//-128 to 127 by default, 0 to 255 when compiled by using J
+    wchar_t d2;//0 to 65,535, ither a wide-character type or multibyte-character type
+    __wchar_t d4;
+    __int8 d3;
+    short int e;//-32,768 to 32,767
     short e2;
-    unsigned int f;
-    unsigned long g;
+    signed short int e3;
+    __int16 e4;
+    unsigned int f;//0 to 4,294,967,295
+    unsigned f2;
+    unsigned __int32 f3;
+    unsigned long g;//0 to 4,294,967,295
     long h = 21.37;//conversion from 'double' to 'long', possible loss of data
-    long int h2;
+    long int h2;//-2,147,483,648 to 2,147,483,647
+    signed long int h3;
     enum i;
-    float j;
-    double k;
-    long double l;
-    bool m;
+    float j;//3.4E +/- 38 (7 digits)
+    double k;//1.7E +/- 308 (15 digits)
+    long double l;//Same as double
+    bool m;//false or true
     seasons n = autumn;//not a season value of type "int" cannot be used to initialize an entity of type "seasons", E0110, E0020, C2332, C2440
+    unsigned __int16 o;//0 to 65,535
+    unsigned short o2;
+    unsigned short int o3;
+    __int64 p;//-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+    long long p2;//none (but equivalent to __int64), -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807
+    signed long long p3;
+    unsigned __int64 r;//0 to 18, 446, 744, 073, 709, 551, 615
+    unsigned long long r2;//none (but equivalent to unsigned __int64), 0 to 18,446,744,073,709,551,615
+    signed char q;//-128 to 127
     long & h_ref = h;//reference, new name for an existing object
-    int integers[1]{};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
+    const int primes[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
     /*std::*/cout << "Hello World!\n";
     a += b;
     cout << a /* + b */ << "\n";
@@ -62,6 +82,7 @@ int main()
     cout << "Adres n to: " << &n << "\n";
     cout << "Adres h to: " << &h << "\n";
     cout << "Adres h_ref to: " << &h_ref << "\n";
+    cout << primes << "\n";
     system("pause");
 }
 
