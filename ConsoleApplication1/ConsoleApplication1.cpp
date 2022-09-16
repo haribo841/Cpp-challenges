@@ -52,6 +52,7 @@ int main()
     signed char q;//-128 to 127
     long & h_ref = h;//reference, new name for an existing object
     const int primes[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
+    char gosha[] = { "Karr" };
     /*std::*/cout << "Hello World!\n";
     a += b;
     cout << a /* + b */ << "\n";
@@ -83,6 +84,7 @@ int main()
     cout << "Adres h to: " << &h << "\n";
     cout << "Adres h_ref to: " << &h_ref << "\n";
     cout << primes << "\n";
+    cout << gosha << "\n";
     system("pause");
 }
 
