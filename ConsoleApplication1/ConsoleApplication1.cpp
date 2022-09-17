@@ -85,6 +85,10 @@ int main()
     cout << "Adres h_ref to: " << &h_ref << "\n";
     cout << primes << "\n";
     cout << gosha << "\n";
+    int* w;
+    int z = 10;
+    w = &z;
+    cout << *w << "\n";
     system("pause");
 }
 
