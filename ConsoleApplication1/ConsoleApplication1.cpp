@@ -85,10 +85,12 @@ int main()
     cout << "Adres h_ref to: " << &h_ref << "\n";
     cout << primes << "\n";
     cout << gosha << "\n";
-    int* w;
+    int* w;//value of type "int **" cannot be assigned to an entity of type "int *"
     int z = 10;
-    w = &z;
-    cout << *w << "\n";
+    int*x=&z;
+    cout << *x << "\n";//Using uninitialized memory 'w'
+    *x = 20;
+    cout << z << "\n";
     system("pause");
 }
 
