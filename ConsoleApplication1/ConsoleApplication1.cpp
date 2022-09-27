@@ -91,6 +91,9 @@ int main()
     cout << *x << "\n";//Using uninitialized memory 'w'
     *x = 20;
     cout << z << "\n";
+    char* y = &gosha[0];
+    y=y+z;
+    cout << y << "\n";
     system("pause");
 }
 
