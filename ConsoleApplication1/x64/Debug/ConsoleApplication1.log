@@ -1,36 +1,35 @@
 ﻿  ConsoleApplication1.cpp
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(35,12): warning C4244: 'initializing': conversion from 'double' to 'long', possible loss of data
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(42,10): warning C4101: 'm': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(28,11): warning C4101: 'e2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,12): warning C4101: 'b2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(40,12): warning C4101: 'k': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(26,12): warning C4101: 'd3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(51,24): warning C4101: 'r2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(32,14): warning C4101: 'f2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(27,15): warning C4101: 'e': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,16): warning C4101: 'b3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(47,13): warning C4101: 'p': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25,15): warning C4101: 'd4': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(52,17): warning C4101: 'q': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(49,22): warning C4101: 'p3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(37,21): warning C4101: 'h3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(31,18): warning C4101: 'f': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(29,22): warning C4101: 'e3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(20,13): warning C4101: 'b4': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(46,24): warning C4101: 'o3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(41,17): warning C4101: 'l': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(39,11): warning C4101: 'j': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,19): warning C4101: 'c': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,15): warning C4101: 'p2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,21): warning C4101: 'c2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(88,10): warning C4101: 'w': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(36,14): warning C4101: 'h2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(34,19): warning C4101: 'g': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(50,22): warning C4101: 'r': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(45,20): warning C4101: 'o2': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(44,22): warning C4101: 'o': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(33,22): warning C4101: 'f3': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(23,10): warning C4101: 'd': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(30,13): warning C4101: 'e4': unreferenced local variable
-C:\Users\Adam\source\repos\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,13): warning C4101: 'd2': unreferenced local variable
-  ConsoleApplication1.vcxproj -> C:\Users\Adam\source\repos\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(35,12): warning C4244: "inicjowanie": konwersja z "double" do "long", możliwa utrata danych
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(42,10): warning C4101: "m": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(28,11): warning C4101: "e2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(18,12): warning C4101: "b2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(40,12): warning C4101: "k": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(26,12): warning C4101: "d3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(51,24): warning C4101: "r2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(32,14): warning C4101: "f2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(27,15): warning C4101: "e": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(19,16): warning C4101: "b3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(47,13): warning C4101: "p": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(25,15): warning C4101: "d4": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(52,17): warning C4101: "q": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(49,22): warning C4101: "p3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(37,21): warning C4101: "h3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(31,18): warning C4101: "f": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(29,22): warning C4101: "e3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(20,13): warning C4101: "b4": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(46,24): warning C4101: "o3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(41,17): warning C4101: "l": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(39,11): warning C4101: "j": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(21,19): warning C4101: "c": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(48,15): warning C4101: "p2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,21): warning C4101: "c2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(36,14): warning C4101: "h2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(34,19): warning C4101: "g": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(50,22): warning C4101: "r": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(45,20): warning C4101: "o2": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(44,22): warning C4101: "o": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(33,22): warning C4101: "f3": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(23,10): warning C4101: "d": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(30,13): warning C4101: "e4": lokalna zmienna, do której nie istnieje odwołanie
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(24,13): warning C4101: "d2": lokalna zmienna, do której nie istnieje odwołanie
+  ConsoleApplication1.vcxproj -> C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe

@@ -52,6 +52,7 @@ int main()
     signed char q;//-128 to 127
     long & h_ref = h;//reference, new name for an existing object
     const int primes[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
+    int zero[1]{ 0 };
     char gosha[] = { "Karr" };
     /*std::*/cout << "Hello World!\n";
     a += b;
@@ -86,6 +87,11 @@ int main()
     cout << primes << "\n";
     cout << gosha << "\n";
     int* w;//value of type "int **" cannot be assigned to an entity of type "int *"
+    w =& zero[0];
+    cout << primes[0] << "\n";
+    cout << *w << "\n";
+    *w += 1;
+    cout << *w << "\n";
     int z = 10;
     int*x=&z;
     cout << *x << "\n";//Using uninitialized memory 'w'
