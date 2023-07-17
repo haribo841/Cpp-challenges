@@ -1,7 +1,6 @@
 // ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
 
-#include <iostream>
+#include <iostream>//including a library that supports the output and input streams
 using namespace std;
 enum seasons
 {
@@ -10,7 +9,7 @@ enum seasons
     autumn = 2137,
     winter
 };
-int main()
+int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
     hint a = 5;//reference of type cannot be initialized with a value of type hint
@@ -86,6 +85,8 @@ int main()
     cout << "Adres h_ref to: " << &h_ref << "\n";
     cout << primes << "\n";
     cout << gosha << "\n";
+    const int* v = &primes[0];
+    cout << *v << "\n";
     int* w;//value of type "int **" cannot be assigned to an entity of type "int *"
     w =& zero[0];
     cout << primes[0] << "\n";
@@ -93,7 +94,7 @@ int main()
     *w += 1;
     cout << *w << "\n";
     int z = 10;
-    int*x=&z;
+    int*const x=&z;
     cout << *x << "\n";//Using uninitialized memory 'w'
     *x = 20;
     cout << z << "\n";
