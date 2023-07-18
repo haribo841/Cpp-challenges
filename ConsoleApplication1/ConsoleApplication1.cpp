@@ -97,6 +97,12 @@ int main()//C++ does not support int by default ConsoleApplication1
     int*const x=&z;
     cout << *x << "\n";//Using uninitialized memory 'w'
     *x = 20;
+    if (*x == z)
+    {
+        cout << "condition fulfilled" << "\n";
+        cout << *x <<"is *x value" << "\n";
+        cout << z << "is Z value" << "\n";
+    }
     cout << z << "\n";
     char* y = &gosha[0];
     y=y+z;
