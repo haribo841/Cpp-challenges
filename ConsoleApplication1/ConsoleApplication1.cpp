@@ -99,10 +99,14 @@ int main()//C++ does not support int by default ConsoleApplication1
     *x = 20;
     if (*x == z)
     {
-        cout << "condition fulfilled" << "\n";
-        cout << *x <<"is *x value" << "\n";
-        cout << z << "is Z value" << "\n";
+        cout << "first condition fulfilled" << "\n";
+        cout << *x <<" is *x value" << "\n";
+        cout << z << " is z value" << "\n";
     }
+    else if (*x == *w)
+        cout << "second condition fulfilled" << "\n";
+    else
+        cout << "none of conditions fulfilled" << "\n";
     cout << z << "\n";
     char* y = &gosha[0];
     y=y+z;
