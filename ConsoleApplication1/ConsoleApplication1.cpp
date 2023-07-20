@@ -13,7 +13,7 @@ int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
     hint a = 5;//reference of type cannot be initialized with a value of type hint
-    const int b = 10;//qualifiers dropped in binding reference of type string to initializer of type const int
+    const int b = (a == 5) ? 10 : 5;//qualifiers dropped in binding reference of type string to initializer of type const int
     signed b2;//-2,147,483,648 to 2,147,483,647
     signed int b3;
     __int32 b4;
