@@ -70,8 +70,25 @@ int main()//C++ does not support int by default ConsoleApplication1
     a--;//a-=1
     cout << a /* = a - 1 */ << "\n";
     cout << --a << "\n";
-    cin >> a;
-    cout << "Wartosc a to: " << a << "\n";
+    cin >> d;
+    switch (d) //the expression must have a constant value
+    {
+    case '0':
+    case '1':
+    case '2':
+    case '3':
+    case '4':
+    case '5':
+    case '6':
+    case '7':
+    case '8':
+    case '9':
+        cout << "You pressed a number: " << d << endl;
+        break;
+    default:
+        cout << "You pressed a non-number key: " << d << endl;
+        break;
+    }
     cout << "Wartosc n to: " << n << "\n";
     cout << "Wartosc h to: " << h << "\n";
     cout << "Wartosc h_ref to: " << h_ref << "\n";

@@ -29,7 +29,6 @@ C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Console
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(44,20): warning C4101: "o2": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(43,22): warning C4101: "o": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(32,22): warning C4101: "f3": lokalna zmienna, do której nie istnieje odwołanie
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(22,10): warning C4101: "d": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(29,13): warning C4101: "e4": lokalna zmienna, do której nie istnieje odwołanie
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(23,13): warning C4101: "d2": lokalna zmienna, do której nie istnieje odwołanie
   ConsoleApplication1.vcxproj -> C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
