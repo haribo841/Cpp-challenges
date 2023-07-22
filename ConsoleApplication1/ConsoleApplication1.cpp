@@ -120,8 +120,16 @@ int main()//C++ does not support int by default ConsoleApplication1
         cout << *x <<" is *x value" << "\n";
         cout << z << " is z value" << "\n";
     }
-    else if (*x == *w)
+    else if (*x != *w)
         cout << "second condition fulfilled" << "\n";
+    else if (*x < z)
+        cout << "third condition fulfilled" << "\n";
+    else if (*x <= *w)
+        cout << "fourth condition fulfilled" << "\n";
+    else if (*x >= z)
+        cout << "fifth condition fulfilled" << "\n";
+    else if (*x > *w)
+        cout << "sixth condition fulfilled" << "\n";
     else
         cout << "none of conditions fulfilled" << "\n";
     cout << z << "\n";
