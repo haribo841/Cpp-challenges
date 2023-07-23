@@ -114,7 +114,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     int*const x=&z;
     cout << *x << "\n";//Using uninitialized memory 'w'
     *x = 20;
-    if (*x == z)
+    if (!(*x == z))
     {
         cout << "first condition fulfilled" << "\n";
         cout << *x <<" is *x value" << "\n";
@@ -122,14 +122,10 @@ int main()//C++ does not support int by default ConsoleApplication1
     }
     else if (*x != *w)
         cout << "second condition fulfilled" << "\n";
-    else if (*x < z)
+    else if ((*x < z) && (*x >= *w))
         cout << "third condition fulfilled" << "\n";
-    else if (*x <= *w)
+    else if ((*x <= *w) || (*x > z))
         cout << "fourth condition fulfilled" << "\n";
-    else if (*x >= z)
-        cout << "fifth condition fulfilled" << "\n";
-    else if (*x > *w)
-        cout << "sixth condition fulfilled" << "\n";
     else
         cout << "none of conditions fulfilled" << "\n";
     cout << z << "\n";
