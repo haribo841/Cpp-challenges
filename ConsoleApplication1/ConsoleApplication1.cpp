@@ -53,6 +53,16 @@ int main()//C++ does not support int by default ConsoleApplication1
     const int primes[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
     int zero[1]{ 0 };
     char gosha[] = { "Karr" };
+    char matrix[3][3];
+    matrix[0][0] = 'a';
+    matrix[0][1] = 'b';
+    matrix[0][2] = 'c';
+    matrix[1][0] = 'd';
+    matrix[1][1] = 'e';
+    matrix[1][2] = 'f';
+    matrix[2][0] = 'g';
+    matrix[2][1] = 'h';
+    matrix[2][2] = 'i';
     /*std::*/cout << "Hello World!\n";
     a += b;
     cout << a /* + b */ << "\n";
