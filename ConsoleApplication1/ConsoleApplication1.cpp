@@ -138,10 +138,17 @@ int main()//C++ does not support int by default ConsoleApplication1
         cout << z << " is z value" << "\n";
     }
     else if (*x != *w)
-        for (int i = 0; i < 10; i++)
-        cout << i << ". second condition fulfilled" << "\n";
+        while (z >= 10)
+        {
+            cout << z << ". second condition fulfilled" << "\n";
+            z--;
+        }
     else if ((*x < z) && (*x >= *w))
-        cout << "third condition fulfilled" << "\n";
+        do
+        {
+            cout << "third condition fulfilled" << "\n";
+            z--;
+        } while (z > 10);
     else if ((*x <= *w) || (*x > z))
         cout << "fourth condition fulfilled" << "\n";
     else
