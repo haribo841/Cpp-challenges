@@ -64,6 +64,13 @@ int main()//C++ does not support int by default ConsoleApplication1
     matrix[2][1] = 'h';
     matrix[2][2] = 'i';
     /*std::*/cout << "Hello World!\n";
+    for (size_t i = 0; i < 3; i++)
+    {
+        for (size_t j = 0; j < 3; j++)
+        {
+            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << "\n";
+        }
+    }
     a += b;
     cout << a /* + b */ << "\n";
     a -= b;
