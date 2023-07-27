@@ -142,11 +142,13 @@ int main()//C++ does not support int by default ConsoleApplication1
         {
             cout << z << ". second condition fulfilled" << "\n";
             z--;
+            break;
         }
     else if ((*x < z) && (*x >= *w))
         do
         {
             cout << "third condition fulfilled" << "\n";
+            continue;
             z--;
         } while (z > 10);
     else if ((*x <= *w) || (*x > z))
