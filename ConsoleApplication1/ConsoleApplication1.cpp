@@ -9,6 +9,7 @@ enum seasons
     autumn = 2137,
     winter
 };
+void function();
 int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
@@ -159,9 +160,13 @@ int main()//C++ does not support int by default ConsoleApplication1
     char* y = &gosha[0];
     y=y+z;
     cout << y << "\n";
+    function();
     system("pause");
 }
-
+void function() 
+{
+    cout << "function called"; << "\n";
+}
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
 
