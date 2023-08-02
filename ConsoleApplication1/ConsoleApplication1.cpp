@@ -11,6 +11,9 @@ enum seasons
 };
 void function();
 void functionWithParameter(char* parameter);
+void displayMatrix(char matrix[3][3]);
+int twenty();
+int addition(long x, int y);
 int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
@@ -55,26 +58,15 @@ int main()//C++ does not support int by default ConsoleApplication1
     const int primes[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
     int zero[1]{ 0 };
     char gosha[] = { "Karr" };
-    char matrix[3][3];
-    matrix[0][0] = 'a';
-    matrix[0][1] = 'b';
-    matrix[0][2] = 'c';
-    matrix[1][0] = 'd';
-    matrix[1][1] = 'e';
-    matrix[1][2] = 'f';
-    matrix[2][0] = 'g';
-    matrix[2][1] = 'h';
-    matrix[2][2] = 'i';
-    /*std::*/cout << "Hello World!\n";
-    for (size_t i = 0; i < 3; i++)
+    char matrix[3][3] = 
     {
-        for (size_t j = 0; j < 3; j++)
-        {
-            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << "\n";
-        }
-    }
-    a += b;
-    cout << a /* + b */ << "\n";
+        {'A', 'B', 'C'},
+        {'D', 'E', 'F'},
+        {'G', 'H', 'I'}
+    };
+    /*std::*/cout << "Hello World!\n";
+    displayMatrix(matrix);
+    cout << addition(a, b) /* + b */ << "\n";
     a -= b;
     cout << a /* - b */ << "\n";
     a *= b;
@@ -132,7 +124,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     int z = 10;
     int*const x=&z;
     cout << *x << "\n";//Using uninitialized memory 'w'
-    *x = 20;
+    *x = twenty();
     if (!(*x == z))
     {
         cout << "first condition fulfilled" << "\n";
@@ -171,6 +163,24 @@ void function()
 void functionWithParameter(char* parameter) 
 {
     cout << parameter << "\n";
+}
+void displayMatrix(char matrix[3][3])
+{
+    for (size_t i = 0; i < 3; i++)
+    {
+        for (size_t j = 0; j < 3; j++)
+        {
+            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << "\n";
+        }
+    }
+}
+int twenty()
+{
+    return 20;
+}
+int addition(long x, int y)
+{
+    return x + y;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
