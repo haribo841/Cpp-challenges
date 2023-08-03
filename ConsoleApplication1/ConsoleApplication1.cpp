@@ -9,7 +9,7 @@ enum seasons
     autumn = 2137,
     winter
 };
-void function();
+void function(string space = "\n");
 void functionWithParameter(char* parameter);
 void displayMatrix(char matrix[3][3]);
 int twenty();
@@ -156,9 +156,9 @@ int main()//C++ does not support int by default ConsoleApplication1
     functionWithParameter(y);
     system("pause");
 }
-void function() 
+void function(string space)
 {
-    cout << "function called" << "\n";
+    cout << "function called" << space;
 }
 void functionWithParameter(char* parameter) 
 {
