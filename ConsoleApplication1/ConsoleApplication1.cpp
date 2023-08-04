@@ -9,11 +9,32 @@ enum seasons
     autumn = 2137,
     winter
 };
-void function(string space = "\n");
-void functionWithParameter(char* parameter);
-void displayMatrix(char matrix[3][3]);
-int twenty();
-int addition(long x, int y);
+void function(string space = "\n")
+{
+    cout << "function called" << space;
+}
+void functionWithParameter(char* parameter)
+{
+    cout << parameter << "\n";
+}
+void displayMatrix(char matrix[3][3])
+{
+    for (size_t i = 0; i < 3; i++)
+    {
+        for (size_t j = 0; j < 3; j++)
+        {
+            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << "\n";
+        }
+    }
+}
+int twenty()
+{
+    return 20;
+}
+int addition(long x, int y)
+{
+    return x + y;
+}
 int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
@@ -155,32 +176,6 @@ int main()//C++ does not support int by default ConsoleApplication1
     function();
     functionWithParameter(y);
     system("pause");
-}
-void function(string space)
-{
-    cout << "function called" << space;
-}
-void functionWithParameter(char* parameter) 
-{
-    cout << parameter << "\n";
-}
-void displayMatrix(char matrix[3][3])
-{
-    for (size_t i = 0; i < 3; i++)
-    {
-        for (size_t j = 0; j < 3; j++)
-        {
-            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << "\n";
-        }
-    }
-}
-int twenty()
-{
-    return 20;
-}
-int addition(long x, int y)
-{
-    return x + y;
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
 // Debug program: F5 or Debug > Start Debugging menu
