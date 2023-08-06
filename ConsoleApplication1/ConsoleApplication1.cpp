@@ -15,7 +15,7 @@ void function(string space = "\n")
 }
 void functionWithParameter(char* parameter)
 {
-    cout << parameter << "\n";
+    cout << parameter << endl;
 }
 void displayMatrix(char matrix[3][3])
 {
@@ -23,9 +23,19 @@ void displayMatrix(char matrix[3][3])
     {
         for (size_t j = 0; j < 3; j++)
         {
-            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << "\n";
+            cout << "[" << i << "][" << j << "] values is: " << matrix[i][j] << endl;
         }
     }
+}
+void valueDoubling(int parameter)
+{
+    parameter <<= 1;
+    cout << "Parameter have value of " << parameter << endl;
+}
+void valueDoublingRef(int &parameter)
+{
+    parameter <<= 1;
+    cout << "Parameter have value of " << parameter << endl;
 }
 int twenty()
 {
@@ -175,6 +185,11 @@ int main()//C++ does not support int by default ConsoleApplication1
     y=y+z;
     function();
     functionWithParameter(y);
+    cout << "Variable z have value of " << z << endl;
+    valueDoubling(z);
+    cout << "Variable b have value of " << z << endl;
+    valueDoublingRef(z);
+    cout << "Variable b have value of " << z << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
