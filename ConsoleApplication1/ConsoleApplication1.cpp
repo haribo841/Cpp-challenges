@@ -2,6 +2,7 @@
 
 #include <iostream>//including a library that supports the output and input streams
 using namespace std;
+int globalVariable;//the order of declarations matters
 enum seasons
 {
     spring,
@@ -11,7 +12,7 @@ enum seasons
 };
 void function(string space = "\n")
 {
-    cout << "function called" << space;
+    cout << globalVariable << "function called" << space;
 }
 void functionWithParameter(char* parameter)
 {
@@ -184,6 +185,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     char* y = &gosha[0];
     y=y+z;
     function();
+    cout << globalVariable << endl;
     functionWithParameter(y);
     cout << "Variable z have value of " << z << endl;
     valueDoubling(z);
