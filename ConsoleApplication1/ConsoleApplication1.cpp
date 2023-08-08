@@ -11,9 +11,13 @@ enum seasons
     autumn = 2137,
     winter
 };
+void function( int globalVariable)
+{
+    cout << globalVariable << "function called" << endl;
+}
 void function(string space = "\n")
 {
-    cout << globalVariable << "function called" << space;
+    cout << globalVariable << "overloaded function called" << space;
 }
 void functionWithParameter(char* parameter)
 {
@@ -185,7 +189,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << z << "\n";
     char* y = &gosha[0];
     y=y+z;
-    function();
+    function();//more than one instance of overloaded function "function" matches the argument list
     cout << globalVariable << endl;
     functionWithParameter(y);
     cout << "Variable z have value of " << z << endl;
@@ -200,6 +204,17 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionPointer() << endl;//value
     cout << functionPointer << endl;//address
     cout << globalVariable << endl;//value
+    functionPointer =& twenty;
+    cout << *functionPointer << endl;//address
+    cout << functionPointer() << endl;//value
+    cout << functionPointer << endl;//address
+    cout << globalVariable << endl;//value
+    int (*functionWithParametersPointer) (long, int);
+    functionWithParametersPointer = &addition;
+    cout << *functionWithParametersPointer << endl;//address
+    cout << functionWithParametersPointer(globalVariable, globalVariable) << endl;//value
+    cout << functionWithParametersPointer << endl;//address
+    cout << addition(globalVariable, globalVariable) << endl;//value
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
