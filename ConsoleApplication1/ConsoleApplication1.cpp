@@ -3,6 +3,7 @@
 #include <iostream>//including a library that supports the output and input streams
 using namespace std;
 int globalVariable;//the order of declarations matters
+int* globalPointer =& globalVariable;
 enum seasons
 {
     spring,
@@ -192,6 +193,13 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << "Variable b have value of " << z << endl;
     valueDoublingRef(z);
     cout << "Variable b have value of " << z << endl;
+    int (*functionPointer) ();
+    functionPointer = twenty;
+    globalVariable = functionPointer();
+    cout << *functionPointer << endl;//address
+    cout << functionPointer() << endl;//value
+    cout << functionPointer << endl;//address
+    cout << globalVariable << endl;//value
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
