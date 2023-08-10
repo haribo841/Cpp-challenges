@@ -43,6 +43,10 @@ void valueDoublingRef(int &parameter)
     parameter <<= 1;
     cout << "Parameter have value of " << parameter << endl;
 }
+double twenty(int x)
+{
+    return 20.20;
+}
 int twenty()
 {
     return 20;
