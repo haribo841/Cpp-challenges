@@ -2,6 +2,23 @@
 
 #include <iostream>//including a library that supports the output and input streams
 using namespace std;
+class MyClass
+{
+public:
+    MyClass();
+    ~MyClass();
+
+private:
+
+};
+
+MyClass::MyClass()
+{
+}
+
+MyClass::~MyClass()
+{
+}
 int globalVariable;//the order of declarations matters
 int* globalPointer =& globalVariable;
 enum seasons
@@ -219,6 +236,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionWithParametersPointer(globalVariable, globalVariable) << endl;//value
     cout << functionWithParametersPointer << endl;//address
     cout << addition(globalVariable, globalVariable) << endl;//value
+    MyClass object;
+    MyClass* pointer;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
