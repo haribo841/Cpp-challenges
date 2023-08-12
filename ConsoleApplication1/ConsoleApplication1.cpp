@@ -2,21 +2,22 @@
 
 #include <iostream>//including a library that supports the output and input streams
 using namespace std;
-class MyClass
+class Complex
 {
 public:
-    MyClass();
-    ~MyClass();
-
+    Complex();
+    ~Complex();
+    double real;
+    double imag;
 private:
 
 };
 
-MyClass::MyClass()
+Complex::Complex()
 {
 }
 
-MyClass::~MyClass()
+Complex::~Complex()
 {
 }
 int globalVariable;//the order of declarations matters
@@ -236,8 +237,12 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionWithParametersPointer(globalVariable, globalVariable) << endl;//value
     cout << functionWithParametersPointer << endl;//address
     cout << addition(globalVariable, globalVariable) << endl;//value
-    MyClass object;
-    MyClass* pointer;
+    Complex object;
+    object.imag = 1.0;
+    object.real = 2.0;
+    Complex* pointer;
+    cout << object.imag << endl;
+    cout << object.real << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
