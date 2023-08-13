@@ -5,21 +5,62 @@ using namespace std;
 class Complex
 {
 public:
-    Complex();
-    ~Complex();
-    double real;
-    double imag;
+    Complex(double r = 0.0, double i = 0.0) : real(r), imaginary(i) {}
+    // Method for setting the real part value
+    void setReal(double r) 
+    {
+        real = r;
+    }
+    // Method for setting the value of the imaginary part
+    void setImaginary(double i) 
+    {
+        imaginary = i;
+    }
+    // Method to retrieve the value of the real part
+    double getReal() const 
+    {
+        return real;
+    }
+    // Method to retrieve the value of the imaginary part
+    double getImaginary() const 
+    {
+        return imaginary;
+    }
+    // Overloading the addition operator
+    Complex operator+(const Complex& other) const 
+    {
+        return Complex(real + other.real, imaginary + other.imaginary);
+    }
+    // Overloading the subtraction operator
+    Complex operator-(const Complex& other) const 
+    {
+        return Complex(real - other.real, imaginary - other.imaginary);
+    }
+    // Overloading the multiplication operator
+    Complex operator*(const Complex& other) const 
+    {
+        double newReal = real * other.real - imaginary * other.imaginary;
+        double newImaginary = real * other.imaginary + imaginary * other.real;
+        return Complex(newReal, newImaginary);
+    }
+    // Display operator overloading
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c) 
+    {
+        os << c.real;
+        if (c.imaginary >= 0) 
+        {
+            os << " + " << c.imaginary << "i";
+        }
+        else 
+        {
+            os << " - " << -c.imaginary << "i";
+        }
+        return os;
+    }
 private:
-
+    double real;
+    double imaginary;
 };
-
-Complex::Complex()
-{
-}
-
-Complex::~Complex()
-{
-}
 int globalVariable;//the order of declarations matters
 int* globalPointer =& globalVariable;
 enum seasons
@@ -238,11 +279,13 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionWithParametersPointer << endl;//address
     cout << addition(globalVariable, globalVariable) << endl;//value
     Complex object;
-    object.imag = 1.0;
-    object.real = 2.0;
+    Complex object2(2, 1);
+    object.setReal(1);
+    object.setImaginary(2);
     Complex* pointer;
-    cout << object.imag << endl;
-    cout << object.real << endl;
+    cout << object.getReal() << endl;
+    cout << object.getImaginary() << endl;
+    cout << object2 - object << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
