@@ -61,6 +61,18 @@ private:
     double real;
     double imaginary;
 };
+class Point
+{
+private:
+    int xCoordinate;
+    int yCoordinate;
+public:
+    void initializeCoordinates(int x, int y)
+    {
+        xCoordinate = x;
+        yCoordinate = y;
+    }
+};
 int globalVariable;//the order of declarations matters
 int* globalPointer =& globalVariable;
 enum seasons
@@ -286,6 +298,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << object.getReal() << endl;
     cout << object.getImaginary() << endl;
     cout << object2 - object << endl;
+    Point pointA;
+    pointA.initializeCoordinates(0, 0);
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
