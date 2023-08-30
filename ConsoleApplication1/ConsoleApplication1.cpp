@@ -69,12 +69,12 @@ private:
 public:
     Point(int x, int y)
     {
-        xCoordinate = x;
-        yCoordinate = y;
+        this->xCoordinate = x;
+        this->yCoordinate = y;
     }
     Point(int x)
     {
-        xCoordinate = x;
+        this->xCoordinate = x;
     }
     void showCoordinates()
     {
