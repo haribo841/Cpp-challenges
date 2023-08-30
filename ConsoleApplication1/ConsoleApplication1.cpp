@@ -67,10 +67,19 @@ private:
     int xCoordinate;
     int yCoordinate;
 public:
-    void initializeCoordinates(int x, int y)
+    Point(int x, int y)
     {
         xCoordinate = x;
         yCoordinate = y;
+    }
+    Point(int x)
+    {
+        xCoordinate = x;
+    }
+    void showCoordinates()
+    {
+        cout << xCoordinate << endl;
+        cout << yCoordinate << endl;
     }
 };
 int globalVariable;//the order of declarations matters
@@ -298,8 +307,10 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << object.getReal() << endl;
     cout << object.getImaginary() << endl;
     cout << object2 - object << endl;
-    Point pointA;
-    pointA.initializeCoordinates(0, 0);
+    Point pointA = Point(0, 0);
+    Point pointB(1);
+    pointA.showCoordinates();
+    pointB.showCoordinates();
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
