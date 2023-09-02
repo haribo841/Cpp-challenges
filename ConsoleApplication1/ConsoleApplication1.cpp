@@ -66,6 +66,7 @@ class Point
 private:
     int xCoordinate;
     int yCoordinate;
+    static int id;
 public:
     Point(int x, int y)
     {
@@ -85,7 +86,12 @@ public:
     {
         cout << "static method was called" << endl;
     }
+    void giveId()
+    {
+        cout << id++ << endl;
+    }
 };
+int Point::id = 1;
 int globalVariable;//the order of declarations matters
 int* globalPointer =& globalVariable;
 enum seasons
@@ -316,6 +322,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     pointA.showCoordinates();
     pointB.showCoordinates();
     Point::staticMethod();
+    pointA.giveId();
+    pointB.giveId();
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
