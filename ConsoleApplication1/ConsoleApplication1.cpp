@@ -86,7 +86,7 @@ public:
     {
         cout << "static method was called" << endl;
     }
-    void giveId()
+    void giveId() const
     {
         cout << id++ << endl;
     }
@@ -324,6 +324,10 @@ int main()//C++ does not support int by default ConsoleApplication1
     Point::staticMethod();
     pointA.giveId();
     pointB.giveId();
+    Point origin(0, 0);
+    origin.giveId();
+    origin.staticMethod();
+    origin.showCoordinates();
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
