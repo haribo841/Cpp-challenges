@@ -63,6 +63,7 @@ private:
 };
 class Point
 {
+    friend void clearId(Point id);
 private:
     int xCoordinate;
     int yCoordinate;
@@ -77,7 +78,7 @@ public:
     {
         this->xCoordinate = x;
     }
-    void showCoordinates()
+    void showCoordinates() const
     {
         cout << xCoordinate << endl;
         cout << yCoordinate << endl;
@@ -101,7 +102,7 @@ enum seasons
     autumn = 2137,
     winter
 };
-void function( int globalVariable)
+void function(int globalVariable)
 {
     cout << globalVariable << "function called" << endl;
 }
@@ -132,6 +133,10 @@ void valueDoublingRef(int &parameter)
 {
     parameter <<= 1;
     cout << "Parameter have value of " << parameter << endl;
+}
+void clearId(Point id)
+{
+    cout << id.id * 0 << endl;
 }
 double twenty(int x)
 {
@@ -324,10 +329,11 @@ int main()//C++ does not support int by default ConsoleApplication1
     Point::staticMethod();
     pointA.giveId();
     pointB.giveId();
-    Point origin(0, 0);
+    const Point origin(0, 0);
     origin.giveId();
     origin.staticMethod();
     origin.showCoordinates();
+    clearId(origin);
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
