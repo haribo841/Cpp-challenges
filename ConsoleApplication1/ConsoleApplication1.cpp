@@ -7,51 +7,51 @@ class Complex
 public:
     Complex(double r = 0.0, double i = 0.0) : real(r), imaginary(i) {}
     // Method for setting the real part value
-    void setReal(double r) 
+    void setReal(double r)
     {
         real = r;
     }
     // Method for setting the value of the imaginary part
-    void setImaginary(double i) 
+    void setImaginary(double i)
     {
         imaginary = i;
     }
     // Method to retrieve the value of the real part
-    double getReal() const 
+    double getReal() const
     {
         return real;
     }
     // Method to retrieve the value of the imaginary part
-    double getImaginary() const 
+    double getImaginary() const
     {
         return imaginary;
     }
     // Overloading the addition operator
-    Complex operator+(const Complex& other) const 
+    Complex operator+(const Complex& other) const
     {
         return Complex(real + other.real, imaginary + other.imaginary);
     }
     // Overloading the subtraction operator
-    Complex operator-(const Complex& other) const 
+    Complex operator-(const Complex& other) const
     {
         return Complex(real - other.real, imaginary - other.imaginary);
     }
     // Overloading the multiplication operator
-    Complex operator*(const Complex& other) const 
+    Complex operator*(const Complex& other) const
     {
         double newReal = real * other.real - imaginary * other.imaginary;
         double newImaginary = real * other.imaginary + imaginary * other.real;
         return Complex(newReal, newImaginary);
     }
     // Display operator overloading
-    friend std::ostream& operator<<(std::ostream& os, const Complex& c) 
+    friend std::ostream& operator<<(std::ostream& os, const Complex& c)
     {
         os << c.real;
-        if (c.imaginary >= 0) 
+        if (c.imaginary >= 0)
         {
             os << " + " << c.imaginary << "i";
         }
-        else 
+        else
         {
             os << " - " << -c.imaginary << "i";
         }
@@ -92,9 +92,14 @@ public:
         cout << id++ << endl;
     }
 };
+class Derived : public Point
+{
+public:
+    Derived(int x, int y) : Point(x, y) {}
+};
 int Point::id = 1;
 int globalVariable;//the order of declarations matters
-int* globalPointer =& globalVariable;
+int* globalPointer = &globalVariable;
 enum seasons
 {
     spring,
@@ -129,7 +134,7 @@ void valueDoubling(int parameter)
     parameter <<= 1;
     cout << "Parameter have value of " << parameter << endl;
 }
-void valueDoublingRef(int &parameter)
+void valueDoublingRef(int& parameter)
 {
     parameter <<= 1;
     cout << "Parameter have value of " << parameter << endl;
@@ -190,11 +195,11 @@ int main()//C++ does not support int by default ConsoleApplication1
     unsigned __int64 r = 0;//0 to 18, 446, 744, 073, 709, 551, 615
     unsigned long long r2 = 0;//none (but equivalent to unsigned __int64), 0 to 18,446,744,073,709,551,615
     signed char q = 0;//-128 to 127
-    long & h_ref = h;//reference, new name for an existing object
-    const int primes[]{2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71};//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
+    long& h_ref = h;//reference, new name for an existing object
+    const int primes[]{ 2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71 };//incomplete type is not allowed, an empty initializer is invalid for an array with unspecified bound, cannot allocate an array of constant size 0, 'integers': unknown size
     int zero[1]{ 0 };
     char gosha[] = { "Karr" };
-    char matrix[3][3] = 
+    char matrix[3][3] =
     {
         {'A', 'B', 'C'},
         {'D', 'E', 'F'},
@@ -252,19 +257,19 @@ int main()//C++ does not support int by default ConsoleApplication1
     const int* v = &primes[0];
     cout << *v << "\n";
     int* w;//value of type "int **" cannot be assigned to an entity of type "int *"
-    w =& zero[0];
+    w = &zero[0];
     cout << primes[0] << "\n";
     cout << *w << "\n";
     *w += 1;
     cout << *w << "\n";
     int z = 10;
-    int*const x=&z;
+    int* const x = &z;
     cout << *x << "\n";//Using uninitialized memory 'w'
     *x = twenty();
     if (!(*x == z))
     {
         cout << "first condition fulfilled" << "\n";
-        cout << *x <<" is *x value" << "\n";
+        cout << *x << " is *x value" << "\n";
         cout << z << " is z value" << "\n";
     }
     else if (*x != *w)
@@ -287,7 +292,7 @@ int main()//C++ does not support int by default ConsoleApplication1
         cout << "none of conditions fulfilled" << "\n";
     cout << z << "\n";
     char* y = &gosha[0];
-    y=y+z;
+    y = y + z;
     function();//more than one instance of overloaded function "function" matches the argument list
     cout << globalVariable << endl;
     functionWithParameter(y);
@@ -303,7 +308,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionPointer() << endl;//value
     cout << functionPointer << endl;//address
     cout << globalVariable << endl;//value
-    functionPointer =& twenty;
+    functionPointer = &twenty;
     cout << *functionPointer << endl;//address
     cout << functionPointer() << endl;//value
     cout << functionPointer << endl;//address
@@ -334,6 +339,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     origin.staticMethod();
     origin.showCoordinates();
     clearId(origin);
+    Derived pointC(1, 1);
+    pointC.showCoordinates();
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
