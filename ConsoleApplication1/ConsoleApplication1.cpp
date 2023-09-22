@@ -97,6 +97,11 @@ class Derived : public Point
 public:
     Derived(int x, int y) : Point(x, y) {}
 };
+class DerivedDerived : public Derived
+{
+public:
+    DerivedDerived(int x, int y) : Derived(x, y) {}
+};
 int Point::id = 1;
 int globalVariable;//the order of declarations matters
 int* globalPointer = &globalVariable;
@@ -341,6 +346,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     clearId(origin);
     Derived pointC(1, 1);
     pointC.showCoordinates();
+    Derived pointD(2, 2);
+    pointD.showCoordinates();
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
