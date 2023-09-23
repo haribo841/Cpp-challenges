@@ -91,16 +91,28 @@ public:
     {
         cout << id++ << endl;
     }
+    void objectMethod()
+    {
+        cout << "Point" << endl;
+    }
 };
 class Derived : public Point
 {
 public:
     Derived(int x, int y) : Point(x, y) {}
+    void objectMethod()
+    {
+        cout << "Derived" << endl;
+    }
 };
 class DerivedDerived : public Derived
 {
 public:
     DerivedDerived(int x, int y) : Derived(x, y) {}
+    void objectMethod()
+    {
+        cout << "DerivedDerived" << endl;
+    }
 };
 int Point::id = 1;
 int globalVariable;//the order of declarations matters
@@ -334,6 +346,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << object2 - object << endl;
     Point pointA = Point(0, 0);
     Point pointB(1);
+    pointA.objectMethod();
     pointA.showCoordinates();
     pointB.showCoordinates();
     Point::staticMethod();
@@ -345,8 +358,13 @@ int main()//C++ does not support int by default ConsoleApplication1
     origin.showCoordinates();
     clearId(origin);
     Derived pointC(1, 1);
+    pointC.Point::objectMethod();
+    pointC.objectMethod();
     pointC.showCoordinates();
-    Derived pointD(2, 2);
+    DerivedDerived pointD(2, 2);
+    pointD.Point::objectMethod();
+    pointD.Derived::objectMethod();
+    pointD.objectMethod();
     pointD.showCoordinates();
     system("pause");
 }
