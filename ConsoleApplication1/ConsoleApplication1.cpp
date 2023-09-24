@@ -78,6 +78,7 @@ public:
     {
         this->xCoordinate = x;
     }
+    Point() {}
     void showCoordinates() const
     {
         cout << xCoordinate << endl;
@@ -113,6 +114,11 @@ public:
     {
         cout << "DerivedDerived" << endl;
     }
+};
+class MultipleInheritance : public Complex, public Point
+{
+public:
+    MultipleInheritance() {};
 };
 int Point::id = 1;
 int globalVariable;//the order of declarations matters
@@ -366,6 +372,12 @@ int main()//C++ does not support int by default ConsoleApplication1
     pointD.Derived::objectMethod();
     pointD.objectMethod();
     pointD.showCoordinates();
+    MultipleInheritance pointE;
+    pointE.objectMethod();
+    pointE.setReal(3);
+    pointE.setImaginary(3);
+    cout << pointE.getReal() << endl;
+    cout << pointE.getImaginary() << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
