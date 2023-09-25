@@ -105,6 +105,8 @@ public:
     {
         cout << "Derived" << endl;
     }
+protected:
+    string protectedString;
 };
 class DerivedDerived : public Derived
 {
@@ -113,6 +115,10 @@ public:
     void objectMethod()
     {
         cout << "DerivedDerived" << endl;
+    }
+    void usingProtected(string z)
+    {
+        protectedString = z;
     }
 };
 class MultipleInheritance : public Complex, public Point
@@ -372,6 +378,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     pointD.Derived::objectMethod();
     pointD.objectMethod();
     pointD.showCoordinates();
+    pointD.usingProtected("Protected");
     MultipleInheritance pointE;
     pointE.objectMethod();
     pointE.setReal(3);
