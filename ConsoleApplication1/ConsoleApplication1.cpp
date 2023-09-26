@@ -92,7 +92,7 @@ public:
     {
         cout << id++ << endl;
     }
-    void objectMethod()
+    virtual void objectMethod()
     {
         cout << "Point" << endl;
     }
@@ -357,6 +357,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << object.getImaginary() << endl;
     cout << object2 - object << endl;
     Point pointA = Point(0, 0);
+    Point* pointPointer = &pointA;
+    pointPointer->objectMethod();
     Point pointB(1);
     pointA.objectMethod();
     pointA.showCoordinates();
@@ -370,10 +372,14 @@ int main()//C++ does not support int by default ConsoleApplication1
     origin.showCoordinates();
     clearId(origin);
     Derived pointC(1, 1);
+    pointPointer = &pointC;
+    pointPointer->objectMethod();
     pointC.Point::objectMethod();
     pointC.objectMethod();
     pointC.showCoordinates();
     DerivedDerived pointD(2, 2);
+    pointPointer = &pointD;
+    pointPointer->objectMethod();
     pointD.Point::objectMethod();
     pointD.Derived::objectMethod();
     pointD.objectMethod();
