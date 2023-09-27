@@ -97,10 +97,15 @@ public:
         cout << "Point" << endl;
     }
 };
-class Derived : public Point
+class Abstract : public Point
 {
 public:
-    Derived(int x, int y) : Point(x, y) {}
+    virtual void objectMethod() = 0;
+};
+class Derived : public Abstract
+{
+public:
+    Derived(int x, int y) {}// : Point(x, y) {} C++ intermediate non-virtual base class is not allowed
     void objectMethod()
     {
         cout << "Derived" << endl;
