@@ -1,6 +1,7 @@
 // ConsoleApplication1.cpp : This file contains the 'main' function. Program execution begins and ends there.
 
 #include <iostream>//including a library that supports the output and input streams
+#include <string>
 using namespace std;
 class Complex
 {
