@@ -2,66 +2,8 @@
 
 #include <iostream>//including a library that supports the output and input streams
 #include <string>
+#include "Complex.h"
 using namespace std;
-class Complex
-{
-public:
-    Complex(double r = 0.0, double i = 0.0) : real(r), imaginary(i) {}
-    // Method for setting the real part value
-    void setReal(double r)
-    {
-        real = r;
-    }
-    // Method for setting the value of the imaginary part
-    void setImaginary(double i)
-    {
-        imaginary = i;
-    }
-    // Method to retrieve the value of the real part
-    double getReal() const
-    {
-        return real;
-    }
-    // Method to retrieve the value of the imaginary part
-    double getImaginary() const
-    {
-        return imaginary;
-    }
-    // Overloading the addition operator
-    Complex operator+(const Complex& other) const
-    {
-        return Complex(real + other.real, imaginary + other.imaginary);
-    }
-    // Overloading the subtraction operator
-    Complex operator-(const Complex& other) const
-    {
-        return Complex(real - other.real, imaginary - other.imaginary);
-    }
-    // Overloading the multiplication operator
-    Complex operator*(const Complex& other) const
-    {
-        double newReal = real * other.real - imaginary * other.imaginary;
-        double newImaginary = real * other.imaginary + imaginary * other.real;
-        return Complex(newReal, newImaginary);
-    }
-    // Display operator overloading
-    friend std::ostream& operator<<(std::ostream& os, const Complex& c)
-    {
-        os << c.real;
-        if (c.imaginary >= 0)
-        {
-            os << " + " << c.imaginary << "i";
-        }
-        else
-        {
-            os << " - " << -c.imaginary << "i";
-        }
-        return os;
-    }
-private:
-    double real;
-    double imaginary;
-};
 class Point
 {
     friend void clearId(Point id);
@@ -354,11 +296,12 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionWithParametersPointer(globalVariable, globalVariable) << endl;//value
     cout << functionWithParametersPointer << endl;//address
     cout << addition(globalVariable, globalVariable) << endl;//value
+    /*
     Complex object;
     Complex object2(2, 1);
     object.setReal(1);
     object.setImaginary(2);
-    Complex* pointer = nullptr;
+    //Complex* pointer = nullptr;
     cout << object.getReal() << endl;
     cout << object.getImaginary() << endl;
     cout << object2 - object << endl;
@@ -396,7 +339,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     pointE.setReal(3);
     pointE.setImaginary(3);
     cout << pointE.getReal() << endl;
-    cout << pointE.getImaginary() << endl;
+    cout << pointE.getImaginary() << endl; */
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
