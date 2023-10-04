@@ -296,12 +296,11 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << functionWithParametersPointer(globalVariable, globalVariable) << endl;//value
     cout << functionWithParametersPointer << endl;//address
     cout << addition(globalVariable, globalVariable) << endl;//value
-    /*
     Complex object;
     Complex object2(2, 1);
     object.setReal(1);
     object.setImaginary(2);
-    //Complex* pointer = nullptr;
+    Complex* pointer = nullptr;
     cout << object.getReal() << endl;
     cout << object.getImaginary() << endl;
     cout << object2 - object << endl;
@@ -339,7 +338,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     pointE.setReal(3);
     pointE.setImaginary(3);
     cout << pointE.getReal() << endl;
-    cout << pointE.getImaginary() << endl; */
+    cout << pointE.getImaginary() << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

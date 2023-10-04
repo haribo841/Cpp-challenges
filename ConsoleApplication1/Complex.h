@@ -1,9 +1,11 @@
 #pragma once
 #include <iostream>
 #include <string>
+using namespace std;
 class Complex
 {
 public:
+    Complex(double r = 0.0, double i = 0.0);
     void setReal(double r);
     void setImaginary(double i);
     double getReal() const;
