@@ -3,6 +3,7 @@
 #include <iostream>//including a library that supports the output and input streams
 #include <string>
 #include "Complex.h"
+#define JP 2137
 using namespace std;
 class Point
 {
@@ -81,7 +82,7 @@ enum seasons
 {
     spring,
     summer,
-    autumn = 2137,
+    autumn = JP,
     winter
 };
 void function(int globalVariable)
@@ -182,6 +183,9 @@ int main()//C++ does not support int by default ConsoleApplication1
         {'D', 'E', 'F'},
         {'G', 'H', 'I'}
     };
+    cout << __FILE__ << endl;
+    cout << __DATE__ << endl;
+    cout << __TIME__ << endl;
     /*std::*/cout << "Hello World!\n";
     displayMatrix(matrix);
     cout << addition(a, b) /* + b */ << "\n";
