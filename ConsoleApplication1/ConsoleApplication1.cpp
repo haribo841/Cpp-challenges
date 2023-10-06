@@ -133,6 +133,10 @@ int addition(long x, int y)
 {
     return x + y;
 }
+struct Structure
+{
+    string PublicMemmber;
+};
 int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
@@ -343,6 +347,9 @@ int main()//C++ does not support int by default ConsoleApplication1
     pointE.setImaginary(3);
     cout << pointE.getReal() << endl;
     cout << pointE.getImaginary() << endl;
+    Structure structureObject;
+    structureObject.PublicMemmber = "structure";
+    cout << structureObject.PublicMemmber << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
