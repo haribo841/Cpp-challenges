@@ -137,6 +137,11 @@ struct Structure
 {
     string PublicMemmber;
 };
+union Union
+{
+    int member1;
+    float member2;
+};
 int main()//C++ does not support int by default ConsoleApplication1
 {
     typedef long hint;//If its name begins with two underscores (__), a data type is non-standard.
@@ -350,6 +355,16 @@ int main()//C++ does not support int by default ConsoleApplication1
     Structure structureObject;
     structureObject.PublicMemmber = "structure";
     cout << structureObject.PublicMemmber << endl;
+    Union unionMember;
+    cout << sizeof(unionMember) << endl;
+    cout << sizeof(unionMember.member1) << endl;
+    cout << sizeof(unionMember.member2) << endl;
+    unionMember.member1 = 1;
+    cout << unionMember.member1 << endl;
+    cout << unionMember.member2 << endl;
+    unionMember.member2 = 2;
+    cout << unionMember.member1 << endl;
+    cout << unionMember.member2 << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
