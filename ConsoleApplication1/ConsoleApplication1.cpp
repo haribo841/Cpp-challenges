@@ -5,6 +5,14 @@
 #include "Complex.h"
 #define JP 2137
 using namespace std;
+namespace namespace1
+{
+    string variable = "namespace1Variable";
+}
+namespace namespace2
+{
+    string variable = "namespace2Variable";
+}
 class Point
 {
     friend void clearId(Point id);
@@ -365,6 +373,8 @@ int main()//C++ does not support int by default ConsoleApplication1
     unionMember.member2 = 2;
     cout << unionMember.member1 << endl;
     cout << unionMember.member2 << endl;
+    cout << namespace1::variable << endl;
+    cout << namespace2::variable << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
