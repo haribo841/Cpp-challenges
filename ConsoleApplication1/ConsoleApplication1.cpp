@@ -13,6 +13,18 @@ namespace namespace2
 {
     string variable = "namespace2Variable";
 }
+class OuterClass
+{
+public:
+    class IntermediateClass
+    {
+    public:
+        class InnerClass
+        {
+
+        };
+    };
+};
 class Point
 {
     friend void clearId(Point id);
@@ -375,6 +387,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << unionMember.member2 << endl;
     cout << namespace1::variable << endl;
     cout << namespace2::variable << endl;
+    OuterClass::IntermediateClass::InnerClass nestedObject;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
