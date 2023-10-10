@@ -105,6 +105,10 @@ enum seasons
     autumn = JP,
     winter
 };
+template <class T> T multiplication(T x, T y)
+{
+    return x * y;
+}
 void function(int globalVariable)
 {
     cout << globalVariable << "function called" << endl;
@@ -388,6 +392,7 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << namespace1::variable << endl;
     cout << namespace2::variable << endl;
     OuterClass::IntermediateClass::InnerClass nestedObject;
+    cout << multiplication(z, twenty()) << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
