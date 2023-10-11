@@ -95,6 +95,19 @@ class MultipleInheritance : public Complex, public Point
 public:
     MultipleInheritance() {};
 };
+template <class T> class Objects
+{
+    T value;
+public:
+    Objects(T value)
+    {
+        this->value = value;
+    }
+    void show()
+    {
+        cout << value << endl;
+    }
+};
 int Point::id = 1;
 int globalVariable;//the order of declarations matters
 int* globalPointer = &globalVariable;
@@ -393,6 +406,10 @@ int main()//C++ does not support int by default ConsoleApplication1
     cout << namespace2::variable << endl;
     OuterClass::IntermediateClass::InnerClass nestedObject;
     cout << multiplication(z, twenty()) << endl;
+    Objects<int> ObjectInt(JP);
+    ObjectInt.show();
+    Objects<string> ObjectString("value");
+    ObjectString.show();
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
