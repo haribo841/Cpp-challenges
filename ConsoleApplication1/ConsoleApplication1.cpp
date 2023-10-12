@@ -410,6 +410,16 @@ int main()//C++ does not support int by default ConsoleApplication1
     ObjectInt.show();
     Objects<string> ObjectString("value");
     ObjectString.show();
+    try
+    {
+        z = multiplication(z, twenty());
+        if (z < JP)
+            throw x;
+    }
+    catch (int*const x)
+    {
+        cout << "Exception " << endl;
+    }
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
