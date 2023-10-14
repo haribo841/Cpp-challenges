@@ -410,16 +410,25 @@ int main()//C++ does not support int by default ConsoleApplication1
     ObjectInt.show();
     Objects<string> ObjectString("value");
     ObjectString.show();
+    string title("C++");
     try
     {
         z = multiplication(z, twenty());
         if (z < JP)
-            throw x;
+            throw title;
     }
-    catch (int*const x)
+    catch (string title)
     {
-        cout << "Exception " << endl;
+        cout << title << endl;
     }
+    cout << title.length() << endl;
+    cout << title.size() << endl;
+    cout << title.empty() << endl;
+    cout << title.max_size() << endl;
+    title.resize(JP);
+    title=title.substr(0, 3);
+    title.clear();
+    cout << title << endl;
     system("pause");
 }
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
