@@ -1,4 +1,2 @@
-﻿  ConsoleApplication1.cpp
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(204,12): warning C4244: "inicjowanie": konwersja z "double" do "long", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\ConsoleApplication1.cpp(407,47): warning C4101: "nestedObject": lokalna zmienna, do której nie istnieje odwołanie
+﻿  000 True.cpp
   ConsoleApplication1.vcxproj -> C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Debug\ConsoleApplication1.exe
