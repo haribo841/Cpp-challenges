@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32819.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ConsoleApplication1", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Cpp challenges", "ConsoleApplication1\ConsoleApplication1.vcxproj", "{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Tests", "Tests\Tests.vcxproj", "{DDF1AC00-8372-48DE-800B-335057CF882D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,14 @@ Global
 		{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}.Release|x64.Build.0 = Release|x64
 		{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}.Release|x86.ActiveCfg = Release|Win32
 		{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}.Release|x86.Build.0 = Release|Win32
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Debug|x64.ActiveCfg = Debug|x64
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Debug|x64.Build.0 = Debug|x64
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Debug|x86.ActiveCfg = Debug|Win32
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Debug|x86.Build.0 = Debug|Win32
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Release|x64.ActiveCfg = Release|x64
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Release|x64.Build.0 = Release|x64
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Release|x86.ActiveCfg = Release|Win32
+		{DDF1AC00-8372-48DE-800B-335057CF882D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

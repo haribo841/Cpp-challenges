@@ -16,9 +16,6 @@
     <Filter Include="Challenges">
       <UniqueIdentifier>{6946c363-6bba-444d-891b-3c43fea266a3}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Tests">
-      <UniqueIdentifier>{0860610c-3e95-4a5f-b030-8be1000ca9bd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Complex.cpp">
@@ -27,14 +24,11 @@
     <ClCompile Include="000 True.cpp">
       <Filter>Challenges</Filter>
     </ClCompile>
-    <ClCompile Include="000 Test.cpp">
-      <Filter>Tests</Filter>
+    <ClCompile Include="001 Sum of Two Numbers.cpp">
+      <Filter>Challenges</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="000 Test.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Complex.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -42,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="000 True.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="001 Sum of Two Numbers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

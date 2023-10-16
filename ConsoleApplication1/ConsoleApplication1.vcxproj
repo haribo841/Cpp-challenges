@@ -24,6 +24,7 @@
     <ProjectGuid>{9484a1a0-ef48-4c5e-8e51-361d76fbfb7b}</ProjectGuid>
     <RootNamespace>ConsoleApplication1</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Challenges</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -128,13 +129,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="000 True.cpp" />
+    <ClCompile Include="001 Sum of Two Numbers.cpp" />
     <ClCompile Include="Complex.cpp" />
-    <ClCompile Include="000 Test.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
+    <ClInclude Include="001 Sum of Two Numbers.h" />
     <ClInclude Include="Complex.h" />
-    <ClInclude Include="000 Test.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
