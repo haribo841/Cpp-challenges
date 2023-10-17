@@ -1,3 +1,24 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: Katalog pośredni (x64\Debug\) zawiera pliki udostępnione z innego projektu (ConsoleApplication1.vcxproj, Cpp challenges.vcxproj). Może to spowodować niepoprawne zachowanie podczas oczyszczania i ponownej kompilacji.
+  000 True.cpp
   001 Sum of Two Numbers.cpp
+  Benchmark.cpp
+  Generowanie kodu...
+benchmarkd.lib(benchmark.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(benchmark.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(benchmark_register.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(benchmark_register.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(benchmark_name.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(benchmark_name.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(console_reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(console_reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(json_reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(json_reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(csv_reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(csv_reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(commandlineflags.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(commandlineflags.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(benchmark_runner.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(benchmark_runner.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(colorprint.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(colorprint.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(timers.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(timers.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(sysinfo.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(sysinfo.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(statistics.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(statistics.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(string_util.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(string_util.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(complexity.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(complexity.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(counter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(counter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(benchmark_api_internal.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(benchmark_api_internal.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmarkd.lib(sleep.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmarkd.lib(sleep.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
   ConsoleApplication1.vcxproj -> C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Debug\Challenges.exe

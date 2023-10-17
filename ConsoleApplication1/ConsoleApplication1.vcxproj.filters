@@ -18,7 +18,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Complex.cpp">
+    <ClCompile Include="Benchmark.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="000 True.cpp">
@@ -27,9 +27,12 @@
     <ClCompile Include="001 Sum of Two Numbers.cpp">
       <Filter>Challenges</Filter>
     </ClCompile>
+    <ClCompile Include="002 Next Number from the Integer Passed.cpp">
+      <Filter>Challenges</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Complex.h">
+    <ClInclude Include="Benchmark.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="resource.h">
@@ -41,10 +44,16 @@
     <ClInclude Include="001 Sum of Two Numbers.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="002 Next Number from the Integer Passed.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ConsoleApplication1.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

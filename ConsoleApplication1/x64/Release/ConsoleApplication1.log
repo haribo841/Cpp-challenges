@@ -1,0 +1,27 @@
+﻿  Benchmark.cpp
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(9,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(18,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
+  Trwa generowanie kodu
+  6 of 89 functions ( 6.7%) were compiled, the rest were copied from previous compilation.
+    2 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+benchmark.lib(benchmark_register.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark_register.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(benchmark.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(sysinfo.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(sysinfo.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(benchmark_name.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark_name.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(statistics.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(statistics.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(string_util.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(string_util.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(console_reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(console_reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(json_reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(json_reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(csv_reporter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(csv_reporter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(commandlineflags.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(commandlineflags.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(benchmark_runner.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark_runner.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(colorprint.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(colorprint.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(timers.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(timers.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(sleep.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(sleep.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(complexity.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(complexity.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(counter.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(counter.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+benchmark.lib(benchmark_api_internal.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark_api_internal.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
+  ConsoleApplication1.vcxproj -> C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Release\Challenges.exe

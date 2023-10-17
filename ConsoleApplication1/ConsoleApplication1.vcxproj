@@ -130,18 +130,30 @@
   <ItemGroup>
     <ClCompile Include="000 True.cpp" />
     <ClCompile Include="001 Sum of Two Numbers.cpp" />
-    <ClCompile Include="Complex.cpp" />
+    <ClCompile Include="Benchmark.cpp" />
+    <ClCompile Include="002 Next Number from the Integer Passed.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
     <ClInclude Include="001 Sum of Two Numbers.h" />
-    <ClInclude Include="Complex.h" />
+    <ClInclude Include="Benchmark.h" />
+    <ClInclude Include="002 Next Number from the Integer Passed.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ConsoleApplication1.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\gbenchmark.1.5.1\build\gbenchmark.targets" Condition="Exists('..\packages\gbenchmark.1.5.1\build\gbenchmark.targets')" />
   </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Ten projekt zawiera odwołania do pakietów NuGet, których nie ma na tym komputerze. Użyj przywracania pakietów NuGet, aby je pobrać. Aby uzyskać więcej informacji, zobacz http://go.microsoft.com/fwlink/?LinkID=322105. Brakujący plik: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\gbenchmark.1.5.1\build\gbenchmark.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\gbenchmark.1.5.1\build\gbenchmark.targets'))" />
+  </Target>
 </Project>
