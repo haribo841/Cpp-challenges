@@ -1,7 +1,8 @@
 #include "pch.h"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\000 True.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\001 Sum of Two Numbers.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\002 Next Number from the Integer Passed.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\002 Minutes into Seconds.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\003 Next Number from the Integer Passed.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -14,19 +15,18 @@ TEST(test1, addition) {
 	EXPECT_TRUE(true);
 }
 
-TEST(test2, addition) {
+TEST(test2, convert) {
+	EXPECT_EQ(360, convert(6));
+	EXPECT_EQ(240, convert(4));
+	EXPECT_EQ(480, convert(8));
+	EXPECT_EQ(3600, convert(60));
+	EXPECT_TRUE(true);
+}
+TEST(test3, addition) {
 	EXPECT_EQ(3, addition(2));
 	EXPECT_EQ(-8, addition(-9));
 	EXPECT_EQ(1, addition(0));
 	EXPECT_EQ(1000, addition(999));
 	EXPECT_EQ(74, addition(73));
-	EXPECT_TRUE(true);
-}
-TEST(test2, preincrementation) {
-	EXPECT_EQ(3, preincrementation(2));
-	EXPECT_EQ(-8, preincrementation(-9));
-	EXPECT_EQ(1, preincrementation(0));
-	EXPECT_EQ(1000, preincrementation(999));
-	EXPECT_EQ(74, preincrementation(73));
 	EXPECT_TRUE(true);
 }

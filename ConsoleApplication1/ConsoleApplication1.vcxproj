@@ -131,13 +131,15 @@
     <ClCompile Include="000 True.cpp" />
     <ClCompile Include="001 Sum of Two Numbers.cpp" />
     <ClCompile Include="Benchmark.cpp" />
-    <ClCompile Include="002 Next Number from the Integer Passed.cpp" />
+    <ClCompile Include="003 Next Number from the Integer Passed.cpp" />
+    <ClCompile Include="002 Minutes into Seconds.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
     <ClInclude Include="001 Sum of Two Numbers.h" />
     <ClInclude Include="Benchmark.h" />
-    <ClInclude Include="002 Next Number from the Integer Passed.h" />
+    <ClInclude Include="003 Next Number from the Integer Passed.h" />
+    <ClInclude Include="002 Minutes into Seconds.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
