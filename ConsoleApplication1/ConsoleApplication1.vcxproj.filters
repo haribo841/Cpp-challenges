@@ -30,6 +30,9 @@
     <ClCompile Include="003 Next Number from the Integer Passed.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="004 Circuit Power Calculator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -48,6 +51,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="002 Minutes into Seconds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="004 Circuit Power Calculator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
