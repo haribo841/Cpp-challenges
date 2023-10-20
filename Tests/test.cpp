@@ -4,6 +4,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\002 Minutes into Seconds.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\003 Next Number from the Integer Passed.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\004 Circuit Power Calculator.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\005 Convert Age to Days.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -34,5 +35,15 @@ TEST(test4, circuitPower) {
 	EXPECT_EQ(9600, circuitPower(480,20));
 	EXPECT_EQ(330, circuitPower(110,3));
 	EXPECT_EQ(3808800, circuitPower(13800,276));
+	EXPECT_TRUE(true);
+}
+TEST(test5, calc_age) {
+	EXPECT_EQ(3650, calc_age(10));
+	EXPECT_EQ(0, calc_age(0));
+	EXPECT_EQ(26645, calc_age(73));
+	EXPECT_EQ(20440, calc_age(56));
+	EXPECT_EQ(6570, calc_age(18));
+	EXPECT_EQ(7665, calc_age(21));
+	EXPECT_EQ(23725, calc_age(65));
 	EXPECT_TRUE(true);
 }

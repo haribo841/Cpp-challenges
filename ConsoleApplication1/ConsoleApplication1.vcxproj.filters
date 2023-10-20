@@ -33,6 +33,9 @@
     <ClCompile Include="004 Circuit Power Calculator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="005 Convert Age to Days.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -54,6 +57,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="004 Circuit Power Calculator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="005 Convert Age to Days.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

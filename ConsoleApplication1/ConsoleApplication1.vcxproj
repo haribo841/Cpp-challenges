@@ -134,6 +134,7 @@
     <ClCompile Include="003 Next Number from the Integer Passed.cpp" />
     <ClCompile Include="002 Minutes into Seconds.cpp" />
     <ClCompile Include="004 Circuit Power Calculator.cpp" />
+    <ClCompile Include="005 Convert Age to Days.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="003 Next Number from the Integer Passed.h" />
     <ClInclude Include="002 Minutes into Seconds.h" />
     <ClInclude Include="004 Circuit Power Calculator.h" />
+    <ClInclude Include="005 Convert Age to Days.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

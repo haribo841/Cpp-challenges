@@ -1,7 +1,6 @@
 ﻿  Benchmark.cpp
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(9,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(10,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-  004 Circuit Power Calculator.cpp
+  005 Convert Age to Days.cpp
   Trwa generowanie kodu
   5 of 86 functions ( 5.8%) were compiled, the rest were copied from previous compilation.
     1 functions were new in current compilation
