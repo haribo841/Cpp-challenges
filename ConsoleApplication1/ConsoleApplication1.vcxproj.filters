@@ -36,6 +36,9 @@
     <ClCompile Include="005 Convert Age to Days.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="006 Area of a Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -60,6 +63,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="005 Convert Age to Days.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="006 Area of a Triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

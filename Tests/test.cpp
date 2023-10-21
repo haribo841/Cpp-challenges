@@ -5,6 +5,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\003 Next Number from the Integer Passed.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\004 Circuit Power Calculator.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\005 Convert Age to Days.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\006 Area of a Triangle.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -45,5 +46,21 @@ TEST(test5, calc_age) {
 	EXPECT_EQ(6570, calc_age(18));
 	EXPECT_EQ(7665, calc_age(21));
 	EXPECT_EQ(23725, calc_age(65));
+	EXPECT_TRUE(true);
+}
+TEST(test6, triArea) {
+	EXPECT_EQ(3, triArea(3, 2));
+	EXPECT_EQ(10, triArea(5, 4));
+	EXPECT_EQ(50, triArea(10, 10));
+	EXPECT_EQ(0, triArea(0, 60));
+	EXPECT_EQ(66, triArea(12, 11));
+	EXPECT_TRUE(true);
+}
+TEST(test6, bitArea) {
+	EXPECT_EQ(3, bitArea(3, 2));
+	EXPECT_EQ(10, bitArea(5, 4));
+	EXPECT_EQ(50, bitArea(10, 10));
+	EXPECT_EQ(0, bitArea(0, 60));
+	EXPECT_EQ(66, bitArea(12, 11));
 	EXPECT_TRUE(true);
 }
