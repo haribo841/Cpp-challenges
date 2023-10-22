@@ -136,6 +136,7 @@
     <ClCompile Include="004 Circuit Power Calculator.cpp" />
     <ClCompile Include="005 Convert Age to Days.cpp" />
     <ClCompile Include="006 Area of a Triangle.cpp" />
+    <ClCompile Include="007 Remainder from Two Numbers.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -146,6 +147,7 @@
     <ClInclude Include="004 Circuit Power Calculator.h" />
     <ClInclude Include="005 Convert Age to Days.h" />
     <ClInclude Include="006 Area of a Triangle.h" />
+    <ClInclude Include="007 Remainder from Two Numbers.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

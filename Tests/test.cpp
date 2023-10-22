@@ -6,6 +6,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\004 Circuit Power Calculator.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\005 Convert Age to Days.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\006 Area of a Triangle.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\007 Remainder from Two Numbers.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -56,11 +57,10 @@ TEST(test6, triArea) {
 	EXPECT_EQ(66, triArea(12, 11));
 	EXPECT_TRUE(true);
 }
-TEST(test6, bitArea) {
-	EXPECT_EQ(3, bitArea(3, 2));
-	EXPECT_EQ(10, bitArea(5, 4));
-	EXPECT_EQ(50, bitArea(10, 10));
-	EXPECT_EQ(0, bitArea(0, 60));
-	EXPECT_EQ(66, bitArea(12, 11));
+TEST(test7, remainder) {
+	EXPECT_EQ(1, remainder(7, 2));
+	EXPECT_EQ(3, remainder(3, 4));
+	EXPECT_EQ(-9, remainder(-9, -45));
+	EXPECT_EQ(0, remainder(5, 5));
 	EXPECT_TRUE(true);
 }

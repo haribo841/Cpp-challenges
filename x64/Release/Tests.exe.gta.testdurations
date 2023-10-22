@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Executable>C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Release\Tests.exe</Executable>
+  <TestDurations>
+    <TestDuration Test="test0.returnTrue" Duration="1" />
+    <TestDuration Test="test1.addition" Duration="1" />
+    <TestDuration Test="test2.convert" Duration="1" />
+    <TestDuration Test="test3.addition" Duration="1" />
+    <TestDuration Test="test4.circuitPower" Duration="1" />
+    <TestDuration Test="test5.calc_age" Duration="1" />
+    <TestDuration Test="test6.triArea" Duration="1" />
+    <TestDuration Test="test7.remainder" Duration="1" />
+  </TestDurations>
+</GtaTestDurations>
