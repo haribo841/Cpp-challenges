@@ -42,6 +42,9 @@
     <ClCompile Include="007 Remainder from Two Numbers.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="008 Less than or Equal to Zero.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -72,6 +75,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="007 Remainder from Two Numbers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="008 Less than or Equal to Zero.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

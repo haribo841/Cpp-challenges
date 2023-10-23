@@ -7,6 +7,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\005 Convert Age to Days.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\006 Area of a Triangle.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\007 Remainder from Two Numbers.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\008 Less than or Equal to Zero.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -62,5 +63,65 @@ TEST(test7, remainder) {
 	EXPECT_EQ(3, remainder(3, 4));
 	EXPECT_EQ(-9, remainder(-9, -45));
 	EXPECT_EQ(0, remainder(5, 5));
+	EXPECT_TRUE(true);
+}
+TEST(test8, lessThanOrEqualToZero) {
+	EXPECT_EQ(false, lessThanOrEqualToZero(5));
+	EXPECT_EQ(true, lessThanOrEqualToZero(0));
+	EXPECT_EQ(true, lessThanOrEqualToZero(-5));
+	EXPECT_EQ(false, lessThanOrEqualToZero(1));
+	EXPECT_EQ(false, lessThanOrEqualToZero(2));
+	EXPECT_EQ(false, lessThanOrEqualToZero(10000));
+	EXPECT_EQ(false, lessThanOrEqualToZero(1));
+	EXPECT_TRUE(true);
+}
+TEST(test8, lessThanOrEqualToZero2) {
+	EXPECT_EQ(false, lessThanOrEqualToZero2(5));
+	EXPECT_EQ(true, lessThanOrEqualToZero2(0));
+	EXPECT_EQ(true, lessThanOrEqualToZero2(-5));
+	EXPECT_EQ(false, lessThanOrEqualToZero2(1));
+	EXPECT_EQ(false, lessThanOrEqualToZero2(2));
+	EXPECT_EQ(false, lessThanOrEqualToZero2(10000));
+	EXPECT_EQ(false, lessThanOrEqualToZero2(1));
+	EXPECT_TRUE(true);
+}
+TEST(test8, lessThanOrEqualToZero3) {
+	EXPECT_EQ(false, lessThanOrEqualToZero3(5));
+	EXPECT_EQ(true, lessThanOrEqualToZero3(0));
+	EXPECT_EQ(true, lessThanOrEqualToZero3(-5));
+	EXPECT_EQ(false, lessThanOrEqualToZero3(1));
+	EXPECT_EQ(false, lessThanOrEqualToZero3(2));
+	EXPECT_EQ(false, lessThanOrEqualToZero3(10000));
+	EXPECT_EQ(false, lessThanOrEqualToZero3(1));
+	EXPECT_TRUE(true);
+}
+TEST(test8, lessThanOrEqualToZero4) {
+	EXPECT_EQ(false, lessThanOrEqualToZero4(5));
+	EXPECT_EQ(true, lessThanOrEqualToZero4(0));
+	EXPECT_EQ(true, lessThanOrEqualToZero4(-5));
+	EXPECT_EQ(false, lessThanOrEqualToZero4(1));
+	EXPECT_EQ(false, lessThanOrEqualToZero4(2));
+	EXPECT_EQ(false, lessThanOrEqualToZero4(10000));
+	EXPECT_EQ(false, lessThanOrEqualToZero4(1));
+	EXPECT_TRUE(true);
+}
+TEST(test8, lessThanOrEqualToZero5) {
+	EXPECT_EQ(false, lessThanOrEqualToZero5(5));
+	EXPECT_EQ(true, lessThanOrEqualToZero5(0));
+	EXPECT_EQ(true, lessThanOrEqualToZero5(-5));
+	EXPECT_EQ(false, lessThanOrEqualToZero5(1));
+	EXPECT_EQ(false, lessThanOrEqualToZero5(2));
+	EXPECT_EQ(false, lessThanOrEqualToZero5(10000));
+	EXPECT_EQ(false, lessThanOrEqualToZero5(1));
+	EXPECT_TRUE(true);
+}
+TEST(test8, lessThanOrEqualToZero6) {
+	EXPECT_EQ(false, lessThanOrEqualToZero6(5));
+	EXPECT_EQ(true, lessThanOrEqualToZero6(0));
+	EXPECT_EQ(true, lessThanOrEqualToZero6(-5));
+	EXPECT_EQ(false, lessThanOrEqualToZero6(1));
+	EXPECT_EQ(false, lessThanOrEqualToZero6(2));
+	EXPECT_EQ(false, lessThanOrEqualToZero6(10000));
+	EXPECT_EQ(false, lessThanOrEqualToZero6(1));
 	EXPECT_TRUE(true);
 }

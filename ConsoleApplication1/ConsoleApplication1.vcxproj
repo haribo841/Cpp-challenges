@@ -137,6 +137,7 @@
     <ClCompile Include="005 Convert Age to Days.cpp" />
     <ClCompile Include="006 Area of a Triangle.cpp" />
     <ClCompile Include="007 Remainder from Two Numbers.cpp" />
+    <ClCompile Include="008 Less than or Equal to Zero.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -148,6 +149,7 @@
     <ClInclude Include="005 Convert Age to Days.h" />
     <ClInclude Include="006 Area of a Triangle.h" />
     <ClInclude Include="007 Remainder from Two Numbers.h" />
+    <ClInclude Include="008 Less than or Equal to Zero.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
