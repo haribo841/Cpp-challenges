@@ -45,6 +45,9 @@
     <ClCompile Include="008 Less than or Equal to Zero.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="009 Less Than 100.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -78,6 +81,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="008 Less than or Equal to Zero.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="009 Less Than 100.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -1,15 +1,8 @@
-﻿  Benchmark.cpp
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(9,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(19,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(29,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(39,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(49,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(59,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
+﻿  009 Less Than 100.cpp
   Trwa generowanie kodu
-C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\008 Less than or Equal to Zero.cpp(21): warning C4715: "lessThanOrEqualToZero6”: niewszystkie ścieżki kodu zwracają wartość
-  18 of 101 functions (17.8%) were compiled, the rest were copied from previous compilation.
-    10 functions were new in current compilation
-    1 functions had inline decision re-evaluated but remain unchanged
+  4 of 86 functions ( 4.7%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
   Zakończono generowanie kodu
 benchmark.lib(benchmark_register.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark_register.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
 benchmark.lib(benchmark.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
