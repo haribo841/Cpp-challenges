@@ -9,6 +9,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\007 Remainder from Two Numbers.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\008 Less than or Equal to Zero.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\009 Less Than 100.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\010 Are the Numbers Equal.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -97,5 +98,14 @@ TEST(test9, lessThan100) {
 	EXPECT_EQ(false, lessThan100(74, 89));
 	EXPECT_EQ(true, lessThan100(3, 27));
 	EXPECT_EQ(false, lessThan100(21, 79));
+	EXPECT_TRUE(true);
+}
+TEST(test10, isSameNum) {
+	EXPECT_EQ(false, isSameNum(4,8));
+	EXPECT_EQ(true, isSameNum(2,2));
+	EXPECT_EQ(false, isSameNum(0,8));
+	EXPECT_EQ(true, isSameNum(1,1));
+	EXPECT_EQ(false, isSameNum(12,3));
+	EXPECT_EQ(false, isSameNum(5,98));
 	EXPECT_TRUE(true);
 }

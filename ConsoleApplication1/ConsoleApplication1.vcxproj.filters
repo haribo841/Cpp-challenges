@@ -48,6 +48,9 @@
     <ClCompile Include="009 Less Than 100.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="010 Are the Numbers Equal.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -84,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="009 Less Than 100.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="010 Are the Numbers Equal.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

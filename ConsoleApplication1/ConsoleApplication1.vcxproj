@@ -139,6 +139,7 @@
     <ClCompile Include="007 Remainder from Two Numbers.cpp" />
     <ClCompile Include="008 Less than or Equal to Zero.cpp" />
     <ClCompile Include="009 Less Than 100.cpp" />
+    <ClCompile Include="010 Are the Numbers Equal.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -152,6 +153,7 @@
     <ClInclude Include="007 Remainder from Two Numbers.h" />
     <ClInclude Include="008 Less than or Equal to Zero.h" />
     <ClInclude Include="009 Less Than 100.h" />
+    <ClInclude Include="010 Are the Numbers Equal.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

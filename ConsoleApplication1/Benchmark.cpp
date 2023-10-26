@@ -2,7 +2,7 @@
 #include <string>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "009 Less Than 100.h"
+#include "010 Are the Numbers Equal.h"
 using namespace std;
 static void Benchmark(benchmark::State& state) {
     // Perform setup here
@@ -10,11 +10,11 @@ static void Benchmark(benchmark::State& state) {
     int b = state.range(1);
     for (auto _ : state) {
         // This code gets timed
-        int result = lessThan100(a,b);
+        int result = isSameNum(a,b);
         benchmark::DoNotOptimize(result);
     }
 }
 // Register the function as a benchmark
-BENCHMARK(Benchmark)->Args({ 5, 57 })->Args({ 77, 30 })->Args({ 0, 59 })->Args({ 78, 35 })->Args({ 63, 11 })->Args({ 52, 11 })->Args({ 82, 95 })->Args({ 17, 44 })->Args({ 74, 53 })->Args({ 3, 77 })->Args({ 25, 80 })->Args({ 59, 28 })->Args({ 69, 87 })->Args({ 10, 45 })->Args({ 43, 58 })->Args({ 50, 44 })->Args({ 74, 89 })->Args({ 3, 27 })->Args({ 21, 79 });
+BENCHMARK(Benchmark)->Args({ 4,8 })->Args({ 2,2 })->Args({ 0,8 })->Args({ 1,1 })->Args({ 12,3 })->Args({ 5,98 });
 // Run the benchmark
 BENCHMARK_MAIN();
