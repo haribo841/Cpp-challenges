@@ -10,6 +10,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\008 Less than or Equal to Zero.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\009 Less Than 100.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\010 Are the Numbers Equal.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\011 Return Something to Me.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -107,5 +108,17 @@ TEST(test10, isSameNum) {
 	EXPECT_EQ(true, isSameNum(1,1));
 	EXPECT_EQ(false, isSameNum(12,3));
 	EXPECT_EQ(false, isSameNum(5,98));
+	EXPECT_TRUE(true);
+}
+TEST(test11, giveMeSomething) {
+	EXPECT_EQ("something a", giveMeSomething("a"));
+	EXPECT_EQ("something is cooking", giveMeSomething("is cooking"));
+	EXPECT_EQ("something  is cooking", giveMeSomething(" is cooking"));
+	EXPECT_TRUE(true);
+}
+TEST(test11, giveMeSomething2) {
+	EXPECT_EQ("something a", giveMeSomething2("a"));
+	EXPECT_EQ("something is cooking", giveMeSomething2("is cooking"));
+	EXPECT_EQ("something  is cooking", giveMeSomething2(" is cooking"));
 	EXPECT_TRUE(true);
 }

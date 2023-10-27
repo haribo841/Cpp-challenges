@@ -51,6 +51,9 @@
     <ClCompile Include="010 Are the Numbers Equal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="011 Return Something to Me.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -90,6 +93,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="010 Are the Numbers Equal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="011 Return Something to Me.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

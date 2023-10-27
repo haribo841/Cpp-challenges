@@ -1,20 +1,63 @@
-#include <iostream>
-#include <string>
 #include <benchmark/benchmark.h>
-#include "Benchmark.h"
-#include "010 Are the Numbers Equal.h"
-using namespace std;
-static void Benchmark(benchmark::State& state) {
-    // Perform setup here
-    int a = state.range(0);
-    int b = state.range(1);
+#include "011 Return Something to Me.h"
+
+static void BM1(benchmark::State& state) {
     for (auto _ : state) {
-        // This code gets timed
-        int result = isSameNum(a,b);
+        std::string input = "a";
+        std::string result = giveMeSomething(input);
         benchmark::DoNotOptimize(result);
     }
 }
-// Register the function as a benchmark
-BENCHMARK(Benchmark)->Args({ 4,8 })->Args({ 2,2 })->Args({ 0,8 })->Args({ 1,1 })->Args({ 12,3 })->Args({ 5,98 });
-// Run the benchmark
+
+BENCHMARK(BM1);
+
+static void BM2(benchmark::State& state) {
+    for (auto _ : state) {
+        std::string input = "is cooking";
+        std::string result = giveMeSomething(input);
+        benchmark::DoNotOptimize(result);
+    }
+}
+
+BENCHMARK(BM2);
+
+static void BM3(benchmark::State& state) {
+    for (auto _ : state) {
+        std::string input = " is cooking";
+        std::string result = giveMeSomething(input);
+        benchmark::DoNotOptimize(result);
+    }
+}
+
+BENCHMARK(BM3);
+
+static void BM1b(benchmark::State& state) {
+    for (auto _ : state) {
+        std::string input = "a";
+        std::string result = giveMeSomething2(input);
+        benchmark::DoNotOptimize(result);
+    }
+}
+
+BENCHMARK(BM1b);
+
+static void BM2b(benchmark::State& state) {
+    for (auto _ : state) {
+        std::string input = "is cooking";
+        std::string result = giveMeSomething2(input);
+        benchmark::DoNotOptimize(result);
+    }
+}
+
+BENCHMARK(BM2b);
+
+static void BM3b(benchmark::State& state) {
+    for (auto _ : state) {
+        std::string input = " is cooking";
+        std::string result = giveMeSomething2(input);
+        benchmark::DoNotOptimize(result);
+    }
+}
+
+BENCHMARK(BM3b);
 BENCHMARK_MAIN();

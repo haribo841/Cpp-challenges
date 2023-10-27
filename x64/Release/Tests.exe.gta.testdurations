@@ -10,5 +10,10 @@
     <TestDuration Test="test5.calc_age" Duration="1" />
     <TestDuration Test="test6.triArea" Duration="1" />
     <TestDuration Test="test7.remainder" Duration="1" />
+    <TestDuration Test="test8.lessThanOrEqualToZero" Duration="1" />
+    <TestDuration Test="test9.lessThan100" Duration="1" />
+    <TestDuration Test="test10.isSameNum" Duration="1" />
+    <TestDuration Test="test11.giveMeSomething" Duration="1" />
+    <TestDuration Test="test11.giveMeSomething2" Duration="1" />
   </TestDurations>
 </GtaTestDurations>
