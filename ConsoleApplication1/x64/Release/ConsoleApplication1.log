@@ -1,8 +1,21 @@
-﻿  011 Return Something to Me.cpp
+﻿  000 True.cpp
+  001 Sum of Two Numbers.cpp
   Benchmark.cpp
+C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\Benchmark.cpp(9,11): warning C4244: "inicjowanie": konwersja z "int64_t" do "int", możliwa utrata danych
+  003 Next Number from the Integer Passed.cpp
+  002 Minutes into Seconds.cpp
+  004 Circuit Power Calculator.cpp
+  005 Convert Age to Days.cpp
+  006 Area of a Triangle.cpp
+  007 Remainder from Two Numbers.cpp
+  008 Less than or Equal to Zero.cpp
+  009 Less Than 100.cpp
+  010 Are the Numbers Equal.cpp
+  011 Return Something to Me.cpp
+  012 Flip the Boolean.cpp
   Trwa generowanie kodu
   Previous IPDB not found, fall back to full compilation.
-  All 99 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  All 124 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
   Zakończono generowanie kodu
 benchmark.lib(benchmark_register.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark_register.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania
 benchmark.lib(benchmark.cc.obj) : warning LNK4099: nie znaleziono pliku PDB „” z elementem „benchmark.lib(benchmark.cc.obj)” lub w pozycji „”; obiekt zostanie skonsolidowany bez informacji debugowania

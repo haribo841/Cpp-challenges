@@ -1,63 +1,20 @@
+#include <iostream>
+#include <string>
 #include <benchmark/benchmark.h>
-#include "011 Return Something to Me.h"
-
-static void BM1(benchmark::State& state) {
+#include "Benchmark.h"
+#include "012 Flip the Boolean.h"
+using namespace std;
+static void BM(benchmark::State& state) {
+    // Perform setup here
+    int a = state.range(0);
+    //int b = state.range(1);
     for (auto _ : state) {
-        std::string input = "a";
-        std::string result = giveMeSomething(input);
+        // This code gets timed
+        int result = reverse(a);
         benchmark::DoNotOptimize(result);
     }
 }
-
-BENCHMARK(BM1);
-
-static void BM2(benchmark::State& state) {
-    for (auto _ : state) {
-        std::string input = "is cooking";
-        std::string result = giveMeSomething(input);
-        benchmark::DoNotOptimize(result);
-    }
-}
-
-BENCHMARK(BM2);
-
-static void BM3(benchmark::State& state) {
-    for (auto _ : state) {
-        std::string input = " is cooking";
-        std::string result = giveMeSomething(input);
-        benchmark::DoNotOptimize(result);
-    }
-}
-
-BENCHMARK(BM3);
-
-static void BM1b(benchmark::State& state) {
-    for (auto _ : state) {
-        std::string input = "a";
-        std::string result = giveMeSomething2(input);
-        benchmark::DoNotOptimize(result);
-    }
-}
-
-BENCHMARK(BM1b);
-
-static void BM2b(benchmark::State& state) {
-    for (auto _ : state) {
-        std::string input = "is cooking";
-        std::string result = giveMeSomething2(input);
-        benchmark::DoNotOptimize(result);
-    }
-}
-
-BENCHMARK(BM2b);
-
-static void BM3b(benchmark::State& state) {
-    for (auto _ : state) {
-        std::string input = " is cooking";
-        std::string result = giveMeSomething2(input);
-        benchmark::DoNotOptimize(result);
-    }
-}
-
-BENCHMARK(BM3b);
+// Register the function as a benchmark
+BENCHMARK(BM)->Args({ true })->Args({ false });
+// Run the benchmark
 BENCHMARK_MAIN();

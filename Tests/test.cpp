@@ -11,6 +11,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\009 Less Than 100.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\010 Are the Numbers Equal.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\011 Return Something to Me.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\012 Flip the Boolean.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -116,9 +117,8 @@ TEST(test11, giveMeSomething) {
 	EXPECT_EQ("something  is cooking", giveMeSomething(" is cooking"));
 	EXPECT_TRUE(true);
 }
-TEST(test11, giveMeSomething2) {
-	EXPECT_EQ("something a", giveMeSomething2("a"));
-	EXPECT_EQ("something is cooking", giveMeSomething2("is cooking"));
-	EXPECT_EQ("something  is cooking", giveMeSomething2(" is cooking"));
+TEST(test12, reverse) {
+	EXPECT_EQ(false, reverse(true));
+	EXPECT_EQ(true, reverse(false));
 	EXPECT_TRUE(true);
 }
