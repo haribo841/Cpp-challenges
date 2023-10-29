@@ -57,6 +57,9 @@
     <ClCompile Include="012 Flip the Boolean.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="013 Convert Hours into Seconds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -102,6 +105,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="012 Flip the Boolean.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="013 Convert Hours into Seconds.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

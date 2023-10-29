@@ -12,6 +12,7 @@
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\010 Are the Numbers Equal.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\011 Return Something to Me.cpp"
 #include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\012 Flip the Boolean.cpp"
+#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\013 Convert Hours into Seconds.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -120,5 +121,19 @@ TEST(test11, giveMeSomething) {
 TEST(test12, reverse) {
 	EXPECT_EQ(false, reverse(true));
 	EXPECT_EQ(true, reverse(false));
+	EXPECT_TRUE(true);
+}
+TEST(test13, howManySeconds) {
+	EXPECT_EQ(7200, howManySeconds(2));
+	EXPECT_EQ(36000, howManySeconds(10));
+	EXPECT_EQ(86400, howManySeconds(24));
+	EXPECT_EQ(129600, howManySeconds(36));
+	EXPECT_TRUE(true);
+}
+TEST(test13, howManySeconds2) {
+	EXPECT_EQ(7200, howManySeconds2(2));
+	EXPECT_EQ(36000, howManySeconds2(10));
+	EXPECT_EQ(86400, howManySeconds2(24));
+	EXPECT_EQ(129600, howManySeconds2(36));
 	EXPECT_TRUE(true);
 }

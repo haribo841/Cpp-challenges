@@ -16,5 +16,7 @@
     <TestDuration Test="test11.giveMeSomething" Duration="1" />
     <TestDuration Test="test11.giveMeSomething2" Duration="1" />
     <TestDuration Test="test12.reverse" Duration="1" />
+    <TestDuration Test="test13.howManySeconds" Duration="1" />
+    <TestDuration Test="test13.howManySeconds2" Duration="1" />
   </TestDurations>
 </GtaTestDurations>
