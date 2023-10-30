@@ -143,6 +143,7 @@
     <ClCompile Include="011 Return Something to Me.cpp" />
     <ClCompile Include="012 Flip the Boolean.cpp" />
     <ClCompile Include="013 Convert Hours into Seconds.cpp" />
+    <ClCompile Include="014 Sum of Polygon Angles.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -160,6 +161,7 @@
     <ClInclude Include="011 Return Something to Me.h" />
     <ClInclude Include="012 Flip the Boolean.h" />
     <ClInclude Include="013 Convert Hours into Seconds.h" />
+    <ClInclude Include="014 Sum of Polygon Angles.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

@@ -1,18 +1,19 @@
 #include "pch.h"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\000 True.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\001 Sum of Two Numbers.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\002 Minutes into Seconds.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\003 Next Number from the Integer Passed.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\004 Circuit Power Calculator.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\005 Convert Age to Days.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\006 Area of a Triangle.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\007 Remainder from Two Numbers.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\008 Less than or Equal to Zero.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\009 Less Than 100.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\010 Are the Numbers Equal.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\011 Return Something to Me.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\012 Flip the Boolean.cpp"
-#include "C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\ConsoleApplication1\013 Convert Hours into Seconds.cpp"
+#include "..\ConsoleApplication1\000 True.cpp"
+#include "..\ConsoleApplication1\001 Sum of Two Numbers.cpp"
+#include "..\ConsoleApplication1\002 Minutes into Seconds.cpp"
+#include "..\ConsoleApplication1\003 Next Number from the Integer Passed.cpp"
+#include "..\ConsoleApplication1\004 Circuit Power Calculator.cpp"
+#include "..\ConsoleApplication1\005 Convert Age to Days.cpp"
+#include "..\ConsoleApplication1\006 Area of a Triangle.cpp"
+#include "..\ConsoleApplication1\007 Remainder from Two Numbers.cpp"
+#include "..\ConsoleApplication1\008 Less than or Equal to Zero.cpp"
+#include "..\ConsoleApplication1\009 Less Than 100.cpp"
+#include "..\ConsoleApplication1\010 Are the Numbers Equal.cpp"
+#include "..\ConsoleApplication1\011 Return Something to Me.cpp"
+#include "..\ConsoleApplication1\012 Flip the Boolean.cpp"
+#include "..\ConsoleApplication1\013 Convert Hours into Seconds.cpp"
+#include "..\ConsoleApplication1\014 Sum of Polygon Angles.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -130,10 +131,10 @@ TEST(test13, howManySeconds) {
 	EXPECT_EQ(129600, howManySeconds(36));
 	EXPECT_TRUE(true);
 }
-TEST(test13, howManySeconds2) {
-	EXPECT_EQ(7200, howManySeconds2(2));
-	EXPECT_EQ(36000, howManySeconds2(10));
-	EXPECT_EQ(86400, howManySeconds2(24));
-	EXPECT_EQ(129600, howManySeconds2(36));
-	EXPECT_TRUE(true);
+TEST(test14, Expectations) {
+	for (int y = 3; y <= 1000; ++y) {
+		int expected_sum = y * 180 - 180;
+		std::string x = "EXPECT_EQ(sumPolygon(" + std::to_string(y) + "), " + std::to_string(expected_sum) + ");";
+		EXPECT_EQ(sumPolygon(y), expected_sum) << x;
+	}
 }

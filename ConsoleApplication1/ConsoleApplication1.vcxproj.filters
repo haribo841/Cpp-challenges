@@ -60,6 +60,9 @@
     <ClCompile Include="013 Convert Hours into Seconds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="014 Sum of Polygon Angles.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -108,6 +111,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="013 Convert Hours into Seconds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="014 Sum of Polygon Angles.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

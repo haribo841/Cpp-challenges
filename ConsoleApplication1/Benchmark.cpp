@@ -2,30 +2,17 @@
 #include <string>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "013 Convert Hours into Seconds.h"
+#include "014 Sum of Polygon Angles.h"
 using namespace std;
-static void BM(benchmark::State& state) {
-    // Perform setup here
-    int a = state.range(0);
-    //int b = state.range(1);
+static void BM_SumPolygon(benchmark::State& state) {
+    int y = state.range(0);
     for (auto _ : state) {
-        // This code gets timed
-        int result = howManySeconds(a);
+        int result = sumPolygon(y);
         benchmark::DoNotOptimize(result);
     }
+    state.SetLabel(std::to_string(y));
 }
-static void BM2(benchmark::State& state) {
-    // Perform setup here
-    int a = state.range(0);
-    //int b = state.range(1);
-    for (auto _ : state) {
-        // This code gets timed
-        int result = howManySeconds2(a);
-        benchmark::DoNotOptimize(result);
-    }
-}
-// Register the function as a benchmark
-BENCHMARK(BM)->Args({ 2 })->Args({ 10 })->Args({ 24 })->Args({ 36 });
-BENCHMARK(BM2)->Args({ 2 })->Args({ 10 })->Args({ 24 })->Args({ 36 });
+
+BENCHMARK(BM_SumPolygon)->Range(3, 1000);
 // Run the benchmark
 BENCHMARK_MAIN();
