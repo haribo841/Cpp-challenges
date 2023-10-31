@@ -14,6 +14,7 @@
 #include "..\ConsoleApplication1\012 Flip the Boolean.cpp"
 #include "..\ConsoleApplication1\013 Convert Hours into Seconds.cpp"
 #include "..\ConsoleApplication1\014 Sum of Polygon Angles.cpp"
+#include "..\ConsoleApplication1\015 Are the Numbers Equal.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -137,4 +138,12 @@ TEST(test14, Expectations) {
 		std::string x = "EXPECT_EQ(sumPolygon(" + std::to_string(y) + "), " + std::to_string(expected_sum) + ");";
 		EXPECT_EQ(sumPolygon(y), expected_sum) << x;
 	}
+}
+TEST(test15, isEqual) {
+	EXPECT_EQ(true, isEqual(2, 2));
+	EXPECT_EQ(true, isEqual(88, 88));
+	EXPECT_EQ(false, isEqual(36, 35));
+	EXPECT_EQ(true, isEqual(1, 1));
+	EXPECT_EQ(false, isEqual(5, 6));
+	EXPECT_TRUE(true);
 }

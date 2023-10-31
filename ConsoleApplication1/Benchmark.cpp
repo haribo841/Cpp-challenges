@@ -2,17 +2,19 @@
 #include <string>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "014 Sum of Polygon Angles.h"
+#include "015 Are the Numbers Equal.h"
 using namespace std;
-static void BM_SumPolygon(benchmark::State& state) {
-    int y = state.range(0);
+static void BM(benchmark::State& state) {
+    // Perform setup here
+    int a = state.range(0);
+    int b = state.range(1);
     for (auto _ : state) {
-        int result = sumPolygon(y);
+        // This code gets timed
+        int result = isEqual(a,b);
         benchmark::DoNotOptimize(result);
     }
-    state.SetLabel(std::to_string(y));
 }
-
-BENCHMARK(BM_SumPolygon)->Range(3, 1000);
+// Register the function as a benchmark
+BENCHMARK(BM)->Args({ 2,2 })->Args({ 88,88 })->Args({ 36,35 })->Args({ 1,1 })->Args({ 5,6 });
 // Run the benchmark
 BENCHMARK_MAIN();
