@@ -145,6 +145,7 @@
     <ClCompile Include="013 Convert Hours into Seconds.cpp" />
     <ClCompile Include="014 Sum of Polygon Angles.cpp" />
     <ClCompile Include="015 Are the Numbers Equal.cpp" />
+    <ClCompile Include="016 Basic Variable Assignment.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -164,6 +165,7 @@
     <ClInclude Include="013 Convert Hours into Seconds.h" />
     <ClInclude Include="014 Sum of Polygon Angles.h" />
     <ClInclude Include="015 Are the Numbers Equal.h" />
+    <ClInclude Include="016 Basic Variable Assignment.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

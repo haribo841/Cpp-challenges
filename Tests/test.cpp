@@ -15,6 +15,7 @@
 #include "..\ConsoleApplication1\013 Convert Hours into Seconds.cpp"
 #include "..\ConsoleApplication1\014 Sum of Polygon Angles.cpp"
 #include "..\ConsoleApplication1\015 Are the Numbers Equal.cpp"
+#include "..\ConsoleApplication1\016 Basic Variable Assignment.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -145,5 +146,12 @@ TEST(test15, isEqual) {
 	EXPECT_EQ(false, isEqual(36, 35));
 	EXPECT_EQ(true, isEqual(1, 1));
 	EXPECT_EQ(false, isEqual(5, 6));
+	EXPECT_TRUE(true);
+}
+TEST(test16, nameString) {
+	EXPECT_EQ("MubashirEdabit", nameString("Mubashir"));
+	EXPECT_EQ("MattEdabit", nameString("Matt"));
+	EXPECT_EQ("C++Edabit", nameString("C++"));
+	EXPECT_EQ("AirforceEdabit", nameString("Airforce"));
 	EXPECT_TRUE(true);
 }

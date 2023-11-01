@@ -66,6 +66,9 @@
     <ClCompile Include="015 Are the Numbers Equal.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="016 Basic Variable Assignment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -120,6 +123,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="015 Are the Numbers Equal.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="016 Basic Variable Assignment.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

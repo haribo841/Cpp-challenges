@@ -1,20 +1,34 @@
 #include <iostream>
 #include <string>
+#include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "015 Are the Numbers Equal.h"
+#include "016 Basic Variable Assignment.h"
 using namespace std;
-static void BM(benchmark::State& state) {
-    // Perform setup here
-    int a = state.range(0);
-    int b = state.range(1);
+
+std::string giveMeSomething(const std::string& input) {
+    // Implementacja funkcji
+    std::string result = input + "Edabit";
+    return result;
+}
+
+static void BM_giveMeSomething(benchmark::State& state) {
+    // Przygotuj zestaw danych wejœciowych (w tym przypadku ci¹gi znaków)
+    std::vector<std::string> inputs = {
+        "Mubashir",
+        "Matt",
+        "C++",
+        "Airforce"
+    };
+
     for (auto _ : state) {
-        // This code gets timed
-        int result = isEqual(a,b);
-        benchmark::DoNotOptimize(result);
+        for (const std::string& input : inputs) {
+            std::string result = giveMeSomething(input);
+            benchmark::DoNotOptimize(result);
+        }
     }
 }
-// Register the function as a benchmark
-BENCHMARK(BM)->Args({ 2,2 })->Args({ 88,88 })->Args({ 36,35 })->Args({ 1,1 })->Args({ 5,6 });
-// Run the benchmark
+
+BENCHMARK(BM_giveMeSomething);
+
 BENCHMARK_MAIN();
