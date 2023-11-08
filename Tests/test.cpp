@@ -16,6 +16,7 @@
 #include "..\ConsoleApplication1\014 Sum of Polygon Angles.cpp"
 #include "..\ConsoleApplication1\015 Are the Numbers Equal.cpp"
 #include "..\ConsoleApplication1\016 Basic Variable Assignment.cpp"
+#include "..\ConsoleApplication1\017 Using the And Operator.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -153,5 +154,12 @@ TEST(test16, nameString) {
 	EXPECT_EQ("MattEdabit", nameString("Matt"));
 	EXPECT_EQ("C++Edabit", nameString("C++"));
 	EXPECT_EQ("AirforceEdabit", nameString("Airforce"));
+	EXPECT_TRUE(true);
+}
+TEST(test17, andAnd) {
+	EXPECT_EQ(true, andAnd(true, true));
+	EXPECT_EQ(false, andAnd(true, false));
+	EXPECT_EQ(false, andAnd(false, true));
+	EXPECT_EQ(false, andAnd(false, false));
 	EXPECT_TRUE(true);
 }

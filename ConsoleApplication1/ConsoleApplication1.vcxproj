@@ -146,6 +146,7 @@
     <ClCompile Include="014 Sum of Polygon Angles.cpp" />
     <ClCompile Include="015 Are the Numbers Equal.cpp" />
     <ClCompile Include="016 Basic Variable Assignment.cpp" />
+    <ClCompile Include="017 Using the And Operator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -166,6 +167,7 @@
     <ClInclude Include="014 Sum of Polygon Angles.h" />
     <ClInclude Include="015 Are the Numbers Equal.h" />
     <ClInclude Include="016 Basic Variable Assignment.h" />
+    <ClInclude Include="017 Using the And Operator.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

@@ -1,2 +1,1 @@
-﻿  test.cpp
-  Tests.vcxproj -> C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\x64\Release\Tests.exe
+﻿LINK : fatal error LNK1181: cannot open input file 'C:\Users\Adam\source\repos\haribo841\Cpp-challenges\packages\Microsoft.googletest.v140.windesktop.msvcstl.static.rt-dyn.1.8.1.7\build\native\..\..\lib\native\v140\windesktop\msvcstl\static\rt-dyn\x64\Release\gtest_main.lib'

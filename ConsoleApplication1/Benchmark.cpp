@@ -1,34 +1,20 @@
 #include <iostream>
 #include <string>
-#include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "016 Basic Variable Assignment.h"
+#include "017 Using the And Operator.h"
 using namespace std;
-
-std::string giveMeSomething(const std::string& input) {
-    // Implementacja funkcji
-    std::string result = input + "Edabit";
-    return result;
-}
-
-static void BM_giveMeSomething(benchmark::State& state) {
-    // Przygotuj zestaw danych wejœciowych (w tym przypadku ci¹gi znaków)
-    std::vector<std::string> inputs = {
-        "Mubashir",
-        "Matt",
-        "C++",
-        "Airforce"
-    };
-
+static void Benchmark(benchmark::State& state) {
+    // Perform setup here
+    bool a = state.range(0);
+    bool b = state.range(1);
     for (auto _ : state) {
-        for (const std::string& input : inputs) {
-            std::string result = giveMeSomething(input);
-            benchmark::DoNotOptimize(result);
-        }
+        // This code gets timed
+        bool result = andAnd(a,b);
+        benchmark::DoNotOptimize(result);
     }
 }
-
-BENCHMARK(BM_giveMeSomething);
-
+// Register the function as a benchmark
+BENCHMARK(Benchmark)->Args({ true, true })->Args({ false, true })->Args({ true, false })->Args({ false, false });
+// Run the benchmark
 BENCHMARK_MAIN();
