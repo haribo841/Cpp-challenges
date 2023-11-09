@@ -17,6 +17,7 @@
 #include "..\ConsoleApplication1\015 Are the Numbers Equal.cpp"
 #include "..\ConsoleApplication1\016 Basic Variable Assignment.cpp"
 #include "..\ConsoleApplication1\017 Using the And Operator.cpp"
+#include "..\ConsoleApplication1\018 Basketball Points.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -161,5 +162,21 @@ TEST(test17, andAnd) {
 	EXPECT_EQ(false, andAnd(true, false));
 	EXPECT_EQ(false, andAnd(false, true));
 	EXPECT_EQ(false, andAnd(false, false));
+	EXPECT_TRUE(true);
+}
+TEST(test18, points) {
+	EXPECT_EQ(5, points(1, 1));
+	EXPECT_EQ(8, points(1, 2));
+	EXPECT_EQ(7, points(2, 1));
+	EXPECT_EQ(10, points(2, 2));
+	EXPECT_EQ(1398, points(69, 420));
+	EXPECT_TRUE(true);
+}
+TEST(test18, points2) {
+	EXPECT_EQ(5, points2(1, 1));
+	EXPECT_EQ(8, points2(1, 2));
+	EXPECT_EQ(7, points2(2, 1));
+	EXPECT_EQ(10, points2(2, 2));
+	EXPECT_EQ(1398, points2(69, 420));
 	EXPECT_TRUE(true);
 }

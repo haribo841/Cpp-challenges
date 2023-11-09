@@ -1,8 +1,25 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (ConsoleApplication1.vcxproj, Cpp challenges.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  000 True.cpp
+  001 Sum of Two Numbers.cpp
   Benchmark.cpp
+  003 Next Number from the Integer Passed.cpp
+  002 Minutes into Seconds.cpp
+  004 Circuit Power Calculator.cpp
+  005 Convert Age to Days.cpp
+  006 Area of a Triangle.cpp
+  007 Remainder from Two Numbers.cpp
+  008 Less than or Equal to Zero.cpp
+  009 Less Than 100.cpp
+  010 Are the Numbers Equal.cpp
+  011 Return Something to Me.cpp
+  012 Flip the Boolean.cpp
+  013 Convert Hours into Seconds.cpp
+  014 Sum of Polygon Angles.cpp
+  015 Are the Numbers Equal.cpp
+  016 Basic Variable Assignment.cpp
   017 Using the And Operator.cpp
+  018 Basketball Points.cpp
   Generating Code...
-  LINK : C:\Users\Adam\source\repos\haribo841\Cpp-challenges\x64\Debug\Challenges.exe not found or not built by the last incremental link; performing full link
 benchmarkd.lib(benchmark.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmarkd.lib(benchmark.cc.obj)' or at ''; linking object as if no debug info
 benchmarkd.lib(benchmark_register.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmarkd.lib(benchmark_register.cc.obj)' or at ''; linking object as if no debug info
 benchmarkd.lib(benchmark_name.cc.obj) : warning LNK4099: PDB '' was not found with 'benchmarkd.lib(benchmark_name.cc.obj)' or at ''; linking object as if no debug info

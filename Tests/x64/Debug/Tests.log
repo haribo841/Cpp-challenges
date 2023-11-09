@@ -1,2 +1,3 @@
-﻿  test.cpp
+﻿  pch.cpp
+  test.cpp
   Tests.vcxproj -> C:\Users\Adam\source\repos\haribo841\Cpp-challenges\x64\Debug\Tests.exe
