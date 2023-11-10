@@ -22,5 +22,9 @@
     <TestDuration Test="test17.andAnd" Duration="1" />
     <TestDuration Test="test18.points" Duration="1" />
     <TestDuration Test="test18.points2" Duration="1" />
+    <TestDuration Test="test19.findPerimeter" Duration="1" />
+    <TestDuration Test="test19.findPerimeter2" Duration="1" />
+    <TestDuration Test="test19.findPerimeter3" Duration="1" />
+    <TestDuration Test="test19.findPerimeter4" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

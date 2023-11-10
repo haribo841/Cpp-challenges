@@ -148,6 +148,7 @@
     <ClCompile Include="016 Basic Variable Assignment.cpp" />
     <ClCompile Include="017 Using the And Operator.cpp" />
     <ClCompile Include="018 Basketball Points.cpp" />
+    <ClCompile Include="019 Perimeter of a Rectangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -170,6 +171,7 @@
     <ClInclude Include="016 Basic Variable Assignment.h" />
     <ClInclude Include="017 Using the And Operator.h" />
     <ClInclude Include="018 Basketball Points.h" />
+    <ClInclude Include="019 Perimeter of a Rectangle.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

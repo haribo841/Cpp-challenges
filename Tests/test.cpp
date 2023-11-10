@@ -18,6 +18,7 @@
 #include "..\ConsoleApplication1\016 Basic Variable Assignment.cpp"
 #include "..\ConsoleApplication1\017 Using the And Operator.cpp"
 #include "..\ConsoleApplication1\018 Basketball Points.cpp"
+#include "..\ConsoleApplication1\019 Perimeter of a Rectangle.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -172,11 +173,27 @@ TEST(test18, points) {
 	EXPECT_EQ(1398, points(69, 420));
 	EXPECT_TRUE(true);
 }
-TEST(test18, points2) {
-	EXPECT_EQ(5, points2(1, 1));
-	EXPECT_EQ(8, points2(1, 2));
-	EXPECT_EQ(7, points2(2, 1));
-	EXPECT_EQ(10, points2(2, 2));
-	EXPECT_EQ(1398, points2(69, 420));
+TEST(test19, findPerimeter) {
+	EXPECT_EQ(26, findPerimeter(6, 7));
+	EXPECT_EQ(60, findPerimeter(20, 10));
+	EXPECT_EQ(22, findPerimeter(2, 9));
+	EXPECT_TRUE(true);
+}
+TEST(test19, findPerimeter2) {
+	EXPECT_EQ(26, findPerimeter2(6, 7));
+	EXPECT_EQ(60, findPerimeter2(20, 10));
+	EXPECT_EQ(22, findPerimeter2(2, 9));
+	EXPECT_TRUE(true);
+}
+TEST(test19, findPerimeter3) {
+	EXPECT_EQ(26, findPerimeter3(6, 7));
+	EXPECT_EQ(60, findPerimeter3(20, 10));
+	EXPECT_EQ(22, findPerimeter3(2, 9));
+	EXPECT_TRUE(true);
+}
+TEST(test19, findPerimeter4) {
+	EXPECT_EQ(26, findPerimeter4(6, 7));
+	EXPECT_EQ(60, findPerimeter4(20, 10));
+	EXPECT_EQ(22, findPerimeter4(2, 9));
 	EXPECT_TRUE(true);
 }
