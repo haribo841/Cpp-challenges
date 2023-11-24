@@ -1,2 +1,3 @@
 C:\Users\Lenovo\Documents\GitHub\ConsoleApplication1\Tests\x64\Debug\Tests.vcxproj.CopyComplete
 C:\Users\Adam\source\repos\haribo841\Cpp-challenges\Tests\x64\Debug\Tests.vcxproj.CopyComplete
+F:\haribo841\Cpp-challenges\Tests\x64\Debug\Tests.vcxproj.CopyComplete

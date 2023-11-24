@@ -149,6 +149,7 @@
     <ClCompile Include="017 Using the And Operator.cpp" />
     <ClCompile Include="018 Basketball Points.cpp" />
     <ClCompile Include="019 Perimeter of a Rectangle.cpp" />
+    <ClCompile Include="020 Name Greeting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -172,6 +173,7 @@
     <ClInclude Include="017 Using the And Operator.h" />
     <ClInclude Include="018 Basketball Points.h" />
     <ClInclude Include="019 Perimeter of a Rectangle.h" />
+    <ClInclude Include="020 Name Greeting.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

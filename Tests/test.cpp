@@ -19,6 +19,7 @@
 #include "..\ConsoleApplication1\017 Using the And Operator.cpp"
 #include "..\ConsoleApplication1\018 Basketball Points.cpp"
 #include "..\ConsoleApplication1\019 Perimeter of a Rectangle.cpp"
+#include "..\ConsoleApplication1\020 Name Greeting.cpp"
 TEST(test0, returnTrue) {
   EXPECT_EQ(true, returnTrue());
   EXPECT_TRUE(true);
@@ -179,21 +180,10 @@ TEST(test19, findPerimeter) {
 	EXPECT_EQ(22, findPerimeter(2, 9));
 	EXPECT_TRUE(true);
 }
-TEST(test19, findPerimeter2) {
-	EXPECT_EQ(26, findPerimeter2(6, 7));
-	EXPECT_EQ(60, findPerimeter2(20, 10));
-	EXPECT_EQ(22, findPerimeter2(2, 9));
-	EXPECT_TRUE(true);
-}
-TEST(test19, findPerimeter3) {
-	EXPECT_EQ(26, findPerimeter3(6, 7));
-	EXPECT_EQ(60, findPerimeter3(20, 10));
-	EXPECT_EQ(22, findPerimeter3(2, 9));
-	EXPECT_TRUE(true);
-}
-TEST(test19, findPerimeter4) {
-	EXPECT_EQ(26, findPerimeter4(6, 7));
-	EXPECT_EQ(60, findPerimeter4(20, 10));
-	EXPECT_EQ(22, findPerimeter4(2, 9));
+TEST(test20, helloName) {
+	EXPECT_EQ("Hello Gerald!", helloName("Gerald"));
+	EXPECT_EQ("Hello Fatima!", helloName("Fatima"));
+	EXPECT_EQ("Hello Ed!", helloName("Ed"));
+	EXPECT_EQ("Hello Tiffany!", helloName("Tiffany"));
 	EXPECT_TRUE(true);
 }

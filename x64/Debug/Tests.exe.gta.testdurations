@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <GtaTestDurations xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <Executable>C:\Users\Adam\source\repos\haribo841\Cpp-challenges\x64\Debug\Tests.exe</Executable>
+  <Executable>F:\haribo841\Cpp-challenges\x64\Debug\Tests.exe</Executable>
   <TestDurations>
     <TestDuration Test="test0.returnTrue" Duration="1" />
     <TestDuration Test="test1.addition" Duration="1" />
@@ -16,7 +16,7 @@
     <TestDuration Test="test11.giveMeSomething" Duration="1" />
     <TestDuration Test="test12.reverse" Duration="1" />
     <TestDuration Test="test13.howManySeconds" Duration="1" />
-    <TestDuration Test="test14.Expectations" Duration="1" />
+    <TestDuration Test="test14.Expectations" Duration="2" />
     <TestDuration Test="test15.isEqual" Duration="1" />
     <TestDuration Test="test16.nameString" Duration="1" />
     <TestDuration Test="test17.andAnd" Duration="1" />
@@ -26,5 +26,6 @@
     <TestDuration Test="test19.findPerimeter2" Duration="1" />
     <TestDuration Test="test19.findPerimeter3" Duration="1" />
     <TestDuration Test="test19.findPerimeter4" Duration="1" />
+    <TestDuration Test="test20.helloName" Duration="1" />
   </TestDurations>
 </GtaTestDurations>
