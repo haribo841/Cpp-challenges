@@ -81,6 +81,9 @@
     <ClCompile Include="020 Name Greeting.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="021 The Farm Problem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -150,6 +153,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="020 Name Greeting.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="021 The Farm Problem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

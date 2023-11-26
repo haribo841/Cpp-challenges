@@ -150,6 +150,7 @@
     <ClCompile Include="018 Basketball Points.cpp" />
     <ClCompile Include="019 Perimeter of a Rectangle.cpp" />
     <ClCompile Include="020 Name Greeting.cpp" />
+    <ClCompile Include="021 The Farm Problem.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -174,6 +175,7 @@
     <ClInclude Include="018 Basketball Points.h" />
     <ClInclude Include="019 Perimeter of a Rectangle.h" />
     <ClInclude Include="020 Name Greeting.h" />
+    <ClInclude Include="021 The Farm Problem.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

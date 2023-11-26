@@ -27,5 +27,22 @@
     <TestDuration Test="test19.findPerimeter3" Duration="1" />
     <TestDuration Test="test19.findPerimeter4" Duration="1" />
     <TestDuration Test="test20.helloName" Duration="1" />
+    <TestDuration Test="test21.animals" Duration="1" />
+    <TestDuration Test="test21.animals2" Duration="1" />
+    <TestDuration Test="test21.animals3" Duration="1" />
+    <TestDuration Test="test21.animals4" Duration="1" />
+    <TestDuration Test="test21.animals5" Duration="1" />
+    <TestDuration Test="test21.animals6" Duration="1" />
+    <TestDuration Test="test21.animals7" Duration="1" />
+    <TestDuration Test="test21.animals8" Duration="1" />
+    <TestDuration Test="test21.animals9" Duration="1" />
+    <TestDuration Test="test21.animals10" Duration="1" />
+    <TestDuration Test="test21.animals11" Duration="1" />
+    <TestDuration Test="test21.animals12" Duration="1" />
+    <TestDuration Test="test21.animals13" Duration="1" />
+    <TestDuration Test="test21.animals14" Duration="1" />
+    <TestDuration Test="test21.animals15" Duration="1" />
+    <TestDuration Test="test21.animals16" Duration="1" />
+    <TestDuration Test="test21.animals17" Duration="1" />
   </TestDurations>
 </GtaTestDurations>

@@ -20,9 +20,10 @@
 #include "..\ConsoleApplication1\018 Basketball Points.cpp"
 #include "..\ConsoleApplication1\019 Perimeter of a Rectangle.cpp"
 #include "..\ConsoleApplication1\020 Name Greeting.cpp"
+#include "..\ConsoleApplication1\021 The Farm Problem.cpp"
 TEST(test0, returnTrue) {
-  EXPECT_EQ(true, returnTrue());
-  EXPECT_TRUE(true);
+	EXPECT_EQ(true, returnTrue());
+	EXPECT_TRUE(true);
 }
 TEST(test1, addition) {
 	EXPECT_EQ(5, addition(2, 3));
@@ -46,10 +47,10 @@ TEST(test3, addition) {
 	EXPECT_TRUE(true);
 }
 TEST(test4, circuitPower) {
-	EXPECT_EQ(2300, circuitPower(230,10));
-	EXPECT_EQ(9600, circuitPower(480,20));
-	EXPECT_EQ(330, circuitPower(110,3));
-	EXPECT_EQ(3808800, circuitPower(13800,276));
+	EXPECT_EQ(2300, circuitPower(230, 10));
+	EXPECT_EQ(9600, circuitPower(480, 20));
+	EXPECT_EQ(330, circuitPower(110, 3));
+	EXPECT_EQ(3808800, circuitPower(13800, 276));
 	EXPECT_TRUE(true);
 }
 TEST(test5, calc_age) {
@@ -111,12 +112,12 @@ TEST(test9, lessThan100) {
 	EXPECT_TRUE(true);
 }
 TEST(test10, isSameNum) {
-	EXPECT_EQ(false, isSameNum(4,8));
-	EXPECT_EQ(true, isSameNum(2,2));
-	EXPECT_EQ(false, isSameNum(0,8));
-	EXPECT_EQ(true, isSameNum(1,1));
-	EXPECT_EQ(false, isSameNum(12,3));
-	EXPECT_EQ(false, isSameNum(5,98));
+	EXPECT_EQ(false, isSameNum(4, 8));
+	EXPECT_EQ(true, isSameNum(2, 2));
+	EXPECT_EQ(false, isSameNum(0, 8));
+	EXPECT_EQ(true, isSameNum(1, 1));
+	EXPECT_EQ(false, isSameNum(12, 3));
+	EXPECT_EQ(false, isSameNum(5, 98));
 	EXPECT_TRUE(true);
 }
 TEST(test11, giveMeSomething) {
@@ -185,5 +186,103 @@ TEST(test20, helloName) {
 	EXPECT_EQ("Hello Fatima!", helloName("Fatima"));
 	EXPECT_EQ("Hello Ed!", helloName("Ed"));
 	EXPECT_EQ("Hello Tiffany!", helloName("Tiffany"));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals) {
+	EXPECT_EQ(50, animals(5, 2, 8));
+	EXPECT_EQ(50, animals(3, 4, 7));
+	EXPECT_EQ(22, animals(1, 2, 3));
+	EXPECT_EQ(34, animals(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals2) {
+	EXPECT_EQ(50, animals2(5, 2, 8));
+	EXPECT_EQ(50, animals2(3, 4, 7));
+	EXPECT_EQ(22, animals2(1, 2, 3));
+	EXPECT_EQ(34, animals2(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals3) {
+	EXPECT_EQ(50, animals3(5, 2, 8));
+	EXPECT_EQ(50, animals3(3, 4, 7));
+	EXPECT_EQ(22, animals3(1, 2, 3));
+	EXPECT_EQ(34, animals3(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals4) {
+	EXPECT_EQ(50, animals4(5, 2, 8));
+	EXPECT_EQ(50, animals4(3, 4, 7));
+	EXPECT_EQ(22, animals4(1, 2, 3));
+	EXPECT_EQ(34, animals4(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals5) {
+	EXPECT_EQ(50, animals5(5, 2, 8));
+	EXPECT_EQ(50, animals5(3, 4, 7));
+	EXPECT_EQ(22, animals5(1, 2, 3));
+	EXPECT_EQ(34, animals5(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals6) {
+	EXPECT_EQ(50, animals6(5, 2, 8));
+	EXPECT_EQ(50, animals6(3, 4, 7));
+	EXPECT_EQ(22, animals6(1, 2, 3));
+	EXPECT_EQ(34, animals6(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals7) {
+	EXPECT_EQ(50, animals7(5, 2, 8));
+	EXPECT_EQ(50, animals7(3, 4, 7));
+	EXPECT_EQ(22, animals7(1, 2, 3));
+	EXPECT_EQ(34, animals7(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals8) {
+	EXPECT_EQ(50, animals8(5, 2, 8));
+	EXPECT_EQ(50, animals8(3, 4, 7));
+	EXPECT_EQ(22, animals8(1, 2, 3));
+	EXPECT_EQ(34, animals8(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals9) {
+	EXPECT_EQ(50, animals9(5, 2, 8));
+	EXPECT_EQ(50, animals9(3, 4, 7));
+	EXPECT_EQ(22, animals9(1, 2, 3));
+	EXPECT_EQ(34, animals9(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals10) {
+	EXPECT_EQ(50, animals10(5, 2, 8));
+	EXPECT_EQ(50, animals10(3, 4, 7));
+	EXPECT_EQ(22, animals10(1, 2, 3));
+	EXPECT_EQ(34, animals10(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals11) {
+	EXPECT_EQ(50, animals11(5, 2, 8));
+	EXPECT_EQ(50, animals11(3, 4, 7));
+	EXPECT_EQ(22, animals11(1, 2, 3));
+	EXPECT_EQ(34, animals11(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals12) {
+	EXPECT_EQ(50, animals12(5, 2, 8));
+	EXPECT_EQ(50, animals12(3, 4, 7));
+	EXPECT_EQ(22, animals12(1, 2, 3));
+	EXPECT_EQ(34, animals12(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals16) {
+	EXPECT_EQ(50, animals16(5, 2, 8));
+	EXPECT_EQ(50, animals16(3, 4, 7));
+	EXPECT_EQ(22, animals16(1, 2, 3));
+	EXPECT_EQ(34, animals16(3, 5, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test21, animals17) {
+	EXPECT_EQ(50, animals17(5, 2, 8));
+	EXPECT_EQ(50, animals17(3, 4, 7));
+	EXPECT_EQ(22, animals17(1, 2, 3));
+	EXPECT_EQ(34, animals17(3, 5, 2));
 	EXPECT_TRUE(true);
 }
