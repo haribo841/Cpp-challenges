@@ -31,3 +31,27 @@
 *.out
 *.app
 /.vs/ConsoleApplication1/v17/Browse.VC.opendb
+
+# Visual Studio Files
+Debug
+Release
+*.suo
+*.csproj.user
+*.vbproj.user
+*.ipch
+*sdf
+
+# Other
+*.vsidx
+*.db
+*.db-shm
+*.db-wal
+*.testlog
+*.log
+*.ilk
+*.tlog
+*.lastbuildstate
+*.res
+*.idb
+*.pdb
+*.testdurations

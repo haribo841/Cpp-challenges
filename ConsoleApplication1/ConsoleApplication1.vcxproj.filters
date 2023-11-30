@@ -84,6 +84,9 @@
     <ClCompile Include="021 The Farm Problem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="022 Football Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -156,6 +159,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="021 The Farm Problem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="022 Football Points.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
