@@ -22,6 +22,7 @@
 #include "..\ConsoleApplication1\020 Name Greeting.cpp"
 #include "..\ConsoleApplication1\021 The Farm Problem.cpp"
 #include "..\ConsoleApplication1\022 Football Points.cpp"
+#include "..\ConsoleApplication1\023 First Element in an Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -204,11 +205,11 @@ TEST(test22, footballPoints) {
 	EXPECT_EQ(7, footballPoints(0, 7, 0));
 	EXPECT_TRUE(true);
 }
-TEST(test22, footballPoints2) {
-	EXPECT_EQ(5, footballPoints2(1, 2, 3));
-	EXPECT_EQ(20, footballPoints2(5, 5, 5));
-	EXPECT_EQ(3, footballPoints2(1, 0, 0));
-	EXPECT_EQ(0, footballPoints2(0, 0, 15));
-	EXPECT_EQ(7, footballPoints2(0, 7, 0));
+TEST(test23, getFirstValue) {
+	EXPECT_EQ(1, getFirstValue({1, 2, 3}));
+	EXPECT_EQ(80, getFirstValue({ 80, 5, 100 }));
+	EXPECT_EQ(-500, getFirstValue({ -500, 0, 50 }));
+	EXPECT_EQ(75675, getFirstValue({ 75675, 5, 100 }));
+	EXPECT_EQ(-52320, getFirstValue({ -52320, 0, 50 }));
 	EXPECT_TRUE(true);
 }

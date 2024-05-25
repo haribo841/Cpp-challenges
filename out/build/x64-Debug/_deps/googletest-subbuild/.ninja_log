@@ -1,0 +1,23 @@
+# ninja log v5
+1	38	7383225161257872	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	ea7cbd564d97c6b9
+1	38	7383225161257872	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-mkdir	ea7cbd564d97c6b9
+38	963	7383225170516651	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	852772a0ee910d62
+38	963	7383225170516651	googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip	852772a0ee910d62
+38	963	7383225170516651	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-download	852772a0ee910d62
+38	963	7383225170516651	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/03597a01ee50ed33e9dfd640b249b4be3799d395.zip	852772a0ee910d62
+963	1014	7383225171028618	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	ed26765befb35b5a
+963	1014	7383225171028618	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-update	ed26765befb35b5a
+1014	1057	7383225171444358	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	f4181d30aa30243d
+1014	1057	7383225171444358	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-patch	f4181d30aa30243d
+1057	1093	7383225171818138	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	7bc8c5d0293f535d
+1057	1093	7383225171818138	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-configure	7bc8c5d0293f535d
+1093	1130	7383225172177439	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	375048ce92859da8
+1093	1130	7383225172177439	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-build	375048ce92859da8
+1130	1162	7383225172502815	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	381fe4de622ab3f1
+1130	1162	7383225172502815	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-install	381fe4de622ab3f1
+1162	1196	7383225172850666	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	31f210a936d16e44
+1162	1196	7383225172850666	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-test	31f210a936d16e44
+1196	1247	7383225173355572	CMakeFiles/googletest-populate-complete	6eafcf26257768bc
+1196	1247	7383225173355572	googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	6eafcf26257768bc
+1196	1247	7383225173355572	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/CMakeFiles/googletest-populate-complete	6eafcf26257768bc
+1196	1247	7383225173355572	C:/Users/Adam/source/repos/haribo841/Cpp-challenges/out/build/x64-Debug/_deps/googletest-subbuild/googletest-populate-prefix/src/googletest-populate-stamp/googletest-populate-done	6eafcf26257768bc

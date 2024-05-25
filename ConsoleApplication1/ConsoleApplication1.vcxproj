@@ -152,6 +152,7 @@
     <ClCompile Include="020 Name Greeting.cpp" />
     <ClCompile Include="021 The Farm Problem.cpp" />
     <ClCompile Include="022 Football Points.cpp" />
+    <ClCompile Include="023 First Element in an Array.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -178,6 +179,7 @@
     <ClInclude Include="020 Name Greeting.h" />
     <ClInclude Include="021 The Farm Problem.h" />
     <ClInclude Include="022 Football Points.h" />
+    <ClInclude Include="023 First Element in an Array.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
