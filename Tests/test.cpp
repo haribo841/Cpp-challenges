@@ -23,6 +23,7 @@
 #include "..\ConsoleApplication1\021 The Farm Problem.cpp"
 #include "..\ConsoleApplication1\022 Football Points.cpp"
 #include "..\ConsoleApplication1\023 First Element in an Array.cpp"
+#include "..\ConsoleApplication1\024 Hours and Minutes into Seconds.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -211,5 +212,11 @@ TEST(test23, getFirstValue) {
 	EXPECT_EQ(-500, getFirstValue({ -500, 0, 50 }));
 	EXPECT_EQ(75675, getFirstValue({ 75675, 5, 100 }));
 	EXPECT_EQ(-52320, getFirstValue({ -52320, 0, 50 }));
+	EXPECT_TRUE(true);
+}
+TEST(test24, convert) {
+	EXPECT_EQ(3600, convert(1, 0));
+	EXPECT_EQ(3780, convert(1, 3));
+	EXPECT_EQ(1800, convert(0, 30));
 	EXPECT_TRUE(true);
 }

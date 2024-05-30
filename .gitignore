@@ -55,3 +55,16 @@ Release
 *.idb
 *.pdb
 *.testdurations
+
+# Other2
+/.vs/CMake Overview
+/.vs/slnx.sqlite
+/out/build/x64-Debug
+*.json
+*.wsuo
+*.vcxproj
+*.filters
+*.user
+*.txt
+*.cmake
+*.bin

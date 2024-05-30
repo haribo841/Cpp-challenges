@@ -90,6 +90,9 @@
     <ClCompile Include="023 First Element in an Array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="024 Hours and Minutes into Seconds.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -168,6 +171,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="023 First Element in an Array.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="024 Hours and Minutes into Seconds.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
