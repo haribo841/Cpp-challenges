@@ -93,6 +93,9 @@
     <ClCompile Include="024 Hours and Minutes into Seconds.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="025 Buggy Code.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -174,6 +177,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="024 Hours and Minutes into Seconds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="025 Buggy Code.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

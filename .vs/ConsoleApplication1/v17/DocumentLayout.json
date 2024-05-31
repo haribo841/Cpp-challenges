@@ -3,7 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDF1AC00-8372-48DE-800B-335057CF882D}|Tests\\Tests.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\Tests\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\025 Buggy Code.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\025 Buggy Code.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\025 Buggy Code.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\025 Buggy Code.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\024 Hours and Minutes into Seconds.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\024 Hours and Minutes into Seconds.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDF1AC00-8372-48DE-800B-335057CF882D}|Tests\\Tests.vcxproj|C:\\Users\\Adam\\Source\\Repos\\haribo841\\Cpp-challenges\\Tests\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{DDF1AC00-8372-48DE-800B-335057CF882D}|Tests\\Tests.vcxproj|solutionrelative:Tests\\test.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -15,20 +27,12 @@
       "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\Benchmark.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\USERS\\ADAM\\SOURCE\\REPOS\\HARIBO841\\CPP-CHALLENGES\\PACKAGES\\GBENCHMARK.1.5.1\\INCLUDE\\BENCHMARK\\BENCHMARK.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:PACKAGES\\GBENCHMARK.1.5.1\\INCLUDE\\BENCHMARK\\BENCHMARK.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\024 Hours and Minutes into Seconds.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\024 Hours and Minutes into Seconds.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\002 Minutes into Seconds.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\002 Minutes into Seconds.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\024 Hours and Minutes into Seconds.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\024 Hours and Minutes into Seconds.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\023 First Element in an Array.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -43,11 +47,15 @@
       "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\022 Football Points.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\PROGRAM FILES\\MICROSOFT VISUAL STUDIO\\2022\\COMMUNITY\\VC\\TOOLS\\MSVC\\14.39.33519\\INCLUDE\\VECTOR||{3B902123-F8A7-4915-9F01-361F908088D0}|"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\022 Football Points.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{9484A1A0-EF48-4C5E-8E51-361D76FBFB7B}|ConsoleApplication1\\ConsoleApplication1.vcxproj|solutionrelative:ConsoleApplication1\\022 Football Points.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector||{3B902123-F8A7-4915-9F01-361F908088D0}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\packages\\gbenchmark.1.5.1\\include\\benchmark\\benchmark.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:packages\\gbenchmark.1.5.1\\include\\benchmark\\benchmark.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,11 +65,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "025 Buggy Code.cpp",
+              "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\025 Buggy Code.cpp",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\025 Buggy Code.cpp",
+              "ToolTip": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\025 Buggy Code.cpp",
+              "RelativeToolTip": "ConsoleApplication1\\025 Buggy Code.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-05-31T19:18:57.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "025 Buggy Code.h",
+              "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\025 Buggy Code.h",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\025 Buggy Code.h",
+              "ToolTip": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\025 Buggy Code.h",
+              "RelativeToolTip": "ConsoleApplication1\\025 Buggy Code.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAADAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-05-31T19:18:38.001Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "002 Minutes into Seconds.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\002 Minutes into Seconds.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\002 Minutes into Seconds.cpp",
@@ -69,25 +103,24 @@
               "RelativeToolTip": "ConsoleApplication1\\002 Minutes into Seconds.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-30T18:52:38.409Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-30T18:52:38.409Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "024 Hours and Minutes into Seconds.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\024 Hours and Minutes into Seconds.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\024 Hours and Minutes into Seconds.cpp",
               "ToolTip": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\024 Hours and Minutes into Seconds.cpp",
               "RelativeToolTip": "ConsoleApplication1\\024 Hours and Minutes into Seconds.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-30T18:39:25.347Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 2,
               "Title": "024 Hours and Minutes into Seconds.h",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\024 Hours and Minutes into Seconds.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\024 Hours and Minutes into Seconds.h",
@@ -100,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "000 True.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\000 True.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\000 True.cpp",
@@ -113,20 +146,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "test.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\Tests\\test.cpp",
               "RelativeDocumentMoniker": "Tests\\test.cpp",
               "ToolTip": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\Tests\\test.cpp",
               "RelativeToolTip": "Tests\\test.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABDAAAA",
+              "ViewState": "AQIAAMwAAAAAAAAAAAASwOEAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-25T07:14:34.768Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "vector",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
@@ -134,12 +167,11 @@
               "RelativeToolTip": "..\\..\\..\\..\\..\\..\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.39.33519\\include\\vector",
               "ViewState": "AQIAAFEHAAAAAAAAAAAiwGQHAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-05-25T07:09:58.453Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T07:09:58.453Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "benchmark.h",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\packages\\gbenchmark.1.5.1\\include\\benchmark\\benchmark.h",
               "RelativeDocumentMoniker": "packages\\gbenchmark.1.5.1\\include\\benchmark\\benchmark.h",
@@ -147,25 +179,24 @@
               "RelativeToolTip": "packages\\gbenchmark.1.5.1\\include\\benchmark\\benchmark.h",
               "ViewState": "AQIAADAFAAAAAAAAAAASwEYFAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-25T07:08:31.857Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T07:08:31.857Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Benchmark.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\Benchmark.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\Benchmark.cpp",
               "ToolTip": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\Benchmark.cpp",
               "RelativeToolTip": "ConsoleApplication1\\Benchmark.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAA+AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2024-05-25T06:52:36.53Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "022 Football Points.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\022 Football Points.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\022 Football Points.cpp",
@@ -173,12 +204,11 @@
               "RelativeToolTip": "ConsoleApplication1\\022 Football Points.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-25T06:50:25.067Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:50:25.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "023 First Element in an Array.cpp",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\023 First Element in an Array.cpp",
               "RelativeDocumentMoniker": "ConsoleApplication1\\023 First Element in an Array.cpp",
@@ -186,8 +216,7 @@
               "RelativeToolTip": "ConsoleApplication1\\023 First Element in an Array.cpp",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2024-05-25T06:51:38.897Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:51:38.897Z"
             },
             {
               "$type": "Document",
@@ -199,12 +228,11 @@
               "RelativeToolTip": "ConsoleApplication1\\022 Football Points.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-25T06:50:29.368Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:50:29.368Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "023 First Element in an Array.h",
               "DocumentMoniker": "C:\\Users\\Adam\\source\\repos\\haribo841\\Cpp-challenges\\ConsoleApplication1\\023 First Element in an Array.h",
               "RelativeDocumentMoniker": "ConsoleApplication1\\023 First Element in an Array.h",
@@ -212,8 +240,7 @@
               "RelativeToolTip": "ConsoleApplication1\\023 First Element in an Array.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-25T06:49:59.475Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T06:49:59.475Z"
             }
           ]
         }
