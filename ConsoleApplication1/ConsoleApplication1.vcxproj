@@ -155,6 +155,7 @@
     <ClCompile Include="022 Football Points.cpp" />
     <ClCompile Include="023 First Element in an Array.cpp" />
     <ClCompile Include="025 Buggy Code.cpp" />
+    <ClCompile Include="026 Maximum Edge of a Triangle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -184,6 +185,7 @@
     <ClInclude Include="022 Football Points.h" />
     <ClInclude Include="023 First Element in an Array.h" />
     <ClInclude Include="025 Buggy Code.h" />
+    <ClInclude Include="026 Maximum Edge of a Triangle.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

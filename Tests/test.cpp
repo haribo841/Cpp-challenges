@@ -25,6 +25,7 @@
 #include "..\ConsoleApplication1\023 First Element in an Array.cpp"
 #include "..\ConsoleApplication1\024 Hours and Minutes into Seconds.cpp"
 #include "..\ConsoleApplication1\025 Buggy Code.cpp"
+#include "..\ConsoleApplication1\026 Maximum Edge of a Triangle.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -227,5 +228,13 @@ TEST(test25, cubes) {
 	EXPECT_EQ(64, cubes(4));
 	EXPECT_EQ(125, cubes(5));
 	EXPECT_EQ(1000, cubes(10));
+	EXPECT_TRUE(true);
+}
+TEST(test26, nextEdge) {
+	EXPECT_EQ(8, nextEdge(5, 4));
+	EXPECT_EQ(10, nextEdge(8, 3));
+	EXPECT_EQ(15, nextEdge(7, 9));
+	EXPECT_EQ(13, nextEdge(10, 4));
+	EXPECT_EQ(8, nextEdge(7, 2));
 	EXPECT_TRUE(true);
 }

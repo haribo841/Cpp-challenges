@@ -96,6 +96,9 @@
     <ClCompile Include="025 Buggy Code.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="026 Maximum Edge of a Triangle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -180,6 +183,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="025 Buggy Code.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="026 Maximum Edge of a Triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
