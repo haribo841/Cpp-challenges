@@ -26,6 +26,7 @@
 #include "..\ConsoleApplication1\024 Hours and Minutes into Seconds.cpp"
 #include "..\ConsoleApplication1\025 Buggy Code.cpp"
 #include "..\ConsoleApplication1\026 Maximum Edge of a Triangle.cpp"
+#include "..\ConsoleApplication1\027 Inches to Feet.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -236,5 +237,14 @@ TEST(test26, nextEdge) {
 	EXPECT_EQ(15, nextEdge(7, 9));
 	EXPECT_EQ(13, nextEdge(10, 4));
 	EXPECT_EQ(8, nextEdge(7, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test27, inchesToFeet) {
+	EXPECT_EQ(1, inchesToFeet(12));
+	EXPECT_EQ(30, inchesToFeet(360));
+	EXPECT_EQ(301, inchesToFeet(3612));
+	EXPECT_EQ(27, inchesToFeet(324));
+	EXPECT_EQ(251, inchesToFeet(3012));
+	EXPECT_EQ(0, inchesToFeet(11));
 	EXPECT_TRUE(true);
 }

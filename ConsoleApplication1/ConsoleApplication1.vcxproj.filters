@@ -99,6 +99,9 @@
     <ClCompile Include="026 Maximum Edge of a Triangle.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="027 Inches to Feet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -186,6 +189,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="026 Maximum Edge of a Triangle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="027 Inches to Feet.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
