@@ -2,7 +2,7 @@
 #include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "027 Inches to Feet.h"
+#include "028 Integer is Divisible By Five.h"
 using namespace std;
 static void BM(benchmark::State& state) {
     // Perform setup here
@@ -10,13 +10,13 @@ static void BM(benchmark::State& state) {
     //int b = state.range(1);
     for (auto _ : state) {
         // This code gets timed
-        int result = inchesToFeet(a);// , b);
+        bool result = divisibleByFive(a);// , b);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)->Args({12})->Args({360})->Args({3612})->Args({324})->Args({3012})->Args({ 11 });
+BENCHMARK(BM)->Args({7})->Args({5})->Args({15})->Args({33})->Args({-18})->Args({999})->Args({ 2 });
 
 // Run the benchmark
 BENCHMARK_MAIN();

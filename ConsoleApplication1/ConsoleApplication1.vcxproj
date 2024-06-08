@@ -157,6 +157,7 @@
     <ClCompile Include="025 Buggy Code.cpp" />
     <ClCompile Include="026 Maximum Edge of a Triangle.cpp" />
     <ClCompile Include="027 Inches to Feet.cpp" />
+    <ClCompile Include="028 Integer is Divisible By Five.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -188,6 +189,7 @@
     <ClInclude Include="025 Buggy Code.h" />
     <ClInclude Include="026 Maximum Edge of a Triangle.h" />
     <ClInclude Include="027 Inches to Feet.h" />
+    <ClInclude Include="028 Integer is Divisible By Five.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>
