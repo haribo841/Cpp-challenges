@@ -2,7 +2,7 @@
 #include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "028 Integer is Divisible By Five.h"
+#include "029 Correct the Mistakes.h"
 using namespace std;
 static void BM(benchmark::State& state) {
     // Perform setup here
@@ -10,13 +10,13 @@ static void BM(benchmark::State& state) {
     //int b = state.range(1);
     for (auto _ : state) {
         // This code gets timed
-        bool result = divisibleByFive(a);// , b);
+        bool result = squaed(a);// , b);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)->Args({7})->Args({5})->Args({15})->Args({33})->Args({-18})->Args({999})->Args({ 2 });
+BENCHMARK(BM)->Args({ 10 })->Args({ 69 })->Args({ 666 })->Args({ -21 })->Args({ 21 });
 
 // Run the benchmark
 BENCHMARK_MAIN();

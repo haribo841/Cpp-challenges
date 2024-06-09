@@ -105,6 +105,9 @@
     <ClCompile Include="028 Integer is Divisible By Five.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="029 Correct the Mistakes.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -198,6 +201,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="028 Integer is Divisible By Five.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="029 Correct the Mistakes.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

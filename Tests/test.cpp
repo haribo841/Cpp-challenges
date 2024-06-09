@@ -28,6 +28,7 @@
 #include "..\ConsoleApplication1\026 Maximum Edge of a Triangle.cpp"
 #include "..\ConsoleApplication1\027 Inches to Feet.cpp"
 #include "..\ConsoleApplication1\028 Integer is Divisible By Five.cpp"
+#include "..\ConsoleApplication1\029 Correct the Mistakes.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -257,5 +258,13 @@ TEST(test28, divisibleByFive) {
 	EXPECT_EQ(false, divisibleByFive(-18));
 	EXPECT_EQ(false, divisibleByFive(999));
 	EXPECT_EQ(false, divisibleByFive(2));
+	EXPECT_TRUE(true);
+}
+TEST(test29, squaed) {
+	EXPECT_EQ(100, squaed(10));
+	EXPECT_EQ(4761, squaed(69));
+	EXPECT_EQ(443556, squaed(666));
+	EXPECT_EQ(441, squaed(-21));
+	EXPECT_EQ(441, squaed(21));;
 	EXPECT_TRUE(true);
 }
