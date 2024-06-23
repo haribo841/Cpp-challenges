@@ -29,6 +29,7 @@
 #include "..\ConsoleApplication1\027 Inches to Feet.cpp"
 #include "..\ConsoleApplication1\028 Integer is Divisible By Five.cpp"
 #include "..\ConsoleApplication1\029 Correct the Mistakes.cpp"
+#include "..\ConsoleApplication1\030 Flip the int Boolean.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -266,5 +267,10 @@ TEST(test29, squaed) {
 	EXPECT_EQ(443556, squaed(666));
 	EXPECT_EQ(441, squaed(-21));
 	EXPECT_EQ(441, squaed(21));;
+	EXPECT_TRUE(true);
+}
+TEST(test30, flipIntBool) {
+	EXPECT_EQ(1, reverse(0));
+	EXPECT_EQ(0, reverse(1));
 	EXPECT_TRUE(true);
 }

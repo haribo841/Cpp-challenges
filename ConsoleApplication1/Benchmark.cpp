@@ -2,7 +2,7 @@
 #include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "029 Correct the Mistakes.h"
+#include "030 Flip the int Boolean.h"
 using namespace std;
 static void BM(benchmark::State& state) {
     // Perform setup here
@@ -10,13 +10,13 @@ static void BM(benchmark::State& state) {
     //int b = state.range(1);
     for (auto _ : state) {
         // This code gets timed
-        bool result = squaed(a);// , b);
+        bool result = flipIntBool(a);// , b);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)->Args({ 10 })->Args({ 69 })->Args({ 666 })->Args({ -21 })->Args({ 21 });
+BENCHMARK(BM)->Args({ 1 })->Args({ 0 });
 
 // Run the benchmark
 BENCHMARK_MAIN();
