@@ -30,6 +30,7 @@
 #include "..\ConsoleApplication1\028 Integer is Divisible By Five.cpp"
 #include "..\ConsoleApplication1\029 Correct the Mistakes.cpp"
 #include "..\ConsoleApplication1\030 Flip the int Boolean.cpp"
+#include "..\ConsoleApplication1\031 Divides Evenly.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -272,5 +273,28 @@ TEST(test29, squaed) {
 TEST(test30, flipIntBool) {
 	EXPECT_EQ(1, reverse(0));
 	EXPECT_EQ(0, reverse(1));
+	EXPECT_TRUE(true);
+}
+TEST(test31, dividesEvenly) {
+	EXPECT_EQ(true, dividesEvenly(98, 7));
+	EXPECT_EQ(false, dividesEvenly(87, 49));
+	EXPECT_EQ(false, dividesEvenly(34, 14));
+	EXPECT_EQ(true, dividesEvenly(78, 6));
+	EXPECT_EQ(false, dividesEvenly(30, 4));
+	EXPECT_EQ(false, dividesEvenly(87, 73));
+	EXPECT_EQ(false, dividesEvenly(74, 7));
+	EXPECT_EQ(true, dividesEvenly(87, 29));
+	EXPECT_EQ(true, dividesEvenly(48, 24));
+	EXPECT_EQ(false, dividesEvenly(99, 20));
+	EXPECT_EQ(true, dividesEvenly(98, 49));
+	EXPECT_EQ(false, dividesEvenly(100, 6));
+	EXPECT_EQ(true, dividesEvenly(64, 4));
+	EXPECT_EQ(true, dividesEvenly(70, 35));
+	EXPECT_EQ(true, dividesEvenly(38, 38));
+	EXPECT_EQ(false, dividesEvenly(29, 3));
+	EXPECT_EQ(false, dividesEvenly(20, 8));
+	EXPECT_EQ(false, dividesEvenly(66, 50));
+	EXPECT_EQ(true, dividesEvenly(95, 1));
+	EXPECT_EQ(true, dividesEvenly(58, 2));
 	EXPECT_TRUE(true);
 }
