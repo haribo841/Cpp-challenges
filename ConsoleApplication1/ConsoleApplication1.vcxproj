@@ -161,6 +161,7 @@
     <ClCompile Include="029 Correct the Mistakes.cpp" />
     <ClCompile Include="030 Flip the int Boolean.cpp" />
     <ClCompile Include="031 Divides Evenly.cpp" />
+    <ClCompile Include="032 Frames Per Second.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="000 True.h" />
@@ -196,6 +197,7 @@
     <ClInclude Include="029 Correct the Mistakes.h" />
     <ClInclude Include="030 Flip the int Boolean.h" />
     <ClInclude Include="031 Divides Evenly.h" />
+    <ClInclude Include="032 Frames Per Second.h" />
     <ClInclude Include="resource.h" />
   </ItemGroup>
   <ItemGroup>

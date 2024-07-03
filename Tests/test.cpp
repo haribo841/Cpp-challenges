@@ -31,6 +31,7 @@
 #include "..\ConsoleApplication1\029 Correct the Mistakes.cpp"
 #include "..\ConsoleApplication1\030 Flip the int Boolean.cpp"
 #include "..\ConsoleApplication1\031 Divides Evenly.cpp"
+#include "..\ConsoleApplication1\032 Frames Per Second.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -296,5 +297,16 @@ TEST(test31, dividesEvenly) {
 	EXPECT_EQ(false, dividesEvenly(66, 50));
 	EXPECT_EQ(true, dividesEvenly(95, 1));
 	EXPECT_EQ(true, dividesEvenly(58, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test32, frames) {
+	EXPECT_EQ(60, frames(1, 1));
+	EXPECT_EQ(600, frames(10, 1));
+	EXPECT_EQ(15000, frames(10, 25));
+	EXPECT_EQ(1800000, frames(500, 60));
+	EXPECT_EQ(0, frames(0, 60));
+	EXPECT_EQ(5940, frames(99, 1));
+	EXPECT_EQ(1759800, frames(419, 70));
+	EXPECT_EQ(102960, frames(52, 33));
 	EXPECT_TRUE(true);
 }

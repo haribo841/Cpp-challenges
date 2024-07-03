@@ -114,6 +114,9 @@
     <ClCompile Include="031 Divides Evenly.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="032 Frames Per Second.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -216,6 +219,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="031 Divides Evenly.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="032 Frames Per Second.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
