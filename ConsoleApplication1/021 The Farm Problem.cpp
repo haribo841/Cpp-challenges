@@ -7,5 +7,5 @@
 //You have to implement a function that returns the total number of legs of all the animals.
 #include "021 The Farm Problem.h"
 int animals(int chickens, int cows, int pigs) {
-	return chickens * 2 + (cows << 2) + pigs * 4;
+	return (chickens << 1) + (cows << 2) + pigs * 4;
 }

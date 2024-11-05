@@ -117,6 +117,9 @@
     <ClCompile Include="032 Frames Per Second.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="033 Profitable Gamble.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Benchmark.h">
@@ -222,6 +225,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="032 Frames Per Second.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="033 Profitable Gamble.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

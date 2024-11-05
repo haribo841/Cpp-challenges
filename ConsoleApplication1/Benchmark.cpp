@@ -1,22 +1,31 @@
-﻿#include <string>
-#include <vector>
+﻿#include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "032 Frames Per Second.h"
+#include "033 Profitable Gamble.h"
 using namespace std;
+
 static void BM(benchmark::State& state) {
     // Perform setup here
-    int a = state.range(0);
+    float a = static_cast<float>(state.range(0)) / 100.0f;
     int b = state.range(1);
+    int c = static_cast<double>(state.range(2)) / 100.0;
+
     for (auto _ : state) {
         // This code gets timed
-        int result = frames(a, b);
+        bool result = profitableGamble(a, b, c);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)->Args({ 1, 1 })->Args({ 10, 1 })->Args({ 10, 25 })->Args({ 500, 60 })->Args({ 0, 60 })->Args({ 99, 1 })->Args({ 419, 70 })->Args({ 52, 33 });
+BENCHMARK(BM)
+->Args({ 20, 50, 900 })
+->Args({ 90, 1, 200 })
+->Args({ 9, 3, 200 })
+->Args({ 33, 10, 330 })
+->Args({ 0, 1000, 1 })
+->Args({ 1, 1000, 700 })
+->Args({ 0, 0, 0 });
 
 // Run the benchmark
 BENCHMARK_MAIN();

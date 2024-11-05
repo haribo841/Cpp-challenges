@@ -32,6 +32,7 @@
 #include "..\ConsoleApplication1\030 Flip the int Boolean.cpp"
 #include "..\ConsoleApplication1\031 Divides Evenly.cpp"
 #include "..\ConsoleApplication1\032 Frames Per Second.cpp"
+#include "..\ConsoleApplication1\033 Profitable Gamble.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -308,5 +309,15 @@ TEST(test32, frames) {
 	EXPECT_EQ(5940, frames(99, 1));
 	EXPECT_EQ(1759800, frames(419, 70));
 	EXPECT_EQ(102960, frames(52, 33));
+	EXPECT_TRUE(true);
+}
+TEST(test33, profitableGamble) {
+	EXPECT_EQ(true, profitableGamble(0.2, 50, 9));
+	EXPECT_EQ(false, profitableGamble(0.9, 1, 2));
+	EXPECT_EQ(true, profitableGamble(0.9, 3, 2));
+	EXPECT_EQ(true, profitableGamble(0.33, 10, 3.30));
+	EXPECT_EQ(false, profitableGamble(0, 1000, 0.01));
+	EXPECT_EQ(true, profitableGamble(0.1, 1000, 7));
+	EXPECT_EQ(false, profitableGamble(0, 0, 0));
 	EXPECT_TRUE(true);
 }

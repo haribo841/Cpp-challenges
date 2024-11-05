@@ -4,8 +4,5 @@
 //losses get 0 points
 #include "022 Football Points.h"
 int footballPoints(int wins, int draws, int losses) {
-	return wins * 3 + draws * 1;
-}
-int footballPoints2(int wins, int draws, int losses) {
 	return wins * 3 + draws;
 }
