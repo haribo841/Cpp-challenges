@@ -228,11 +228,14 @@ Release
 /.vs/CMake Overview
 /.vs/slnx.sqlite
 /out/build/x64-Debug
-*.json
-*.wsuo
-*.vcxproj
-*.filters
 *.user
 *.txt
 *.cmake
 *.bin
+
+# Added to ignore JSON, WSuo, SQLite, VCXProj, Filters
+*.json
+*.wsuo
+*.sqlite
+*.vcxproj
+*.filters
