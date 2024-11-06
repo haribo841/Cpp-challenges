@@ -33,6 +33,7 @@
 #include "..\ConsoleApplication1\031 Divides Evenly.cpp"
 #include "..\ConsoleApplication1\032 Frames Per Second.cpp"
 #include "..\ConsoleApplication1\033 Profitable Gamble.cpp"
+#include "..\ConsoleApplication1\034 Multiple of 100.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -319,5 +320,15 @@ TEST(test33, profitableGamble) {
 	EXPECT_EQ(false, profitableGamble(0, 1000, 0.01));
 	EXPECT_EQ(true, profitableGamble(0.1, 1000, 7));
 	EXPECT_EQ(false, profitableGamble(0, 0, 0));
+	EXPECT_TRUE(true);
+}
+TEST(test34, divisibleByHundred) {
+	EXPECT_EQ(false, divisibleByHundred(1));
+	EXPECT_EQ(true, divisibleByHundred(100));
+	EXPECT_EQ(true, divisibleByHundred(1000));
+	EXPECT_EQ(true, divisibleByHundred(111000));
+	EXPECT_EQ(false, divisibleByHundred(-1));
+	EXPECT_EQ(true, divisibleByHundred(0));
+	EXPECT_EQ(true, divisibleByHundred(-100));
 	EXPECT_TRUE(true);
 }
