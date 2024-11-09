@@ -1,31 +1,22 @@
 ﻿#include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "034 Multiple of 100.h"
+#include "035 Time for Milk and Cookies.h".h"
 using namespace std;
-
 static void BM(benchmark::State& state) {
     // Perform setup here
-    //float a = static_cast<float>(state.range(0)) / 100.0f;
     int a = state.range(0);
-    //int c = static_cast<double>(state.range(2)) / 100.0;
-
+    int b = state.range(1);
+    int c = state.range(2);
     for (auto _ : state) {
         // This code gets timed
-        bool result = divisibleByHundred(a);// , b, c);
+        int result = timeForMilkAndCookies(a, b, c);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)
-->Args({ 1 })
-->Args({ 100 })
-->Args({ 1000 })
-->Args({ 111000 })
-->Args({ -1 })
-->Args({ 0 })
-->Args({ -100 });
+BENCHMARK(BM)->Args({ 2013, 11, 24 })->Args({ 2013, 0, 23 })->Args({ 3000, 11, 24 });
 
 // Run the benchmark
 BENCHMARK_MAIN();
