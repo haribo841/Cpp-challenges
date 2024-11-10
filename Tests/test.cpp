@@ -35,6 +35,7 @@
 #include "..\ConsoleApplication1\033 Profitable Gamble.cpp"
 #include "..\ConsoleApplication1\034 Multiple of 100.cpp"
 #include "..\ConsoleApplication1\035 Time for Milk and Cookies.cpp"
+#include "..\ConsoleApplication1\036 Number of Stickers.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -337,5 +338,23 @@ TEST(test35, timeForMilkAndCookies) {
 	EXPECT_EQ(true, timeForMilkAndCookies(2013, 11, 24));
 	EXPECT_EQ(false, timeForMilkAndCookies(2013, 0, 23));
 	EXPECT_EQ(true, timeForMilkAndCookies(3000, 11, 24));
+	EXPECT_TRUE(true);
+}
+TEST(test36, howManyStickers) {
+	EXPECT_EQ(6, howManyStickers(1));
+	EXPECT_EQ(24, howManyStickers(2));
+	EXPECT_EQ(54, howManyStickers(3));
+	EXPECT_EQ(96, howManyStickers(4));
+	EXPECT_EQ(150, howManyStickers(5));
+	EXPECT_EQ(216, howManyStickers(6));
+	EXPECT_EQ(294, howManyStickers(7));
+	EXPECT_EQ(384, howManyStickers(8));
+	EXPECT_EQ(486, howManyStickers(9));
+	EXPECT_EQ(600, howManyStickers(10));
+	EXPECT_EQ(726, howManyStickers(11));
+	EXPECT_EQ(864, howManyStickers(12));
+	EXPECT_EQ(1014, howManyStickers(13));
+	EXPECT_EQ(1176, howManyStickers(14));
+	EXPECT_EQ(1350, howManyStickers(15));
 	EXPECT_TRUE(true);
 }
