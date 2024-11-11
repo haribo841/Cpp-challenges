@@ -36,6 +36,7 @@
 #include "..\ConsoleApplication1\034 Multiple of 100.cpp"
 #include "..\ConsoleApplication1\035 Time for Milk and Cookies.cpp"
 #include "..\ConsoleApplication1\036 Number of Stickers.cpp"
+#include "..\ConsoleApplication1\037 Stack the Boxes.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -356,5 +357,15 @@ TEST(test36, howManyStickers) {
 	EXPECT_EQ(1014, howManyStickers(13));
 	EXPECT_EQ(1176, howManyStickers(14));
 	EXPECT_EQ(1350, howManyStickers(15));
+	EXPECT_TRUE(true);
+}
+TEST(test37, stackBoxes) {
+	EXPECT_EQ(1, stackBoxes(1));
+	EXPECT_EQ(4, stackBoxes(2));
+	EXPECT_EQ(0, stackBoxes(0));
+	EXPECT_EQ(25, stackBoxes(5));
+	EXPECT_EQ(729, stackBoxes(27));
+	EXPECT_EQ(38416, stackBoxes(196));
+	EXPECT_EQ(262144, stackBoxes(512));
 	EXPECT_TRUE(true);
 }

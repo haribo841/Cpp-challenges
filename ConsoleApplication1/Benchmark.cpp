@@ -1,7 +1,7 @@
 ﻿#include <vector>
 #include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "036 Number of Stickers.h"
+#include "037 Stack the Boxes.h"
 using namespace std;
 static void BM(benchmark::State& state) {
     // Perform setup here
@@ -10,13 +10,13 @@ static void BM(benchmark::State& state) {
     //int c = state.range(2);
     for (auto _ : state) {
         // This code gets timed
-        int result = howManyStickers(a);// , b, c);
+        int result = stackBoxes(a);// , b, c);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)->Range(1, 15);
+BENCHMARK(BM)->Args({ 1 })->Args({ 2 })->Args({ 0 })->Args({ 5 })->Args({ 27 })->Args({ 196 })->Args({ 512 });
 
 // Run the benchmark
 BENCHMARK_MAIN();
