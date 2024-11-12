@@ -37,6 +37,7 @@
 #include "..\ConsoleApplication1\035 Time for Milk and Cookies.cpp"
 #include "..\ConsoleApplication1\036 Number of Stickers.cpp"
 #include "..\ConsoleApplication1\037 Stack the Boxes.cpp"
+#include "..\ConsoleApplication1\038 Buggy Code 2.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -367,5 +368,18 @@ TEST(test37, stackBoxes) {
 	EXPECT_EQ(729, stackBoxes(27));
 	EXPECT_EQ(38416, stackBoxes(196));
 	EXPECT_EQ(262144, stackBoxes(512));
+	EXPECT_TRUE(true);
+}
+TEST(test38, printArray) {
+	EXPECT_EQ((std::vector<int>{1}), printArray(1));
+	EXPECT_EQ((std::vector<int>{1, 2}), printArray(2));
+	EXPECT_EQ((std::vector<int>{1, 2, 3}), printArray(3));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4}), printArray(4));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5}), printArray(5));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6}), printArray(6));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7}), printArray(7));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8}), printArray(8));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9}), printArray(9));
+	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}), printArray(10));
 	EXPECT_TRUE(true);
 }
