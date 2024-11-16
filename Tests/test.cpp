@@ -38,6 +38,8 @@
 #include "..\ConsoleApplication1\036 Number of Stickers.cpp"
 #include "..\ConsoleApplication1\037 Stack the Boxes.cpp"
 #include "..\ConsoleApplication1\038 Buggy Code 2.cpp"
+#include "..\ConsoleApplication1\039 Check Whether a Given Number Is Odd.cpp"
+#include "..\ConsoleApplication1\040 Nth Even Number.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -381,5 +383,24 @@ TEST(test38, printArray) {
 	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8}), printArray(8));
 	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9}), printArray(9));
 	EXPECT_EQ((std::vector<int>{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}), printArray(10));
+	EXPECT_TRUE(true);
+}
+TEST(test39, isOdd) {
+	EXPECT_EQ(true, isOdd(-5));
+	EXPECT_EQ(false, isOdd(-50));
+	EXPECT_EQ(false, isOdd(0));
+	EXPECT_EQ(true, isOdd(25));
+	EXPECT_EQ(true, isOdd(-19));
+	EXPECT_EQ(false, isOdd(12));
+	EXPECT_EQ(true, isOdd(23));
+	EXPECT_EQ(true, isOdd(-71));
+	EXPECT_TRUE(true);
+}
+TEST(test40, nthEven) {
+	EXPECT_EQ(0, nthEven(1));
+	EXPECT_EQ(2, nthEven(2));
+	EXPECT_EQ(4, nthEven(3));
+	EXPECT_EQ(198, nthEven(100));
+	EXPECT_EQ(2597466, nthEven(1298734));
 	EXPECT_TRUE(true);
 }

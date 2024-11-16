@@ -1,7 +1,6 @@
-﻿#include <vector>
-#include <benchmark/benchmark.h>
+﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "038 Buggy Code 2.h"
+#include "040 Nth Even Number.h"
 using namespace std;
 static void BM(benchmark::State& state) {
     // Perform setup here
@@ -10,13 +9,13 @@ static void BM(benchmark::State& state) {
     //int c = state.range(2);
     for (auto _ : state) {
         // This code gets timed
-        std::vector<int> result = printArray(a);// , b, c);
+        int result = nthEven(a);// , b, c);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)->Range(1, 10);
+BENCHMARK(BM)->Args({ 1 })->Args({ 2 })->Args({ 3 })->Args({ 100 })->Args({ 1298734 });
 
 // Run the benchmark
 BENCHMARK_MAIN();
