@@ -40,6 +40,7 @@
 #include "..\ConsoleApplication1\038 Buggy Code 2.cpp"
 #include "..\ConsoleApplication1\039 Check Whether a Given Number Is Odd.cpp"
 #include "..\ConsoleApplication1\040 Nth Even Number.cpp"
+#include "..\ConsoleApplication1\041 Free Coffee Cups.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -402,5 +403,14 @@ TEST(test40, nthEven) {
 	EXPECT_EQ(4, nthEven(3));
 	EXPECT_EQ(198, nthEven(100));
 	EXPECT_EQ(2597466, nthEven(1298734));
+	EXPECT_TRUE(true);
+}
+TEST(test41, totalCups) {
+	EXPECT_EQ(7, totalCups(6));
+	EXPECT_EQ(3, totalCups(3));
+	EXPECT_EQ(8, totalCups(7));
+	EXPECT_EQ(14, totalCups(12));
+	EXPECT_EQ(248, totalCups(213));
+	EXPECT_EQ(18, totalCups(16));
 	EXPECT_TRUE(true);
 }
