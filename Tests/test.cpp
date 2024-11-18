@@ -41,6 +41,7 @@
 #include "..\ConsoleApplication1\039 Check Whether a Given Number Is Odd.cpp"
 #include "..\ConsoleApplication1\040 Nth Even Number.cpp"
 #include "..\ConsoleApplication1\041 Free Coffee Cups.cpp"
+#include "..\ConsoleApplication1\042 Concatenate First and Last Name into One String.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -412,5 +413,12 @@ TEST(test41, totalCups) {
 	EXPECT_EQ(14, totalCups(12));
 	EXPECT_EQ(248, totalCups(213));
 	EXPECT_EQ(18, totalCups(16));
+	EXPECT_TRUE(true);
+}
+TEST(test42, concatName) {
+	EXPECT_EQ("Doe, John", concatName("John", "Doe"));
+	EXPECT_EQ("Last, First", concatName("First", "Last"));
+	EXPECT_EQ("B, A", concatName("A", "B"));
+	EXPECT_EQ(",, ,", concatName(",", ","));
 	EXPECT_TRUE(true);
 }
