@@ -42,6 +42,7 @@
 #include "..\ConsoleApplication1\040 Nth Even Number.cpp"
 #include "..\ConsoleApplication1\041 Free Coffee Cups.cpp"
 #include "..\ConsoleApplication1\042 Concatenate First and Last Name into One String.cpp"
+#include "..\ConsoleApplication1\043 Area of a Rectangle.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -420,5 +421,17 @@ TEST(test42, concatName) {
 	EXPECT_EQ("Last, First", concatName("First", "Last"));
 	EXPECT_EQ("B, A", concatName("A", "B"));
 	EXPECT_EQ(",, ,", concatName(",", ","));
+	EXPECT_TRUE(true);
+}
+TEST(test43, area) {
+	EXPECT_EQ(15, area(5, 3));
+	EXPECT_EQ(40, area(8, 5));
+	EXPECT_EQ(20, area(5, 4));
+	EXPECT_EQ(100000000, area(10000, 10000));
+	EXPECT_EQ(-1, area(-2, -5));
+	EXPECT_EQ(-1, area(0, 3));
+	EXPECT_EQ(-1, area(5, -3));
+	EXPECT_EQ(-1, area(0, 1));
+	EXPECT_EQ(-1, area(-1, 0));
 	EXPECT_TRUE(true);
 }
