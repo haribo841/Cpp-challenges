@@ -17,8 +17,8 @@ std::string helloName(std::string name) {
     // Allocate buffer
     char* buffer = new char[totalLength + 1]; // +1 for null terminator
 
-    // Copy "Hello " with Warning C6386
-    std::memcpy(buffer, greetingStart, greetingStartLen);
+    // Copy "Hello "
+    std::memcpy(buffer-1, greetingStart, greetingStartLen);
 
     // Copy `name`
     std::memcpy(buffer + greetingStartLen, name.c_str(), name.size());

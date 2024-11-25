@@ -1,30 +1,29 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "043 Area of a Rectangle.h"
+#include "044 Empty String.h"
 using namespace std;
+// Predefined test cases
+const vector<string> testCases = {
+    "",
+    " ",
+    "            ",
+    "38215",
+    "afjabsdf",
+    "!?@&",
+};
 static void BM(benchmark::State& state) {
-    // Perform setup here
-    int a = state.range(0);
-    int b = state.range(1);
+    // Get test case based on index
+    const auto& testCase = testCases[state.range(0)];
+
     for (auto _ : state) {
-        // This code gets timed
-        int result = area(a , b);//, c);
+        // Benchmarking code
+        bool result = isEmpty(testCase);
         benchmark::DoNotOptimize(result);
     }
 }
 
 // Register the function as a benchmark
-BENCHMARK(BM)
-->Args({ 5, 3 })
-->Args({ 8, 5 })
-->Args({ 5, 4 })
-->Args({ 2, 3 })
-->Args({ -2, -5 })
-->Args({ 0, 3 })
-->Args({ 5, -3 })
-->Args({ 0, 1 })
-->Args({ -1, 0 })
-->Args({ 10000, 10000 });
+BENCHMARK(BM)->Arg(0)->Arg(1)->Arg(2)->Arg(3)->Arg(4)->Arg(5); // Indices for predefined test cases
 
 // Run the benchmark
 BENCHMARK_MAIN();

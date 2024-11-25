@@ -43,6 +43,7 @@
 #include "..\ConsoleApplication1\041 Free Coffee Cups.cpp"
 #include "..\ConsoleApplication1\042 Concatenate First and Last Name into One String.cpp"
 #include "..\ConsoleApplication1\043 Area of a Rectangle.cpp"
+#include "..\ConsoleApplication1\044 Empty String.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -433,5 +434,14 @@ TEST(test43, area) {
 	EXPECT_EQ(-1, area(5, -3));
 	EXPECT_EQ(-1, area(0, 1));
 	EXPECT_EQ(-1, area(-1, 0));
+	EXPECT_TRUE(true);
+}
+TEST(test44, isEmpty) {
+	EXPECT_EQ(true, isEmpty(""));
+	EXPECT_EQ(false, isEmpty(" "));
+	EXPECT_EQ(false, isEmpty("            "));
+	EXPECT_EQ(false, isEmpty("38215"));;
+	EXPECT_EQ(false, isEmpty("afjabsdf"));
+	EXPECT_EQ(false, isEmpty("!?@&"));
 	EXPECT_TRUE(true);
 }
