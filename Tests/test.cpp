@@ -44,6 +44,7 @@
 #include "..\ConsoleApplication1\042 Concatenate First and Last Name into One String.cpp"
 #include "..\ConsoleApplication1\043 Area of a Rectangle.cpp"
 #include "..\ConsoleApplication1\044 Empty String.cpp"
+#include "..\ConsoleApplication1\045 Compare Strings by Count of Characters.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -443,5 +444,15 @@ TEST(test44, isEmpty) {
 	EXPECT_EQ(false, isEmpty("38215"));;
 	EXPECT_EQ(false, isEmpty("afjabsdf"));
 	EXPECT_EQ(false, isEmpty("!?@&"));
+	EXPECT_TRUE(true);
+}
+TEST(test45, comp) {
+	EXPECT_EQ(true, comp("AB", "CD"));
+	EXPECT_EQ(false, comp("ABC", "DE"));
+	EXPECT_EQ(false, comp("hello", "edabit"));
+	EXPECT_EQ(true, comp("meow", "woof"));;
+	EXPECT_EQ(false, comp("jrnvjrnnt", "cvjknfjvmfvnfjn"));
+	EXPECT_EQ(false, comp("jkvnjrt", "krnf"));
+	EXPECT_EQ(true, comp("Facebook", "Snapchat"));;
 	EXPECT_TRUE(true);
 }

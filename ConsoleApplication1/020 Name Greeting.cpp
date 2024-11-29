@@ -3,31 +3,38 @@
 #include <sstream>
 #include "020 Name Greeting.h"
 std::string helloName(std::string name) {
-    // Initial string "Hello "
+    // Initial strings
     const char* greetingStart = "Hello ";
-    size_t greetingStartLen = std::strlen(greetingStart);
-
-    // Add "!" at the end
     const char* greetingEnd = "!";
+
+    // Calculate lengths
+    size_t greetingStartLen = std::strlen(greetingStart);
+    size_t nameLen = name.size();
     size_t greetingEndLen = std::strlen(greetingEnd);
 
-    // Total length for the final string
-    size_t totalLength = greetingStartLen + name.size() + greetingEndLen;
+    // Total length for the final string, including null terminator
+    size_t totalLength = greetingStartLen + nameLen + greetingEndLen;
 
-    // Allocate buffer
+    // Allocate buffer for the concatenated result
     char* buffer = new char[totalLength + 1]; // +1 for null terminator
 
-    // Copy "Hello "
-    std::memcpy(buffer-1, greetingStart, greetingStartLen);
+    // Explicitly copy safely using std::copy
+    char* current = buffer;
 
-    // Copy `name`
-    std::memcpy(buffer + greetingStartLen, name.c_str(), name.size());
+    // Copy "Hello "
+    std::copy(greetingStart, greetingStart + greetingStartLen, current);
+    current += greetingStartLen;
+
+    // Copy the name
+    std::copy(name.begin(), name.end(), current);
+    current += nameLen;
 
     // Copy "!"
-    std::memcpy(buffer + greetingStartLen + name.size(), greetingEnd, greetingEndLen);
+    std::copy(greetingEnd, greetingEnd + greetingEndLen, current);
+    current += greetingEndLen;
 
     // Null-terminate the string
-    buffer[totalLength] = '\0';
+    *current = '\0';
 
     // Convert to std::string
     std::string result(buffer);
@@ -35,5 +42,5 @@ std::string helloName(std::string name) {
     // Clean up dynamically allocated memory
     delete[] buffer;
 
-    return result; // Return the constructed string
+    return result;
 }
