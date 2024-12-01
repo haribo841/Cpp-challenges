@@ -45,6 +45,7 @@
 #include "..\ConsoleApplication1\043 Area of a Rectangle.cpp"
 #include "..\ConsoleApplication1\044 Empty String.cpp"
 #include "..\ConsoleApplication1\045 Compare Strings by Count of Characters.cpp"
+#include "..\ConsoleApplication1\046 String Odd or Even.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -454,5 +455,14 @@ TEST(test45, comp) {
 	EXPECT_EQ(false, comp("jrnvjrnnt", "cvjknfjvmfvnfjn"));
 	EXPECT_EQ(false, comp("jkvnjrt", "krnf"));
 	EXPECT_EQ(true, comp("Facebook", "Snapchat"));;
+	EXPECT_TRUE(true);
+}
+TEST(test46, oddOrEven) {
+	EXPECT_EQ(true, oddOrEven("apples"));
+	EXPECT_EQ(true, oddOrEven("banana"));
+	EXPECT_EQ(true, oddOrEven("cherry"));
+	EXPECT_EQ(false, oddOrEven("mango"));;
+	EXPECT_EQ(false, oddOrEven("peach"));
+	EXPECT_EQ(false, oddOrEven("pears"));
 	EXPECT_TRUE(true);
 }
