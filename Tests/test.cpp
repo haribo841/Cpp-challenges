@@ -47,6 +47,7 @@
 #include "..\ConsoleApplication1\045 Compare Strings by Count of Characters.cpp"
 #include "..\ConsoleApplication1\046 String Odd or Even.cpp"
 #include "..\ConsoleApplication1\047 Return Negative.cpp"
+#include "..\ConsoleApplication1\048 Drinks Allowed.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -476,5 +477,13 @@ TEST(test47, returnNegative) {
 	EXPECT_EQ(0, returnNegative(0));
 	EXPECT_EQ(-1, returnNegative(1));
 	EXPECT_EQ(-1, returnNegative(-1));
+	EXPECT_TRUE(true);
+}
+TEST(test48, shouldServeDrinks) {
+	EXPECT_EQ(false, shouldServeDrinks(17, true));
+	EXPECT_EQ(false, shouldServeDrinks(30, true));
+	EXPECT_EQ(true, shouldServeDrinks(24, false));
+	EXPECT_EQ(true, shouldServeDrinks(18, false));
+	EXPECT_EQ(false, shouldServeDrinks(3, false));
 	EXPECT_TRUE(true);
 }
