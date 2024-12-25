@@ -48,6 +48,7 @@
 #include "..\ConsoleApplication1\046 String Odd or Even.cpp"
 #include "..\ConsoleApplication1\047 Return Negative.cpp"
 #include "..\ConsoleApplication1\048 Drinks Allowed.cpp"
+#include "..\ConsoleApplication1\049 Recreating Function.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -485,5 +486,13 @@ TEST(test48, shouldServeDrinks) {
 	EXPECT_EQ(true, shouldServeDrinks(24, false));
 	EXPECT_EQ(true, shouldServeDrinks(18, false));
 	EXPECT_EQ(false, shouldServeDrinks(3, false));
+	EXPECT_TRUE(true);
+}
+TEST(test49, absolute) {
+	EXPECT_EQ(0, absolute(0));
+	EXPECT_EQ(20.5, absolute(20.5));
+	EXPECT_EQ(250, absolute(-250));
+	EXPECT_EQ(5, absolute(-5));
+	EXPECT_EQ(3.14, absolute(-3.14));
 	EXPECT_TRUE(true);
 }
