@@ -49,6 +49,7 @@
 #include "..\ConsoleApplication1\047 Return Negative.cpp"
 #include "..\ConsoleApplication1\048 Drinks Allowed.cpp"
 #include "..\ConsoleApplication1\049 Recreating Function.cpp"
+#include "..\ConsoleApplication1\050 Number Even or Odd.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -494,5 +495,26 @@ TEST(test49, absolute) {
 	EXPECT_EQ(250, absolute(-250));
 	EXPECT_EQ(5, absolute(-5));
 	EXPECT_EQ(3.14, absolute(-3.14));
+	EXPECT_TRUE(true);
+}
+TEST(test50, isEvenOrOdd) {
+	EXPECT_EQ("odd", isEvenOrOdd(3));
+	EXPECT_EQ("even", isEvenOrOdd(0));
+	EXPECT_EQ("odd", isEvenOrOdd(7));
+	EXPECT_EQ("even", isEvenOrOdd(12));
+	EXPECT_EQ("even", isEvenOrOdd(6474));
+	EXPECT_EQ("odd", isEvenOrOdd(0563));
+	EXPECT_EQ("odd", isEvenOrOdd(3));
+	EXPECT_EQ("even", isEvenOrOdd(0000001111100000));
+	EXPECT_EQ("odd", isEvenOrOdd(301));
+	EXPECT_EQ("odd", isEvenOrOdd(-3));
+	EXPECT_EQ("even", isEvenOrOdd(-0));
+	EXPECT_EQ("odd", isEvenOrOdd(-7));
+	EXPECT_EQ("even", isEvenOrOdd(-12));
+	EXPECT_EQ("even", isEvenOrOdd(-6474));
+	EXPECT_EQ("odd", isEvenOrOdd(-0563));
+	EXPECT_EQ("odd", isEvenOrOdd(-3));
+	EXPECT_EQ("even", isEvenOrOdd(-0000001111100000));
+	EXPECT_EQ("odd", isEvenOrOdd(-301));
 	EXPECT_TRUE(true);
 }

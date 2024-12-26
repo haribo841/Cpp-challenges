@@ -2,7 +2,7 @@
 #include "Benchmark.h"
 #include <vector>
 #include <string>
-#include "049 Recreating Function.h"
+#include "050 Number Even or Odd.h"
 using namespace std;
 // Predefined test cases
 /*const vector<pair<int, bool>> testCases = {
@@ -12,8 +12,8 @@ using namespace std;
     {18, false},
     {3, false},
 };*/
-//const vector<int> testCases = { 4, 15, -4, 42, -9, 0, 1, -1 };
-const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
+const vector<int> testCases = { 3, 0, 7, 12, 6474, 563, 3, 1111100000, 301, -3, 0, -7, -12, -6474, -563, -3, -1111100000, -301 };
+//const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 static void BM(benchmark::State& state) {
     // Get test case based on index
     const auto& testCase = testCases[state.range(0)];
@@ -21,7 +21,7 @@ static void BM(benchmark::State& state) {
     //const bool b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        bool result = absolute(testCase);// a, b);
+        string result = isEvenOrOdd(testCase);// a, b);
         benchmark::DoNotOptimize(result);
     }
 }
