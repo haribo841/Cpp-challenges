@@ -50,6 +50,7 @@
 #include "..\ConsoleApplication1\048 Drinks Allowed.cpp"
 #include "..\ConsoleApplication1\049 Recreating Function.cpp"
 #include "..\ConsoleApplication1\050 Number Even or Odd.cpp"
+#include "..\ConsoleApplication1\051 Broken Bridge.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -516,5 +517,12 @@ TEST(test50, isEvenOrOdd) {
 	EXPECT_EQ("odd", isEvenOrOdd(-3));
 	EXPECT_EQ("even", isEvenOrOdd(-0000001111100000));
 	EXPECT_EQ("odd", isEvenOrOdd(-301));
+	EXPECT_TRUE(true);
+}
+TEST(test51, isSafeBridge) {
+	EXPECT_EQ(true, isSafeBridge("####"));
+	EXPECT_EQ(false, isSafeBridge("## ####"));
+	EXPECT_EQ(true, isSafeBridge("#"));
+	EXPECT_EQ(false, isSafeBridge("# #"));
 	EXPECT_TRUE(true);
 }
