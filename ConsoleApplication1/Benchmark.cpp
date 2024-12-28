@@ -14,7 +14,15 @@ using namespace std;
 };*/
 //const vector<int> testCases = { 3, 0, 7, 12, 6474, 563, 3, 1111100000, 301, -3, 0, -7, -12, -6474, -563, -3, -1111100000, -301 };
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
-const vector<string> testCases = { "####", "## ####", "#", "# #" };
+const vector<string> testCases = {
+    "Aiden",
+    "Roxy",
+    "Bert",
+    "Dean",
+    "Ian",
+    "Brian",
+    "Daniel"
+};
 static void BM(benchmark::State& state) {
     // Get test case based on index
     const auto& testCase = testCases[state.range(0)];

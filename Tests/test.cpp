@@ -51,6 +51,7 @@
 #include "..\ConsoleApplication1\049 Recreating Function.cpp"
 #include "..\ConsoleApplication1\050 Number Even or Odd.cpp"
 #include "..\ConsoleApplication1\051 Broken Bridge.cpp"
+#include "..\ConsoleApplication1\052 Last Character.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -524,5 +525,15 @@ TEST(test51, isSafeBridge) {
 	EXPECT_EQ(false, isSafeBridge("## ####"));
 	EXPECT_EQ(true, isSafeBridge("#"));
 	EXPECT_EQ(false, isSafeBridge("# #"));
+	EXPECT_TRUE(true);
+}
+TEST(test52, isLastCharacterN) {
+	EXPECT_EQ(true, isLastCharacterN("Aiden"));
+	EXPECT_EQ(false, isLastCharacterN("Roxy"));
+	EXPECT_EQ(false, isLastCharacterN("Bert"));
+	EXPECT_EQ(true, isLastCharacterN("Dean"));
+	EXPECT_EQ(true, isLastCharacterN("Ian"));
+	EXPECT_EQ(true, isLastCharacterN("Brian"));
+	EXPECT_EQ(false, isLastCharacterN("Daniel"));
 	EXPECT_TRUE(true);
 }
