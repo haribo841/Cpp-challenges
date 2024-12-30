@@ -52,6 +52,7 @@
 #include "..\ConsoleApplication1\050 Number Even or Odd.cpp"
 #include "..\ConsoleApplication1\051 Broken Bridge.cpp"
 #include "..\ConsoleApplication1\052 Last Character.cpp"
+#include "..\ConsoleApplication1\053 Length of a String.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -535,5 +536,13 @@ TEST(test52, isLastCharacterN) {
 	EXPECT_EQ(true, isLastCharacterN("Ian"));
 	EXPECT_EQ(true, isLastCharacterN("Brian"));
 	EXPECT_EQ(false, isLastCharacterN("Daniel"));
+	EXPECT_TRUE(true);
+}
+TEST(test53, length) {
+	EXPECT_EQ(8, length("shipment"));
+	EXPECT_EQ(5, length("apple"));
+	EXPECT_EQ(4, length("make"));
+	EXPECT_EQ(1, length("a"));
+	EXPECT_EQ(0, length(""));
 	EXPECT_TRUE(true);
 }
