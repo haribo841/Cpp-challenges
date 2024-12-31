@@ -2,7 +2,7 @@
 #include "Benchmark.h"
 #include <vector>
 #include <string>
-#include "053 Length of a String.h"
+#include "054 Max Min Difference.h"
 using namespace std;
 // Predefined test cases
 /*const vector<pair<int, bool>> testCases = {
@@ -14,12 +14,27 @@ using namespace std;
 };*/
 //const vector<int> testCases = { 3, 0, 7, 12, 6474, 563, 3, 1111100000, 301, -3, 0, -7, -12, -6474, -563, -3, -1111100000, -301 };
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
-const vector<string> testCases = {
-    "shipment",
-    "apple",
-    "make",
-    "a",
-    ""
+const vector<vector<int>> testCases = {
+    {-9, -8, 6, -9, 15, 6},
+    {-5, 6, 18, 4, 16, -2},
+    {-2, 20, -9, -9, -2, -7},
+    {4, -2, 11, -9, 15, 2},
+    {15, 10, 3, -6, 6, 19},
+    {1, 7, 18, -1, -2, 9},
+    {5, 1, -9, 7, -8, -10},
+    {-4, 17, -4, 20, -7, 0},
+    {-2, 11, 11, -3, -3, -3},
+    {1, 15, 14, 20, 10, 6},
+    {4, 17, 12, 2, 10, 2},
+    {-3, 3, 20, 10, 0, 17},
+    {-3, 6, 20, 9, 6, 7},
+    {16, 15, 1, 18, -7, -3},
+    {-7, 4, -4, -3, -8, -9},
+    {15, 8, 17, 18, 10, 10},
+    {-3, 20, 16, 8, 18, -10},
+    {6, 18, 9, 1, 3, 1},
+    {20, 18, -2, -10, -10, 17},
+    {18, 20, -7, -4, -2, -8}
 };
 static void BM(benchmark::State& state) {
     // Get test case based on index
@@ -28,7 +43,7 @@ static void BM(benchmark::State& state) {
     //const bool b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        bool result = length(testCase);// a, b);
+        bool result = difference(testCase);// a, b);
         benchmark::DoNotOptimize(result);
     }
 }

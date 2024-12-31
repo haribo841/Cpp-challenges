@@ -53,6 +53,7 @@
 #include "..\ConsoleApplication1\051 Broken Bridge.cpp"
 #include "..\ConsoleApplication1\052 Last Character.cpp"
 #include "..\ConsoleApplication1\053 Length of a String.cpp"
+#include "..\ConsoleApplication1\054 Max Min Difference.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -544,5 +545,28 @@ TEST(test53, length) {
 	EXPECT_EQ(4, length("make"));
 	EXPECT_EQ(1, length("a"));
 	EXPECT_EQ(0, length(""));
+	EXPECT_TRUE(true);
+}
+TEST(test54, difference) {
+	EXPECT_EQ(24, difference(std::vector<int>{ -9, -8, 6, -9, 15, 6 }));
+	EXPECT_EQ(23, difference(std::vector<int>{ -5, 6, 18, 4, 16, -2 }));
+	EXPECT_EQ(29, difference(std::vector<int>{ -2, 20, -9, -9, -2, -7 }));
+	EXPECT_EQ(24, difference(std::vector<int>{ 4, -2, 11, -9, 15, 2 }));
+	EXPECT_EQ(25, difference(std::vector<int>{ 15, 10, 3, -6, 6, 19 }));
+	EXPECT_EQ(20, difference(std::vector<int>{ 1, 7, 18, -1, -2, 9 }));
+	EXPECT_EQ(17, difference(std::vector<int>{ 5, 1, -9, 7, -8, -10 }));
+	EXPECT_EQ(27, difference(std::vector<int>{ -4, 17, -4, 20, -7, 0 }));
+	EXPECT_EQ(14, difference(std::vector<int>{ -2, 11, 11, -3, -3, -3 }));
+	EXPECT_EQ(19, difference(std::vector<int>{ 1, 15, 14, 20, 10, 6 }));
+	EXPECT_EQ(15, difference(std::vector<int>{ 4, 17, 12, 2, 10, 2 }));
+	EXPECT_EQ(23, difference(std::vector<int>{ -3, 3, 20, 10, 0, 17 }));
+	EXPECT_EQ(23, difference(std::vector<int>{ -3, 6, 20, 9, 6, 7 }));
+	EXPECT_EQ(25, difference(std::vector<int>{ 16, 15, 1, 18, -7, -3 }));
+	EXPECT_EQ(13, difference(std::vector<int>{ -7, 4, -4, -3, -8, -9 }));
+	EXPECT_EQ(10, difference(std::vector<int>{ 15, 8, 17, 18, 10, 10 }));
+	EXPECT_EQ(30, difference(std::vector<int>{ -3, 20, 16, 8, 18, -10 }));
+	EXPECT_EQ(17, difference(std::vector<int>{ 6, 18, 9, 1, 3, 1 }));
+	EXPECT_EQ(30, difference(std::vector<int>{ 20, 18, -2, -10, -10, 17 }));
+	EXPECT_EQ(28, difference(std::vector<int>{ 18, 20, -7, -4, -2, -8 }));
 	EXPECT_TRUE(true);
 }
