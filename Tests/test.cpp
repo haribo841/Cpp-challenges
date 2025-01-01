@@ -54,6 +54,7 @@
 #include "..\ConsoleApplication1\052 Last Character.cpp"
 #include "..\ConsoleApplication1\053 Length of a String.cpp"
 #include "..\ConsoleApplication1\054 Max Min Difference.cpp"
+#include "..\ConsoleApplication1\055 String as an Integer.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -568,5 +569,11 @@ TEST(test54, difference) {
 	EXPECT_EQ(17, difference(std::vector<int>{ 6, 18, 9, 1, 3, 1 }));
 	EXPECT_EQ(30, difference(std::vector<int>{ 20, 18, -2, -10, -10, 17 }));
 	EXPECT_EQ(28, difference(std::vector<int>{ 18, 20, -7, -4, -2, -8 }));
+	EXPECT_TRUE(true);
+}
+TEST(test55, StringInt) {
+	EXPECT_EQ(6, StringInt("6"));
+	EXPECT_EQ(1000, StringInt("1000"));
+	EXPECT_EQ(12, StringInt("12"));
 	EXPECT_TRUE(true);
 }

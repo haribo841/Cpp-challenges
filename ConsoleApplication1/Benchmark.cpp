@@ -1,8 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include <vector>
-#include <string>
-#include "054 Max Min Difference.h"
+#include "055 String as an Integer.h"
 using namespace std;
 // Predefined test cases
 /*const vector<pair<int, bool>> testCases = {
@@ -12,9 +10,10 @@ using namespace std;
     {18, false},
     {3, false},
 };*/
-//const vector<int> testCases = { 3, 0, 7, 12, 6474, 563, 3, 1111100000, 301, -3, 0, -7, -12, -6474, -563, -3, -1111100000, -301 };
+//const vector<int> testCases = { 6, 1000, 12 };
+const vector<string> testCases = { "6", "1000", "12" };
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
-const vector<vector<int>> testCases = {
+/*const vector<vector<int>> testCases = {
     {-9, -8, 6, -9, 15, 6},
     {-5, 6, 18, 4, 16, -2},
     {-2, 20, -9, -9, -2, -7},
@@ -35,7 +34,7 @@ const vector<vector<int>> testCases = {
     {6, 18, 9, 1, 3, 1},
     {20, 18, -2, -10, -10, 17},
     {18, 20, -7, -4, -2, -8}
-};
+};*/
 static void BM(benchmark::State& state) {
     // Get test case based on index
     const auto& testCase = testCases[state.range(0)];
@@ -43,7 +42,7 @@ static void BM(benchmark::State& state) {
     //const bool b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        bool result = difference(testCase);// a, b);
+        int result = StringInt(testCase);// a, b);
         benchmark::DoNotOptimize(result);
     }
 }
