@@ -55,6 +55,7 @@
 #include "..\ConsoleApplication1\053 Length of a String.cpp"
 #include "..\ConsoleApplication1\054 Max Min Difference.cpp"
 #include "..\ConsoleApplication1\055 String as an Integer.cpp"
+#include "..\ConsoleApplication1\056 Check String for Spaces.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -575,5 +576,15 @@ TEST(test55, StringInt) {
 	EXPECT_EQ(6, StringInt("6"));
 	EXPECT_EQ(1000, StringInt("1000"));
 	EXPECT_EQ(12, StringInt("12"));
+	EXPECT_TRUE(true);
+}
+TEST(test56, HasSpaces) {
+	EXPECT_EQ(false, HasSpaces("Foo"));
+	EXPECT_EQ(true, HasSpaces("Foo bar"));
+	EXPECT_EQ(true, HasSpaces("Foo "));
+	EXPECT_EQ(true, HasSpaces(" Foo"));
+	EXPECT_EQ(true, HasSpaces(" "));
+	EXPECT_EQ(false, HasSpaces(""));
+	EXPECT_EQ(false, HasSpaces(",./;'[]-="));
 	EXPECT_TRUE(true);
 }

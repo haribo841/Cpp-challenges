@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "055 String as an Integer.h"
+#include "056 Check String for Spaces.h"
 using namespace std;
 // Predefined test cases
 /*const vector<pair<int, bool>> testCases = {
@@ -11,7 +11,15 @@ using namespace std;
     {3, false},
 };*/
 //const vector<int> testCases = { 6, 1000, 12 };
-const vector<string> testCases = { "6", "1000", "12" };
+const vector<string> testCases = {
+    "Foo",
+    "Foo bar",
+    "Foo ",
+    " Foo",
+    " ",
+    "",
+    ",./;'[]-="
+};
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 /*const vector<vector<int>> testCases = {
     {-9, -8, 6, -9, 15, 6},
@@ -42,7 +50,7 @@ static void BM(benchmark::State& state) {
     //const bool b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        int result = StringInt(testCase);// a, b);
+        int result = HasSpaces(testCase);// a, b);
         benchmark::DoNotOptimize(result);
     }
 }
