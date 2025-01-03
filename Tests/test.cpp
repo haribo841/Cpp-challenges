@@ -56,6 +56,7 @@
 #include "..\ConsoleApplication1\054 Max Min Difference.cpp"
 #include "..\ConsoleApplication1\055 String as an Integer.cpp"
 #include "..\ConsoleApplication1\056 Check String for Spaces.cpp"
+#include "..\ConsoleApplication1\057 Both Zero, Negative or Positive.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -586,5 +587,15 @@ TEST(test56, HasSpaces) {
 	EXPECT_EQ(true, HasSpaces(" "));
 	EXPECT_EQ(false, HasSpaces(""));
 	EXPECT_EQ(false, HasSpaces(",./;'[]-="));
+	EXPECT_TRUE(true);
+}
+TEST(test57, isSame) {
+	EXPECT_EQ(true, isSame(-6, -9));
+	EXPECT_EQ(true, isSame(6, 2));
+	EXPECT_EQ(false, isSame(6, -999));
+	EXPECT_EQ(true, isSame(100, 1));
+	EXPECT_EQ(true, isSame(0, 0));
+	EXPECT_EQ(true, isSame(-80, -5000));
+	EXPECT_EQ(false, isSame(0, 2));
 	EXPECT_TRUE(true);
 }

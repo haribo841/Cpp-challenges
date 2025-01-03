@@ -1,8 +1,19 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "056 Check String for Spaces.h"
+#include "057 Both Zero, Negative or Positive.h"
 using namespace std;
 // Predefined test cases
+//<int, int>
+const vector<pair<int, int>> testCases = {
+    {-6, -9},
+    {6, 2},
+    {6, -999},
+    {100, 1},
+    {0, 0},
+    {-80, -5000},
+    {0, 2}
+};
+//<int, bool>
 /*const vector<pair<int, bool>> testCases = {
     {17, true},
     {30, true},
@@ -11,7 +22,8 @@ using namespace std;
     {3, false},
 };*/
 //const vector<int> testCases = { 6, 1000, 12 };
-const vector<string> testCases = {
+//<string>
+/*const vector<string> testCases = {
     "Foo",
     "Foo bar",
     "Foo ",
@@ -19,8 +31,9 @@ const vector<string> testCases = {
     " ",
     "",
     ",./;'[]-="
-};
+};*/
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
+//<vector<int>
 /*const vector<vector<int>> testCases = {
     {-9, -8, 6, -9, 15, 6},
     {-5, 6, 18, 4, 16, -2},
@@ -46,11 +59,11 @@ const vector<string> testCases = {
 static void BM(benchmark::State& state) {
     // Get test case based on index
     const auto& testCase = testCases[state.range(0)];
-    //const int a = testCase.first;
-    //const bool b = testCase.second;
+    const int a = testCase.first;
+    const int b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        int result = HasSpaces(testCase);// a, b);
+        int result = isSame(a, b);
         benchmark::DoNotOptimize(result);
     }
 }
