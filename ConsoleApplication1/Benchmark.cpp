@@ -1,10 +1,10 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "057 Both Zero, Negative or Positive.h"
+#include "058 Char to ASCII.h"
 using namespace std;
 // Predefined test cases
 //<int, int>
-const vector<pair<int, int>> testCases = {
+/*const vector<pair<int, int>> testCases = {
     {-6, -9},
     {6, 2},
     {6, -999},
@@ -12,7 +12,7 @@ const vector<pair<int, int>> testCases = {
     {0, 0},
     {-80, -5000},
     {0, 2}
-};
+};*/
 //<int, bool>
 /*const vector<pair<int, bool>> testCases = {
     {17, true},
@@ -22,6 +22,15 @@ const vector<pair<int, int>> testCases = {
     {3, false},
 };*/
 //const vector<int> testCases = { 6, 1000, 12 };
+//<char>
+const vector<char> testCases = {
+    ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 
+    'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 
+    'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', '\\', ']', 
+    '^', '_', '`', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 
+    'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 
+    'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
+};
 //<string>
 /*const vector<string> testCases = {
     "Foo",
@@ -59,11 +68,11 @@ const vector<pair<int, int>> testCases = {
 static void BM(benchmark::State& state) {
     // Get test case based on index
     const auto& testCase = testCases[state.range(0)];
-    const int a = testCase.first;
-    const int b = testCase.second;
+    //const int a = testCase.first;
+    //const int b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        int result = isSame(a, b);
+        int result = ctoa(testCase);// a, b);
         benchmark::DoNotOptimize(result);
     }
 }

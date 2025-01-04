@@ -5,5 +5,5 @@
 //Otherwise, return false.
 #include "057 Both Zero, Negative or Positive.h"
 bool isSame(int a, int b) {
-	return (a < 0 && b < 0) || (a > 0 && b > 0) || (a == 0 && b == 0);
+	return (a * b > 0) || (a == 0 && b == 0);
 }

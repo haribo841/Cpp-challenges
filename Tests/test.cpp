@@ -57,6 +57,7 @@
 #include "..\ConsoleApplication1\055 String as an Integer.cpp"
 #include "..\ConsoleApplication1\056 Check String for Spaces.cpp"
 #include "..\ConsoleApplication1\057 Both Zero, Negative or Positive.cpp"
+#include "..\ConsoleApplication1\058 Char to ASCII.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -597,5 +598,67 @@ TEST(test57, isSame) {
 	EXPECT_EQ(true, isSame(0, 0));
 	EXPECT_EQ(true, isSame(-80, -5000));
 	EXPECT_EQ(false, isSame(0, 2));
+	EXPECT_TRUE(true);
+}
+TEST(test58, ctoa) {
+	EXPECT_EQ(32, ctoa(' '));
+	EXPECT_EQ(65, ctoa('A'));
+	EXPECT_EQ(66, ctoa('B'));
+	EXPECT_EQ(67, ctoa('C'));
+	EXPECT_EQ(68, ctoa('D'));
+	EXPECT_EQ(69, ctoa('E'));
+	EXPECT_EQ(70, ctoa('F'));
+	EXPECT_EQ(71, ctoa('G'));
+	EXPECT_EQ(72, ctoa('H'));
+	EXPECT_EQ(73, ctoa('I'));
+	EXPECT_EQ(74, ctoa('J'));
+	EXPECT_EQ(75, ctoa('K'));
+	EXPECT_EQ(76, ctoa('L'));
+	EXPECT_EQ(77, ctoa('M'));
+	EXPECT_EQ(78, ctoa('N'));
+	EXPECT_EQ(79, ctoa('O'));
+	EXPECT_EQ(80, ctoa('P'));
+	EXPECT_EQ(81, ctoa('Q'));
+	EXPECT_EQ(82, ctoa('R'));
+	EXPECT_EQ(83, ctoa('S'));
+	EXPECT_EQ(84, ctoa('T'));
+	EXPECT_EQ(85, ctoa('U'));
+	EXPECT_EQ(86, ctoa('V'));
+	EXPECT_EQ(87, ctoa('W'));
+	EXPECT_EQ(88, ctoa('X'));
+	EXPECT_EQ(89, ctoa('Y'));
+	EXPECT_EQ(90, ctoa('Z'));
+	EXPECT_EQ(91, ctoa('['));
+	EXPECT_EQ(92, ctoa('\\'));
+	EXPECT_EQ(93, ctoa(']'));
+	EXPECT_EQ(94, ctoa('^'));
+	EXPECT_EQ(95, ctoa('_'));
+	EXPECT_EQ(96, ctoa('`'));
+	EXPECT_EQ(97, ctoa('a'));
+	EXPECT_EQ(98, ctoa('b'));
+	EXPECT_EQ(99, ctoa('c'));
+	EXPECT_EQ(100, ctoa('d'));
+	EXPECT_EQ(101, ctoa('e'));
+	EXPECT_EQ(102, ctoa('f'));
+	EXPECT_EQ(103, ctoa('g'));
+	EXPECT_EQ(104, ctoa('h'));
+	EXPECT_EQ(105, ctoa('i'));
+	EXPECT_EQ(106, ctoa('j'));
+	EXPECT_EQ(107, ctoa('k'));
+	EXPECT_EQ(108, ctoa('l'));
+	EXPECT_EQ(109, ctoa('m'));
+	EXPECT_EQ(110, ctoa('n'));
+	EXPECT_EQ(111, ctoa('o'));
+	EXPECT_EQ(112, ctoa('p'));
+	EXPECT_EQ(113, ctoa('q'));
+	EXPECT_EQ(114, ctoa('r'));
+	EXPECT_EQ(115, ctoa('s'));
+	EXPECT_EQ(116, ctoa('t'));
+	EXPECT_EQ(117, ctoa('u'));
+	EXPECT_EQ(118, ctoa('v'));
+	EXPECT_EQ(119, ctoa('w'));
+	EXPECT_EQ(120, ctoa('x'));
+	EXPECT_EQ(121, ctoa('y'));
+	EXPECT_EQ(122, ctoa('z'));
 	EXPECT_TRUE(true);
 }
