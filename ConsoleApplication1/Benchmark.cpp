@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "058 Char to ASCII.h"
+#include "059 Length of Number.h"
 using namespace std;
 // Predefined test cases
 //<int, int>
@@ -21,16 +21,16 @@ using namespace std;
     {18, false},
     {3, false},
 };*/
-//const vector<int> testCases = { 6, 1000, 12 };
+const vector<int> testCases = { 12, 6000, 314 };
 //<char>
-const vector<char> testCases = {
+/*const vector<char> testCases = {
     ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 
     'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 
     'T', 'U', 'V', 'W', 'X', 'Y', 'Z', '[', '\\', ']', 
     '^', '_', '`', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 
     'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 
     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
-};
+};*/
 //<string>
 /*const vector<string> testCases = {
     "Foo",
@@ -72,7 +72,7 @@ static void BM(benchmark::State& state) {
     //const int b = testCase.second;
     for (auto _ : state) {
         // Benchmarking code
-        int result = ctoa(testCase);// a, b);
+        int result = Length(testCase);// a, b);
         benchmark::DoNotOptimize(result);
     }
 }

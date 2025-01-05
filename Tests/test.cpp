@@ -58,6 +58,7 @@
 #include "..\ConsoleApplication1\056 Check String for Spaces.cpp"
 #include "..\ConsoleApplication1\057 Both Zero, Negative or Positive.cpp"
 #include "..\ConsoleApplication1\058 Char to ASCII.cpp"
+#include "..\ConsoleApplication1\059 Length of Number.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -660,5 +661,11 @@ TEST(test58, ctoa) {
 	EXPECT_EQ(120, ctoa('x'));
 	EXPECT_EQ(121, ctoa('y'));
 	EXPECT_EQ(122, ctoa('z'));
+	EXPECT_TRUE(true);
+}
+TEST(test59, Length) {
+	EXPECT_EQ(2, Length(12));
+	EXPECT_EQ(4, Length(6000));
+	EXPECT_EQ(3, Length(314));
 	EXPECT_TRUE(true);
 }
