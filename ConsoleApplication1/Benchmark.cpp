@@ -1,8 +1,18 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "059 Length of Number.h"
+#include "060 Slice of Pie.h"
 using namespace std;
 // Predefined test cases
+//<int, int, int>
+const vector<tuple<int, int, int>> testCases = {
+    {8, 3, 2},
+    {8, 3, 3},
+    {24, 12, 2},
+    {5, 6, 1},
+    {5, 0, 100},
+    {15, 2, 7},
+    {15, 2, 8}
+};
 //<int, int>
 /*const vector<pair<int, int>> testCases = {
     {-6, -9},
@@ -21,7 +31,7 @@ using namespace std;
     {18, false},
     {3, false},
 };*/
-const vector<int> testCases = { 12, 6000, 314 };
+//const vector<int> testCases = { 12, 6000, 314 };
 //<char>
 /*const vector<char> testCases = {
     ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 
@@ -68,11 +78,10 @@ const vector<int> testCases = { 12, 6000, 314 };
 static void BM(benchmark::State& state) {
     // Get test case based on index
     const auto& testCase = testCases[state.range(0)];
-    //const int a = testCase.first;
-    //const int b = testCase.second;
+    const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmarking code
-        int result = Length(testCase);// a, b);
+        int result = equalSlices(a, b, c);
         benchmark::DoNotOptimize(result);
     }
 }

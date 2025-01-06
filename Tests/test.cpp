@@ -59,6 +59,7 @@
 #include "..\ConsoleApplication1\057 Both Zero, Negative or Positive.cpp"
 #include "..\ConsoleApplication1\058 Char to ASCII.cpp"
 #include "..\ConsoleApplication1\059 Length of Number.cpp"
+#include "..\ConsoleApplication1\060 Slice of Pie.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -667,5 +668,15 @@ TEST(test59, Length) {
 	EXPECT_EQ(2, Length(12));
 	EXPECT_EQ(4, Length(6000));
 	EXPECT_EQ(3, Length(314));
+	EXPECT_TRUE(true);
+}
+TEST(test60, equalSlices) {
+	EXPECT_EQ(true, equalSlices(8, 3, 2));
+	EXPECT_EQ(false, equalSlices(8, 3, 3));
+	EXPECT_EQ(true, equalSlices(24, 12, 2));
+	EXPECT_EQ(false, equalSlices(5, 6, 1));
+	EXPECT_EQ(true, equalSlices(5, 0, 100));
+	EXPECT_EQ(true, equalSlices(15, 2, 7));
+	EXPECT_EQ(false, equalSlices(15, 2, 8));
 	EXPECT_TRUE(true);
 }
