@@ -1,10 +1,18 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "060 Slice of Pie.h"
+#include "061 Last Element in an Array.h"
 using namespace std;
 // Predefined test cases
+int arr1[] = {1, 2, 3};
+int arr2[] = { 1, 2, 3, 56, 87, 23, 65, 45 };
+int arr3[] = { 1 };
+int arr4[] = { 0 };
+int arr5[] = { -1, 3, 4, -45, -10 };
+
+int* testCases[] = { arr1, arr2, arr3, arr4, arr5 };
+int sizes[] = { 3, 8, 1, 1, 5 };
 //<int, int, int>
-const vector<tuple<int, int, int>> testCases = {
+/*const vector<tuple<int, int, int>> testCases = {
     {8, 3, 2},
     {8, 3, 3},
     {24, 12, 2},
@@ -12,7 +20,7 @@ const vector<tuple<int, int, int>> testCases = {
     {5, 0, 100},
     {15, 2, 7},
     {15, 2, 8}
-};
+};*/
 //<int, int>
 /*const vector<pair<int, int>> testCases = {
     {-6, -9},
@@ -75,19 +83,23 @@ const vector<tuple<int, int, int>> testCases = {
     {20, 18, -2, -10, -10, 17},
     {18, 20, -7, -4, -2, -8}
 };*/
-static void BM(benchmark::State& state) {
-    // Get test case based on index
-    const auto& testCase = testCases[state.range(0)];
-    const auto& [a, b, c] = testCase;
+static void BM_getLastItem(benchmark::State& state) {
+    // Get the test case index from the benchmark range
+    int index = state.range(0);
+
+    // Retrieve the array and size for the current test case
+    int* array = testCases[index];
+    int size = sizes[index];
+
     for (auto _ : state) {
-        // Benchmarking code
-        int result = equalSlices(a, b, c);
-        benchmark::DoNotOptimize(result);
+        // Benchmark the function
+        int result = getLastItem(array, size);
+        benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
-// Register the function as a benchmark
-BENCHMARK(BM)->DenseRange(0, testCases.size() - 1);
+// Register the benchmark
+BENCHMARK(BM_getLastItem)->DenseRange(0, sizeof(testCases) / sizeof(testCases[0]) - 1);
 
 // Run the benchmark
 BENCHMARK_MAIN();

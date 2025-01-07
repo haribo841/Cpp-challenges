@@ -4,7 +4,5 @@
 //3.How many slices each person gets.
 #include "060 Slice of Pie.h"
 bool equalSlices(int total, int people, int each) {
-	if (people == 0)return true;
-	else if (total >= people * each)return true;
-	return false;
+	return people * each <= total;
 }

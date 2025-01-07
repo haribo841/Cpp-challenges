@@ -60,6 +60,7 @@
 #include "..\ConsoleApplication1\058 Char to ASCII.cpp"
 #include "..\ConsoleApplication1\059 Length of Number.cpp"
 #include "..\ConsoleApplication1\060 Slice of Pie.cpp"
+#include "..\ConsoleApplication1\061 Last Element in an Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -679,4 +680,17 @@ TEST(test60, equalSlices) {
 	EXPECT_EQ(true, equalSlices(15, 2, 7));
 	EXPECT_EQ(false, equalSlices(15, 2, 8));
 	EXPECT_TRUE(true);
+}
+TEST(test61, getLastItem) {
+	int arr1[] = { 1, 2, 3 };
+	int arr2[] = { 1, 2, 3, 56, 87, 23, 65, 45 };
+	int arr3[] = { 1 };
+	int arr4[] = { 0 };
+	int arr5[] = { -1, 3, 4, -45, -10 };
+
+	EXPECT_EQ(3, getLastItem(arr1, 3));
+	EXPECT_EQ(45, getLastItem(arr2, 8));
+	EXPECT_EQ(1, getLastItem(arr3, 1));
+	EXPECT_EQ(0, getLastItem(arr4, 1));
+	EXPECT_EQ(-10, getLastItem(arr5, 5));
 }
