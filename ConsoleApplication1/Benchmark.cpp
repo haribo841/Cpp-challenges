@@ -1,16 +1,17 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "061 Last Element in an Array.h"
+#include "062 Singular or Plural.h"
 using namespace std;
 // Predefined test cases
-int arr1[] = {1, 2, 3};
+//<int[], int>
+/*int arr1[] = {1, 2, 3};
 int arr2[] = { 1, 2, 3, 56, 87, 23, 65, 45 };
 int arr3[] = { 1 };
 int arr4[] = { 0 };
 int arr5[] = { -1, 3, 4, -45, -10 };
 
 int* testCases[] = { arr1, arr2, arr3, arr4, arr5 };
-int sizes[] = { 3, 8, 1, 1, 5 };
+int sizes[] = { 3, 8, 1, 1, 5 };*/
 //<int, int, int>
 /*const vector<tuple<int, int, int>> testCases = {
     {8, 3, 2},
@@ -50,15 +51,19 @@ int sizes[] = { 3, 8, 1, 1, 5 };
     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 };*/
 //<string>
-/*const vector<string> testCases = {
-    "Foo",
-    "Foo bar",
-    "Foo ",
-    " Foo",
-    " ",
-    "",
-    ",./;'[]-="
-};*/
+const vector<string> testCases = {
+    "dudes",
+    "flowers",
+    "checks",
+    "varies",
+    "efforts",
+    "mood",
+    "whiteboard",
+    "cow",
+    "word",
+    "love",
+    "silly"
+};
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
 /*const vector<vector<int>> testCases = {
@@ -83,23 +88,19 @@ int sizes[] = { 3, 8, 1, 1, 5 };
     {20, 18, -2, -10, -10, 17},
     {18, 20, -7, -4, -2, -8}
 };*/
-static void BM_getLastItem(benchmark::State& state) {
+static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
-    int index = state.range(0);
-
-    // Retrieve the array and size for the current test case
-    int* array = testCases[index];
-    int size = sizes[index];
+    const auto& testCase = testCases[state.range(0)];
+    const auto& a = testCase;
 
     for (auto _ : state) {
         // Benchmark the function
-        int result = getLastItem(array, size);
+        int result = isPlural(a);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM_getLastItem)->DenseRange(0, sizeof(testCases) / sizeof(testCases[0]) - 1);
-
+BENCHMARK(BM)->DenseRange(0, testCases.size() - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

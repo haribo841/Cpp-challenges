@@ -61,6 +61,7 @@
 #include "..\ConsoleApplication1\059 Length of Number.cpp"
 #include "..\ConsoleApplication1\060 Slice of Pie.cpp"
 #include "..\ConsoleApplication1\061 Last Element in an Array.cpp"
+#include "..\ConsoleApplication1\062 Singular or Plural.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -693,4 +694,18 @@ TEST(test61, getLastItem) {
 	EXPECT_EQ(1, getLastItem(arr3, 1));
 	EXPECT_EQ(0, getLastItem(arr4, 1));
 	EXPECT_EQ(-10, getLastItem(arr5, 5));
+}
+TEST(test62, isPlural) {
+	EXPECT_EQ(true, isPlural("dudes"));
+	EXPECT_EQ(true, isPlural("flowers"));
+	EXPECT_EQ(true, isPlural("checks"));
+	EXPECT_EQ(true, isPlural("varies"));
+	EXPECT_EQ(true, isPlural("efforts"));
+	EXPECT_EQ(false, isPlural("mood"));
+	EXPECT_EQ(false, isPlural("whiteboard"));
+	EXPECT_EQ(false, isPlural("cow"));
+	EXPECT_EQ(false, isPlural("word"));
+	EXPECT_EQ(false, isPlural("love"));
+	EXPECT_EQ(false, isPlural("silly"));
+	EXPECT_TRUE(true);
 }
