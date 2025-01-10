@@ -62,6 +62,7 @@
 #include "..\ConsoleApplication1\060 Slice of Pie.cpp"
 #include "..\ConsoleApplication1\061 Last Element in an Array.cpp"
 #include "..\ConsoleApplication1\062 Singular or Plural.cpp"
+#include "..\ConsoleApplication1\063 Add, Subtract, Multiply or Divide.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -707,5 +708,13 @@ TEST(test62, isPlural) {
 	EXPECT_EQ(false, isPlural("word"));
 	EXPECT_EQ(false, isPlural("love"));
 	EXPECT_EQ(false, isPlural("silly"));
+	EXPECT_TRUE(true);
+}
+TEST(test63, operation) {
+	EXPECT_EQ("added", operation(12, 12));
+	EXPECT_EQ("subtracted", operation(100, 76));
+	EXPECT_EQ("multiplied", operation(6, 4));
+	EXPECT_EQ("divided", operation(528, 22));
+	EXPECT_EQ("Invalid", operation(10, 12));
 	EXPECT_TRUE(true);
 }

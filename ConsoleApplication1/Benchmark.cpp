@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "062 Singular or Plural.h"
+#include "063 Add, Subtract, Multiply or Divide.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -23,15 +23,13 @@ int sizes[] = { 3, 8, 1, 1, 5 };*/
     {15, 2, 8}
 };*/
 //<int, int>
-/*const vector<pair<int, int>> testCases = {
-    {-6, -9},
-    {6, 2},
-    {6, -999},
-    {100, 1},
-    {0, 0},
-    {-80, -5000},
-    {0, 2}
-};*/
+const vector<pair<int, int>> testCases = {
+    {12, 12},
+    {100, 76},
+    {6, 4},
+    {528, 22},
+    {10, 12}
+};
 //<int, bool>
 /*const vector<pair<int, bool>> testCases = {
     {17, true},
@@ -51,7 +49,7 @@ int sizes[] = { 3, 8, 1, 1, 5 };*/
     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 };*/
 //<string>
-const vector<string> testCases = {
+/*const vector<string> testCases = {
     "dudes",
     "flowers",
     "checks",
@@ -63,7 +61,7 @@ const vector<string> testCases = {
     "word",
     "love",
     "silly"
-};
+};*/
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
 /*const vector<vector<int>> testCases = {
@@ -91,11 +89,11 @@ const vector<string> testCases = {
 static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
     const auto& testCase = testCases[state.range(0)];
-    const auto& a = testCase;
-
+    const int a = testCase.first;
+    const int b = testCase.second;
     for (auto _ : state) {
         // Benchmark the function
-        int result = isPlural(a);
+        string result = operation(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
