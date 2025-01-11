@@ -63,6 +63,7 @@
 #include "..\ConsoleApplication1\061 Last Element in an Array.cpp"
 #include "..\ConsoleApplication1\062 Singular or Plural.cpp"
 #include "..\ConsoleApplication1\063 Add, Subtract, Multiply or Divide.cpp"
+#include "..\ConsoleApplication1\064 String to Integer and Vice Versa.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -716,5 +717,19 @@ TEST(test63, operation) {
 	EXPECT_EQ("multiplied", operation(6, 4));
 	EXPECT_EQ("divided", operation(528, 22));
 	EXPECT_EQ("Invalid", operation(10, 12));
+	EXPECT_TRUE(true);
+}
+TEST(test64, toInt) {
+	EXPECT_EQ(37, toInt("37"));
+	EXPECT_EQ(113, toInt("113"));
+	EXPECT_EQ(5, toInt("5"));
+	EXPECT_EQ(5231, toInt("5231"));
+	EXPECT_TRUE(true);
+}
+TEST(test64, toStr) {
+	EXPECT_EQ("37", toStr(37));
+	EXPECT_EQ("113", toStr(113));
+	EXPECT_EQ("5", toStr(5));
+	EXPECT_EQ("5231", toStr(5231));
 	EXPECT_TRUE(true);
 }

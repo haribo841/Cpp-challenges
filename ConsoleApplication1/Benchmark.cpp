@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "063 Add, Subtract, Multiply or Divide.h"
+#include "064 String to Integer and Vice Versa.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -23,13 +23,13 @@ int sizes[] = { 3, 8, 1, 1, 5 };*/
     {15, 2, 8}
 };*/
 //<int, int>
-const vector<pair<int, int>> testCases = {
+/*const vector<pair<int, int>> testCases = {
     {12, 12},
     {100, 76},
     {6, 4},
     {528, 22},
     {10, 12}
-};
+};*/
 //<int, bool>
 /*const vector<pair<int, bool>> testCases = {
     {17, true},
@@ -38,7 +38,12 @@ const vector<pair<int, int>> testCases = {
     {18, false},
     {3, false},
 };*/
-//const vector<int> testCases = { 12, 6000, 314 };
+const vector<int> testCasesI = {
+37,
+113,
+5,
+5231
+};
 //<char>
 /*const vector<char> testCases = {
     ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 
@@ -49,19 +54,12 @@ const vector<pair<int, int>> testCases = {
     'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'
 };*/
 //<string>
-/*const vector<string> testCases = {
-    "dudes",
-    "flowers",
-    "checks",
-    "varies",
-    "efforts",
-    "mood",
-    "whiteboard",
-    "cow",
-    "word",
-    "love",
-    "silly"
-};*/
+const vector<string> testCasesS = {
+    "37",
+    "113",
+    "5",
+    "5231"
+};
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
 /*const vector<vector<int>> testCases = {
@@ -86,19 +84,30 @@ const vector<pair<int, int>> testCases = {
     {20, 18, -2, -10, -10, 17},
     {18, 20, -7, -4, -2, -8}
 };*/
-static void BM(benchmark::State& state) {
+static void BMs(benchmark::State& state) {
     // Get the test case index from the benchmark range
-    const auto& testCase = testCases[state.range(0)];
-    const int a = testCase.first;
-    const int b = testCase.second;
+    const auto& testCase = testCasesS[state.range(0)];
+    //const int a = testCase.first;
+    //const int b = testCase.second;
     for (auto _ : state) {
         // Benchmark the function
-        string result = operation(a, b);
+        int result = toInt(testCase);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
-
+static void BMi(benchmark::State& state) {
+    // Get the test case index from the benchmark range
+    const auto& testCase = testCasesI[state.range(0)];
+    //const int a = testCase.first;
+    //const int b = testCase.second;
+    for (auto _ : state) {
+        // Benchmark the function
+        string result = toStr(testCase);
+        benchmark::DoNotOptimize(result); // Prevent optimization of the result
+    }
+}
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCases.size() - 1);
+BENCHMARK(BMs)->DenseRange(0, testCasesS.size() - 1);
+BENCHMARK(BMi)->DenseRange(0, testCasesI.size() - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

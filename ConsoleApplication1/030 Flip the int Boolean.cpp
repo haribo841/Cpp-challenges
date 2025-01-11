@@ -3,5 +3,4 @@
 #include "030 Flip the int Boolean.h"
 int flipIntBool(int baseIntBoolean) {
 	return 1-baseIntBoolean;
-
 }
