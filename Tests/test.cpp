@@ -64,6 +64,7 @@
 #include "..\ConsoleApplication1\062 Singular or Plural.cpp"
 #include "..\ConsoleApplication1\063 Add, Subtract, Multiply or Divide.cpp"
 #include "..\ConsoleApplication1\064 String to Integer and Vice Versa.cpp"
+#include "..\ConsoleApplication1\065 The Modulus Operator Function.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -731,5 +732,13 @@ TEST(test64, toStr) {
 	EXPECT_EQ("113", toStr(113));
 	EXPECT_EQ("5", toStr(5));
 	EXPECT_EQ("5231", toStr(5231));
+	EXPECT_TRUE(true);
+}
+TEST(test65, mod) {
+	EXPECT_EQ(0, mod(0, 3));
+	EXPECT_EQ(1, mod(1, 3));
+	EXPECT_EQ(2, mod(5, 3));
+	EXPECT_EQ(4, mod(4, 5));
+	EXPECT_EQ(3, mod(218, 5));
 	EXPECT_TRUE(true);
 }
