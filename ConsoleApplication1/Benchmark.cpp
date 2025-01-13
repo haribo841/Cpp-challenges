@@ -1,17 +1,21 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "065 The Modulus Operator Function.h"
+#include "066 Smallest Number in an Array.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
-/*int arr1[] = {1, 2, 3};
-int arr2[] = { 1, 2, 3, 56, 87, 23, 65, 45 };
-int arr3[] = { 1 };
-int arr4[] = { 0 };
-int arr5[] = { -1, 3, 4, -45, -10 };
+int arr1[] = { 34, 15, 88, 2 };
+int arr2[] = { 34, -345, -1, 100 };
+int arr3[] = { -76, 345, 1, 0 };
+int arr4[] = { 7, 7, 7 };
+int arr5[] = { 4, 6, 1, 3, 4, 5, 5, 1 };
+int arr6[] = { -4, -6, -8, -1 };
+int arr7[] = { 54, 76, 23, 54 };
+int arr8[] = { 100 };
+int arr9[] = { 0, 1, 2, 3, 4, 5 };
 
-int* testCases[] = { arr1, arr2, arr3, arr4, arr5 };
-int sizes[] = { 3, 8, 1, 1, 5 };*/
+int* testCases[] = { arr1, arr2, arr3, arr4, arr5, arr6, arr7, arr8, arr9 };
+int sizes[] = { 4, 4, 4, 3, 8, 4, 4, 1, 6 };
 //<int, int, int>
 /*const vector<tuple<int, int, int>> testCases = {
     {8, 3, 2},
@@ -23,7 +27,7 @@ int sizes[] = { 3, 8, 1, 1, 5 };*/
     {15, 2, 8}
 };*/
 //<int, int>
-const vector<pair<int, int>> testCases = {
+const vector<pair<int, int>> testCasesPairInt = {
     {12, 12},
     {100, 76},
     {6, 4},
@@ -86,16 +90,18 @@ const vector<string> testCasesS = {
 };*/
 static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
-    const auto& testCase = testCases[state.range(0)];
-    const int a = testCase.first;
-    const int b = testCase.second;
+    int index = state.range(0);
+    // Retrieve the array and size for the current test case
+    int* array = testCases[index];
+    int size = sizes[index];
     for (auto _ : state) {
         // Benchmark the function
-        int result = mod(a, b);
+        int result = findSmallestNum(array, size);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
+
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1);
+BENCHMARK(BM)->DenseRange(0, sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

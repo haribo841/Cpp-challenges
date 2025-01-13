@@ -65,6 +65,7 @@
 #include "..\ConsoleApplication1\063 Add, Subtract, Multiply or Divide.cpp"
 #include "..\ConsoleApplication1\064 String to Integer and Vice Versa.cpp"
 #include "..\ConsoleApplication1\065 The Modulus Operator Function.cpp"
+#include "..\ConsoleApplication1\066 Smallest Number in an Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -740,5 +741,27 @@ TEST(test65, mod) {
 	EXPECT_EQ(2, mod(5, 3));
 	EXPECT_EQ(4, mod(4, 5));
 	EXPECT_EQ(3, mod(218, 5));
+	EXPECT_TRUE(true);
+}
+TEST(test66, findSmallestNum) {
+	int arr1[] = { 34, 15, 88, 2 };
+	int arr2[] = { 34, -345, -1, 100 };
+	int arr3[] = { -76, 345, 1, 0 };
+	int arr4[] = { 7, 7, 7 };
+	int arr5[] = { 4, 6, 1, 3, 4, 5, 5, 1 };
+	int arr6[] = { -4, -6, -8, -1 };
+	int arr7[] = { 54, 76, 23, 54 };
+	int arr8[] = { 100 };
+	int arr9[] = { 0, 1, 2, 3, 4, 5 };
+
+	EXPECT_EQ(2, findSmallestNum(arr1, 4));
+	EXPECT_EQ(-345, findSmallestNum(arr2, 4));
+	EXPECT_EQ(-76, findSmallestNum(arr3, 4));
+	EXPECT_EQ(7, findSmallestNum(arr4, 3));
+	EXPECT_EQ(1, findSmallestNum(arr5, 8));
+	EXPECT_EQ(-8, findSmallestNum(arr6, 4));
+	EXPECT_EQ(23, findSmallestNum(arr7, 4));
+	EXPECT_EQ(100, findSmallestNum(arr8, 1));
+	EXPECT_EQ(0, findSmallestNum(arr9, 6));
 	EXPECT_TRUE(true);
 }
