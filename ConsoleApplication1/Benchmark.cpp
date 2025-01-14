@@ -1,21 +1,19 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "066 Smallest Number in an Array.h"
+#include "067 Largest Number in an Array.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
-int arr1[] = { 34, 15, 88, 2 };
-int arr2[] = { 34, -345, -1, 100 };
-int arr3[] = { -76, 345, 1, 0 };
-int arr4[] = { 7, 7, 7 };
-int arr5[] = { 4, 6, 1, 3, 4, 5, 5, 1 };
-int arr6[] = { -4, -6, -8, -1 };
-int arr7[] = { 54, 76, 23, 54 };
-int arr8[] = { 100 };
-int arr9[] = { 0, 1, 2, 3, 4, 5 };
+int arr1[] = { 4, 5, 1, 3 };
+int arr2[] = { 13, 27, 18, 26 };
+int arr3[] = { 32, 35, 37, 39 };
+int arr4[] = { 1000, 1001, 857, 1 };
+int arr5[] = { 27364, 837363, 736736, 73635 };
+int arr6[] = { 30, 2, 40, 3 };
+int arr7[] = { 0, 1, 0, 0, -1 };
 
-int* testCases[] = { arr1, arr2, arr3, arr4, arr5, arr6, arr7, arr8, arr9 };
-int sizes[] = { 4, 4, 4, 3, 8, 4, 4, 1, 6 };
+int* testCases[] = { arr1, arr2, arr3, arr4, arr5, arr6, arr7 };
+int sizes[] = { 4, 4, 4, 4, 4, 4, 5 };
 //<int, int, int>
 /*const vector<tuple<int, int, int>> testCases = {
     {8, 3, 2},
@@ -96,7 +94,7 @@ static void BM(benchmark::State& state) {
     int size = sizes[index];
     for (auto _ : state) {
         // Benchmark the function
-        int result = findSmallestNum(array, size);
+        int result = findLargestNum(array, size);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }

@@ -66,6 +66,7 @@
 #include "..\ConsoleApplication1\064 String to Integer and Vice Versa.cpp"
 #include "..\ConsoleApplication1\065 The Modulus Operator Function.cpp"
 #include "..\ConsoleApplication1\066 Smallest Number in an Array.cpp"
+#include "..\ConsoleApplication1\067 Largest Number in an Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -763,5 +764,23 @@ TEST(test66, findSmallestNum) {
 	EXPECT_EQ(23, findSmallestNum(arr7, 4));
 	EXPECT_EQ(100, findSmallestNum(arr8, 1));
 	EXPECT_EQ(0, findSmallestNum(arr9, 6));
+	EXPECT_TRUE(true);
+}
+TEST(test67, findLargestNum) {
+	int arr1[] = { 4, 5, 1, 3 };
+	int arr2[] = { 13, 27, 18, 26 };
+	int arr3[] = { 32, 35, 37, 39 };
+	int arr4[] = { 1000, 1001, 857, 1 };
+	int arr5[] = { 27364, 837363, 736736, 73635 };
+	int arr6[] = { 30, 2, 40, 3 };
+	int arr7[] = { 0, 1, 0, 0, -1 };
+
+	EXPECT_EQ(5, findLargestNum(arr1, 4));
+	EXPECT_EQ(27, findLargestNum(arr2, 4));
+	EXPECT_EQ(39, findLargestNum(arr3, 4));
+	EXPECT_EQ(1001, findLargestNum(arr4, 4));
+	EXPECT_EQ(837363, findLargestNum(arr5, 4));
+	EXPECT_EQ(40, findLargestNum(arr6, 4));
+	EXPECT_EQ(1, findLargestNum(arr7, 5));
 	EXPECT_TRUE(true);
 }

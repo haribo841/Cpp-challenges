@@ -3,10 +3,5 @@
 // Instead of returning the result of the division, the modulo operation returns the whole number remainder.
 #include "065 The Modulus Operator Function.h"
 int mod(int a, int b) {
-	if (b > a ) return a;
-	do
-	{
-		a -= b;
-	} while (a>b);
-	return a;
+	return a - (a / b) * b;
 }
