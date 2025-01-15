@@ -67,6 +67,7 @@
 #include "..\ConsoleApplication1\065 The Modulus Operator Function.cpp"
 #include "..\ConsoleApplication1\066 Smallest Number in an Array.cpp"
 #include "..\ConsoleApplication1\067 Largest Number in an Array.cpp"
+#include "..\ConsoleApplication1\068 First and Last Character of a String.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -782,5 +783,14 @@ TEST(test67, findLargestNum) {
 	EXPECT_EQ(837363, findLargestNum(arr5, 4));
 	EXPECT_EQ(40, findLargestNum(arr6, 4));
 	EXPECT_EQ(1, findLargestNum(arr7, 5));
+	EXPECT_TRUE(true);
+}
+TEST(test68, FirstLast) {
+	EXPECT_EQ("fa", FirstLast("forza"));
+	EXPECT_EQ("ki", FirstLast("kali"));
+	EXPECT_EQ("as", FirstLast("always"));
+	EXPECT_EQ("le", FirstLast("love"));
+	EXPECT_EQ("sl", FirstLast("supernatural"));
+	EXPECT_EQ("et", FirstLast("edabit"));
 	EXPECT_TRUE(true);
 }

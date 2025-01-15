@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "067 Largest Number in an Array.h"
+#include "068 First and Last Character of a String.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -57,10 +57,12 @@ const vector<int> testCasesI = {
 };*/
 //<string>
 const vector<string> testCasesS = {
-    "37",
-    "113",
-    "5",
-    "5231"
+    "forza",
+    "kali",
+    "always",
+    "love",
+    "supernatural",
+    "edabit"
 };
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
@@ -88,18 +90,19 @@ const vector<string> testCasesS = {
 };*/
 static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
-    int index = state.range(0);
+    //int index = state.range(0);
     // Retrieve the array and size for the current test case
-    int* array = testCases[index];
-    int size = sizes[index];
+    //int* array = testCases[index];
+    //int size = sizes[index];
+    const auto& testCase = testCasesS[state.range(0)];
     for (auto _ : state) {
         // Benchmark the function
-        int result = findLargestNum(array, size);
+        string result = FirstLast(testCase);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
