@@ -68,6 +68,7 @@
 #include "..\ConsoleApplication1\066 Smallest Number in an Array.cpp"
 #include "..\ConsoleApplication1\067 Largest Number in an Array.cpp"
 #include "..\ConsoleApplication1\068 First and Last Character of a String.cpp"
+#include "..\ConsoleApplication1\069 String Operation.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -792,5 +793,13 @@ TEST(test68, FirstLast) {
 	EXPECT_EQ("le", FirstLast("love"));
 	EXPECT_EQ("sl", FirstLast("supernatural"));
 	EXPECT_EQ("et", FirstLast("edabit"));
+	EXPECT_TRUE(true);
+}
+TEST(test69, calculate) {
+	EXPECT_EQ(-76, calculate(24, 100, '-'));
+	EXPECT_EQ(-50, calculate(-20, -30, '+'));
+	EXPECT_EQ(300, calculate(1500, 5, '/'));
+	EXPECT_EQ(114, calculate(38, 3, '*'));
+	EXPECT_EQ(4, calculate(49, 5, '%'));
 	EXPECT_TRUE(true);
 }

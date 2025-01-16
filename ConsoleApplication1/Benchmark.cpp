@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "068 First and Last Character of a String.h"
+#include "069 String Operation.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -12,7 +12,7 @@ int arr5[] = { 27364, 837363, 736736, 73635 };
 int arr6[] = { 30, 2, 40, 3 };
 int arr7[] = { 0, 1, 0, 0, -1 };
 
-int* testCases[] = { arr1, arr2, arr3, arr4, arr5, arr6, arr7 };
+int* testCasesA[] = { arr1, arr2, arr3, arr4, arr5, arr6, arr7 };
 int sizes[] = { 4, 4, 4, 4, 4, 4, 5 };
 //<int, int, int>
 /*const vector<tuple<int, int, int>> testCases = {
@@ -24,6 +24,14 @@ int sizes[] = { 4, 4, 4, 4, 4, 4, 5 };
     {15, 2, 7},
     {15, 2, 8}
 };*/
+//<int, int, char>
+const vector<tuple<int, int, char>> testCasesIIC = {
+{ 24, 100, '-' },
+{ -20, -30, '+' },
+{ 1500, 5, '/' },
+{ 38, 3, '*' },
+{ 49, 5, '%' }
+};
 //<int, int>
 const vector<pair<int, int>> testCasesPairInt = {
     {12, 12},
@@ -94,10 +102,11 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesS[state.range(0)];
+    const auto& testCase = testCasesIIC[state.range(0)];
+    const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        string result = FirstLast(testCase);
+        int result = calculate(a, b, c);//testCase);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
