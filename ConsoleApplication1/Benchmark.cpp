@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "069 String Operation.h"
+#include "070 Case Insensitive Comparison.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -48,6 +48,19 @@ const vector<pair<int, int>> testCasesPairInt = {
     {18, false},
     {3, false},
 };*/
+//<string, string>
+const vector<pair<string, string>> testCasesPairString = {
+    {"hello", "hELLo"},
+    {"hey", "hey"},
+    {"venom", "VENOM"},
+    {"maGIciAN", "magician"},
+    {"stupIFy", "stupifY"},
+    {"bald", "blad"},
+    {"motive", "emotive"},
+    {"mask", "mAskinG"},
+    {"skim", "skimp"},
+    {"EXCEl", "exceLs"}
+};
 const vector<int> testCasesI = {
 37,
 113,
@@ -102,11 +115,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesIIC[state.range(0)];
-    const auto& [a, b, c] = testCase;
+    const auto& testCase = testCasesPairString[state.range(0)];
+    const string a = testCase.first;
+    const string b = testCase.second;
+    //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        int result = calculate(a, b, c);//testCase);
+        bool result = match(a, b);// , c);//testCase);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }

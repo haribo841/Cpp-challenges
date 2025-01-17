@@ -69,6 +69,7 @@
 #include "..\ConsoleApplication1\067 Largest Number in an Array.cpp"
 #include "..\ConsoleApplication1\068 First and Last Character of a String.cpp"
 #include "..\ConsoleApplication1\069 String Operation.cpp"
+#include "..\ConsoleApplication1\070 Case Insensitive Comparison.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -801,5 +802,18 @@ TEST(test69, calculate) {
 	EXPECT_EQ(300, calculate(1500, 5, '/'));
 	EXPECT_EQ(114, calculate(38, 3, '*'));
 	EXPECT_EQ(4, calculate(49, 5, '%'));
+	EXPECT_TRUE(true);
+}
+TEST(test70, match) {
+	EXPECT_EQ(true, match("hello", "hELLo"));
+	EXPECT_EQ(true, match("hey", "hey"));
+	EXPECT_EQ(true, match("venom", "VENOM"));
+	EXPECT_EQ(true, match("maGIciAN", "magician"));
+	EXPECT_EQ(true, match("stupIFy", "stupifY"));
+	EXPECT_EQ(false, match("bald", "blad"));
+	EXPECT_EQ(false, match("motive", "emotive"));
+	EXPECT_EQ(false, match("mask", "mAskinG"));
+	EXPECT_EQ(false, match("skim", "skimp"));
+	EXPECT_EQ(false, match("EXCEl", "exceLs"));
 	EXPECT_TRUE(true);
 }
