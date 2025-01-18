@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "070 Case Insensitive Comparison.h"
+#include "071 Difference of Max and Min Numbers in Array.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -87,41 +87,23 @@ const vector<string> testCasesS = {
 };
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
-/*const vector<vector<int>> testCases = {
-    {-9, -8, 6, -9, 15, 6},
-    {-5, 6, 18, 4, 16, -2},
-    {-2, 20, -9, -9, -2, -7},
-    {4, -2, 11, -9, 15, 2},
-    {15, 10, 3, -6, 6, 19},
-    {1, 7, 18, -1, -2, 9},
-    {5, 1, -9, 7, -8, -10},
-    {-4, 17, -4, 20, -7, 0},
-    {-2, 11, 11, -3, -3, -3},
-    {1, 15, 14, 20, 10, 6},
-    {4, 17, 12, 2, 10, 2},
-    {-3, 3, 20, 10, 0, 17},
-    {-3, 6, 20, 9, 6, 7},
-    {16, 15, 1, 18, -7, -3},
-    {-7, 4, -4, -3, -8, -9},
-    {15, 8, 17, 18, 10, 10},
-    {-3, 20, 16, 8, 18, -10},
-    {6, 18, 9, 1, 3, 1},
-    {20, 18, -2, -10, -10, 17},
-    {18, 20, -7, -4, -2, -8}
-};*/
+const vector<vector<int>> testCasesVI = {
+    {10, 4, 1, 2, 8, 91},
+    {-70, 43, 34, 54, 22}
+};
 static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
     //int index = state.range(0);
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPairString[state.range(0)];
-    const string a = testCase.first;
-    const string b = testCase.second;
+    const auto& testCase = testCasesVI[state.range(0)];
+    //const string a = testCase.first;
+    //const string b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        bool result = match(a, b);// , c);//testCase);
+        bool result = differenceMaxMin(testCase);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }

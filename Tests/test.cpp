@@ -70,6 +70,7 @@
 #include "..\ConsoleApplication1\068 First and Last Character of a String.cpp"
 #include "..\ConsoleApplication1\069 String Operation.cpp"
 #include "..\ConsoleApplication1\070 Case Insensitive Comparison.cpp"
+#include "..\ConsoleApplication1\071 Difference of Max and Min Numbers in Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -815,5 +816,10 @@ TEST(test70, match) {
 	EXPECT_EQ(false, match("mask", "mAskinG"));
 	EXPECT_EQ(false, match("skim", "skimp"));
 	EXPECT_EQ(false, match("EXCEl", "exceLs"));
+	EXPECT_TRUE(true);
+}
+TEST(test71, findLargestNum) {
+	EXPECT_EQ(90, differenceMaxMin(std::vector<int>{ 10, 4, 1, 2, 8, 91 }));
+	EXPECT_EQ(124, differenceMaxMin(std::vector<int>{ -70, 43, 34, 54, 22 }));
 	EXPECT_TRUE(true);
 }
