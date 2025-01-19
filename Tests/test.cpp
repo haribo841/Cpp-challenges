@@ -71,6 +71,7 @@
 #include "..\ConsoleApplication1\069 String Operation.cpp"
 #include "..\ConsoleApplication1\070 Case Insensitive Comparison.cpp"
 #include "..\ConsoleApplication1\071 Difference of Max and Min Numbers in Array.cpp"
+#include "..\ConsoleApplication1\072 String Ending Matches.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -818,8 +819,21 @@ TEST(test70, match) {
 	EXPECT_EQ(false, match("EXCEl", "exceLs"));
 	EXPECT_TRUE(true);
 }
-TEST(test71, findLargestNum) {
+TEST(test71, differenceMaxMin) {
 	EXPECT_EQ(90, differenceMaxMin(std::vector<int>{ 10, 4, 1, 2, 8, 91 }));
 	EXPECT_EQ(124, differenceMaxMin(std::vector<int>{ -70, 43, 34, 54, 22 }));
+	EXPECT_TRUE(true);
+}
+TEST(test72, checkEnding) {
+	EXPECT_EQ(true, checkEnding("abc", "bc"));
+	EXPECT_EQ(false, checkEnding("abc", "d"));
+	EXPECT_EQ(false, checkEnding("samurai", "zi"));
+	EXPECT_EQ(true, checkEnding("feminine", "nine"));
+	EXPECT_EQ(false, checkEnding("convention", "tio"));
+	EXPECT_EQ(false, checkEnding("cooperative", "ooper"));
+	EXPECT_EQ(true, checkEnding("extraterrestrial", "xtraterrestrial"));
+	EXPECT_EQ(true, checkEnding("access", "ss"));
+	EXPECT_EQ(false, checkEnding("motorist", "is"));
+	EXPECT_EQ(true, checkEnding("landowner", "landowner"));
 	EXPECT_TRUE(true);
 }

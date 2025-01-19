@@ -3,16 +3,9 @@
 int differenceMaxMin(std::vector<int> arr) {
 	int largest = arr[0];
 	int smallest = largest;
-	for (int i = 0; i < arr.size(); i++)
-	{
-		if (arr[i] > largest)
-		{
-			largest = arr[i];
-		}
-		else if (arr[i] < smallest)
-		{
-			smallest = arr[i];
-		}
+	for (int element : arr) {
+		if (element > largest) largest = element;
+		else if (element < smallest) smallest = element;
 	}
 	return largest - smallest;
 }

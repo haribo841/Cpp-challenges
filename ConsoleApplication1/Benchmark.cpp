@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "071 Difference of Max and Min Numbers in Array.h"
+#include "072 String Ending Matches.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -50,16 +50,16 @@ const vector<pair<int, int>> testCasesPairInt = {
 };*/
 //<string, string>
 const vector<pair<string, string>> testCasesPairString = {
-    {"hello", "hELLo"},
-    {"hey", "hey"},
-    {"venom", "VENOM"},
-    {"maGIciAN", "magician"},
-    {"stupIFy", "stupifY"},
-    {"bald", "blad"},
-    {"motive", "emotive"},
-    {"mask", "mAskinG"},
-    {"skim", "skimp"},
-    {"EXCEl", "exceLs"}
+    {"abc", "bc"},
+    {"abc", "d"},
+    {"samurai", "zi"},
+    {"feminine", "nine"},
+    {"convention", "tio"},
+    {"cooperative", "ooper"},
+    {"extraterrestrial", "xtraterrestrial"},
+    {"access", "ss"},
+    {"motorist", "is"},
+    {"landowner", "landowner"}
 };
 const vector<int> testCasesI = {
 37,
@@ -97,13 +97,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesVI[state.range(0)];
-    //const string a = testCase.first;
-    //const string b = testCase.second;
+    const auto& testCase = testCasesPairString[state.range(0)];
+    const string a = testCase.first;
+    const string b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        bool result = differenceMaxMin(testCase);
+        bool result = checkEnding(a, b);// testCase);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
