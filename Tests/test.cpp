@@ -72,6 +72,7 @@
 #include "..\ConsoleApplication1\070 Case Insensitive Comparison.cpp"
 #include "..\ConsoleApplication1\071 Difference of Max and Min Numbers in Array.cpp"
 #include "..\ConsoleApplication1\072 String Ending Matches.cpp"
+#include "..\ConsoleApplication1\073 Find the Index 1.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -835,5 +836,13 @@ TEST(test72, checkEnding) {
 	EXPECT_EQ(true, checkEnding("access", "ss"));
 	EXPECT_EQ(false, checkEnding("motorist", "is"));
 	EXPECT_EQ(true, checkEnding("landowner", "landowner"));
+	EXPECT_TRUE(true);
+}
+TEST(test73, search) {
+	EXPECT_EQ(1, search(std::vector<int>{ 1, 5, 3 }, 5));
+	EXPECT_EQ(2, search(std::vector<int>{ 9, 8, 3 }, 3));
+	EXPECT_EQ(-1, search(std::vector<int>{ 1, 2, 3 }, 4));
+	EXPECT_EQ(5, search(std::vector<int>{ 1, 5, 3, 10, 17, 20, -6 }, 20));
+	EXPECT_EQ(0, search(std::vector<int>{ 1, 1, 1 }, 1));
 	EXPECT_TRUE(true);
 }

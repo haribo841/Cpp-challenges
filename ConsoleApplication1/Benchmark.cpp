@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "072 String Ending Matches.h"
+#include "073 Find the Index 1.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -48,6 +48,14 @@ const vector<pair<int, int>> testCasesPairInt = {
     {18, false},
     {3, false},
 };*/
+//<vector<int>, int>>
+const vector<pair<vector<int>, int>> testCasesPVII = {
+    {{1, 5, 3}, 5},
+    {{9, 8, 3}, 3},
+    {{1, 2, 3}, 4},
+    {{1, 5, 3, 10, 17, 20, -6}, 20},
+    {{1, 1, 1}, 1}
+};
 //<string, string>
 const vector<pair<string, string>> testCasesPairString = {
     {"abc", "bc"},
@@ -97,13 +105,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPairString[state.range(0)];
-    const string a = testCase.first;
-    const string b = testCase.second;
+    const auto& testCase = testCasesPVII[state.range(0)];
+    const vector<int> a = testCase.first;
+    const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        bool result = checkEnding(a, b);// testCase);
+        bool result = search(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
