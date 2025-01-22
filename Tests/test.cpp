@@ -73,6 +73,7 @@
 #include "..\ConsoleApplication1\071 Difference of Max and Min Numbers in Array.cpp"
 #include "..\ConsoleApplication1\072 String Ending Matches.cpp"
 #include "..\ConsoleApplication1\073 Find the Index 1.cpp"
+#include "..\ConsoleApplication1\074 Amazing Edabit.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -844,5 +845,28 @@ TEST(test73, search) {
 	EXPECT_EQ(-1, search(std::vector<int>{ 1, 2, 3 }, 4));
 	EXPECT_EQ(5, search(std::vector<int>{ 1, 5, 3, 10, 17, 20, -6 }, 20));
 	EXPECT_EQ(0, search(std::vector<int>{ 1, 1, 1 }, 1));
+	EXPECT_TRUE(true);
+}
+TEST(test74, amazingEdabit) {
+	EXPECT_EQ("edabit is amazing.", amazingEdabit("edabit is amazing."));
+	EXPECT_EQ("Mubashir is not amazing.", amazingEdabit("Mubashir is amazing."));
+	EXPECT_EQ("Trump is not amazing.", amazingEdabit("Trump is amazing."));
+	EXPECT_EQ("Infinity is not amazing.", amazingEdabit("Infinity is amazing."));
+	EXPECT_EQ("Mubashir and edabit are amazing.", amazingEdabit("Mubashir and edabit are amazing."));
+	EXPECT_EQ("Matt is not amazing.", amazingEdabit("Matt is amazing."));
+	EXPECT_EQ("Helen is not amazing.", amazingEdabit("Helen is amazing."));
+	EXPECT_EQ("Python and edabit are amazing.", amazingEdabit("Python and edabit are amazing."));
+	EXPECT_EQ("C++ is not amazing.", amazingEdabit("C++ is amazing."));
+	EXPECT_EQ("javascript is not amazing.", amazingEdabit("javascript is amazing."));
+	EXPECT_EQ("java is not amazing.", amazingEdabit("java is amazing."));
+	EXPECT_EQ("ruby is not amazing.", amazingEdabit("ruby is amazing."));
+	EXPECT_EQ("SQL is not amazing.", amazingEdabit("SQL is amazing."));
+	EXPECT_EQ("CSS is not amazing.", amazingEdabit("CSS is amazing."));
+	EXPECT_EQ("Pakistan is amazing. edabit", amazingEdabit("Pakistan is amazing. edabit"));
+	EXPECT_EQ("You and edabit are amazing.", amazingEdabit("You and edabit are amazing."));
+	EXPECT_EQ("Matt and edabit are amazing.", amazingEdabit("Matt and edabit are amazing."));
+	EXPECT_EQ("Helen and edabit are amazing.", amazingEdabit("Helen and edabit are amazing."));
+	EXPECT_EQ("Everyone is not amazing.", amazingEdabit("Everyone is amazing."));
+	EXPECT_EQ("Swift and edabit are amazing.", amazingEdabit("Swift and edabit are amazing."));
 	EXPECT_TRUE(true);
 }

@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "073 Find the Index 1.h"
+#include "074 Amazing Edabit.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -86,12 +86,26 @@ const vector<int> testCasesI = {
 };*/
 //<string>
 const vector<string> testCasesS = {
-    "forza",
-    "kali",
-    "always",
-    "love",
-    "supernatural",
-    "edabit"
+    "edabit is amazing.",
+    "Mubashir is amazing.",
+    "Trump is amazing.",
+    "Infinity is amazing.",
+    "Mubashir and edabit are amazing.",
+    "Matt is amazing.",
+    "Helen is amazing.",
+    "Python and edabit are amazing.",
+    "C++ is amazing.",
+    "javascript is amazing.",
+    "java is amazing.",
+    "ruby is amazing.",
+    "SQL is amazing.",
+    "CSS is amazing.",
+    "Pakistan is amazing. edabit",
+    "You and edabit are amazing.",
+    "Matt and edabit are amazing.",
+    "Helen and edabit are amazing.",
+    "Everyone is amazing.",
+    "Swift and edabit are amazing."
 };
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
@@ -105,13 +119,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPVII[state.range(0)];
-    const vector<int> a = testCase.first;
-    const int b = testCase.second;
+    const auto& testCase = testCasesS[state.range(0)];
+    //const vector<int> a = testCase.first;
+    //const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        bool result = search(a, b);
+        string result = amazingEdabit(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
