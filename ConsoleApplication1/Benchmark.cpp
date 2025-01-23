@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "074 Amazing Edabit.h"
+#include "075 OnOff Switches.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -70,10 +70,17 @@ const vector<pair<string, string>> testCasesPairString = {
     {"landowner", "landowner"}
 };
 const vector<int> testCasesI = {
-37,
-113,
-5,
-5231
+    5,
+    4,
+    3,
+    2,
+    1,
+    6,
+    7,
+    8,
+    9,
+    10,
+    25
 };
 //<char>
 /*const vector<char> testCases = {
@@ -119,13 +126,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesS[state.range(0)];
+    const auto& testCase = testCasesI[state.range(0)];
     //const vector<int> a = testCase.first;
     //const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        string result = amazingEdabit(testCase);// a, b);
+        int result = posCom(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
