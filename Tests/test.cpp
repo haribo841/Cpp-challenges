@@ -75,6 +75,7 @@
 #include "..\ConsoleApplication1\073 Find the Index 1.cpp"
 #include "..\ConsoleApplication1\074 Amazing Edabit.cpp"
 #include "..\ConsoleApplication1\075 OnOff Switches.cpp"
+#include "..\ConsoleApplication1\076 Word Endings.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -871,7 +872,7 @@ TEST(test74, amazingEdabit) {
 	EXPECT_EQ("Swift and edabit are amazing.", amazingEdabit("Swift and edabit are amazing."));
 	EXPECT_TRUE(true);
 }
-TEST(test754, posCom) {
+TEST(test75, posCom) {
 	EXPECT_EQ(32, posCom(5));
 	EXPECT_EQ(16, posCom(4));
 	EXPECT_EQ(8, posCom(3));
@@ -883,5 +884,13 @@ TEST(test754, posCom) {
 	EXPECT_EQ(512, posCom(9));
 	EXPECT_EQ(1024, posCom(10));
 	EXPECT_EQ(33554432, posCom(25));
+	EXPECT_TRUE(true);
+}
+TEST(test76, addEnding) {
+	EXPECT_EQ(std::vector<std::string>({ "cleverly", "meekly", "hurriedly", "nicely" }), addEnding({ "clever", "meek", "hurried", "nice" }, "ly"));
+	EXPECT_EQ(std::vector<std::string>({ "newer", "panderer", "scooper" }), addEnding({ "new", "pander", "scoop" }, "er"));
+	EXPECT_EQ(std::vector<std::string>({ "bending", "sharpening", "meaning" }), addEnding({ "bend", "sharpen", "mean" }, "ing"));
+	EXPECT_EQ(std::vector<std::string>({ "bendy", "toothy", "minty" }), addEnding({ "bend", "tooth", "mint" }, "y"));
+	EXPECT_EQ(std::vector<std::string>({ "bendier", "toothier", "mintier" }), addEnding({ "bend", "tooth", "mint" }, "ier"));
 	EXPECT_TRUE(true);
 }

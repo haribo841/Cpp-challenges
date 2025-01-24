@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "075 OnOff Switches.h"
+#include "076 Word Endings.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -55,6 +55,14 @@ const vector<pair<vector<int>, int>> testCasesPVII = {
     {{1, 2, 3}, 4},
     {{1, 5, 3, 10, 17, 20, -6}, 20},
     {{1, 1, 1}, 1}
+};
+//<vector<string>, string>>
+const vector<pair<vector<string>, string>> testCasesPVSS = {
+    {{"clever", "meek", "hurried", "nice"}, "ly"},
+    {{"new", "pander", "scoop"}, "er"},
+    {{"bend", "sharpen", "mean"}, "ing"},
+    {{"bend", "tooth", "mint"}, "y"},
+    {{"bend", "tooth", "mint"}, "ier"}
 };
 //<string, string>
 const vector<pair<string, string>> testCasesPairString = {
@@ -126,13 +134,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesI[state.range(0)];
-    //const vector<int> a = testCase.first;
-    //const int b = testCase.second;
+    const auto& testCase = testCasesPVSS[state.range(0)];
+    const vector<string> a = testCase.first;
+    const string b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        int result = posCom(testCase);// a, b);
+        vector<string> result = addEnding(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
