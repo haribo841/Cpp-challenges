@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "076 Word Endings.h"
+#include "077 Find Digit Amount.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -78,17 +78,12 @@ const vector<pair<string, string>> testCasesPairString = {
     {"landowner", "landowner"}
 };
 const vector<int> testCasesI = {
-    5,
-    4,
-    3,
-    2,
     1,
-    6,
-    7,
-    8,
-    9,
-    10,
-    25
+    67,
+    123,
+    55551,
+    96456431,
+    0
 };
 //<char>
 /*const vector<char> testCases = {
@@ -134,13 +129,13 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPVSS[state.range(0)];
-    const vector<string> a = testCase.first;
-    const string b = testCase.second;
+    const auto& testCase = testCasesI[state.range(0)];
+    //const vector<string> a = testCase.first;
+    //const string b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        vector<string> result = addEnding(a, b);
+        auto result = findDigitAmount(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }

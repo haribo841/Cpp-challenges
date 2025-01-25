@@ -76,6 +76,7 @@
 #include "..\ConsoleApplication1\074 Amazing Edabit.cpp"
 #include "..\ConsoleApplication1\075 OnOff Switches.cpp"
 #include "..\ConsoleApplication1\076 Word Endings.cpp"
+#include "..\ConsoleApplication1\077 Find Digit Amount.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -892,5 +893,14 @@ TEST(test76, addEnding) {
 	EXPECT_EQ(std::vector<std::string>({ "bending", "sharpening", "meaning" }), addEnding({ "bend", "sharpen", "mean" }, "ing"));
 	EXPECT_EQ(std::vector<std::string>({ "bendy", "toothy", "minty" }), addEnding({ "bend", "tooth", "mint" }, "y"));
 	EXPECT_EQ(std::vector<std::string>({ "bendier", "toothier", "mintier" }), addEnding({ "bend", "tooth", "mint" }, "ier"));
+	EXPECT_TRUE(true);
+}
+TEST(test77, findDigitAmount) {
+	EXPECT_EQ(1, findDigitAmount(1));
+	EXPECT_EQ(2, findDigitAmount(67));
+	EXPECT_EQ(3, findDigitAmount(123));
+	EXPECT_EQ(5, findDigitAmount(55551));
+	EXPECT_EQ(8, findDigitAmount(96456431));
+	EXPECT_EQ(1, findDigitAmount(0));
 	EXPECT_TRUE(true);
 }
