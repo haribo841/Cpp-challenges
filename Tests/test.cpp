@@ -77,6 +77,7 @@
 #include "..\ConsoleApplication1\075 OnOff Switches.cpp"
 #include "..\ConsoleApplication1\076 Word Endings.cpp"
 #include "..\ConsoleApplication1\077 Find Digit Amount.cpp"
+#include "..\ConsoleApplication1\078 Missing Third Angle.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -902,5 +903,14 @@ TEST(test77, findDigitAmount) {
 	EXPECT_EQ(5, findDigitAmount(55551));
 	EXPECT_EQ(8, findDigitAmount(96456431));
 	EXPECT_EQ(1, findDigitAmount(0));
+	EXPECT_TRUE(true);
+}
+TEST(test78, missingAngle) {
+	EXPECT_EQ("obtuse", missingAngle(27, 59));
+	EXPECT_EQ("acute", missingAngle(135, 11));
+	EXPECT_EQ("right", missingAngle(45, 45));
+	EXPECT_EQ("obtuse", missingAngle(45, 15));
+	EXPECT_EQ("acute", missingAngle(31, 100));
+	EXPECT_EQ("right", missingAngle(35, 55));
 	EXPECT_TRUE(true);
 }

@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "077 Find Digit Amount.h"
+#include "078 Missing Third Angle.cpp"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -34,11 +34,12 @@ const vector<tuple<int, int, char>> testCasesIIC = {
 };
 //<int, int>
 const vector<pair<int, int>> testCasesPairInt = {
-    {12, 12},
-    {100, 76},
-    {6, 4},
-    {528, 22},
-    {10, 12}
+    {27, 59},
+    {135, 11},
+    {45, 45},
+    {45, 15},
+    {31, 100},
+    {35, 55}
 };
 //<int, bool>
 /*const vector<pair<int, bool>> testCases = {
@@ -129,18 +130,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesI[state.range(0)];
-    //const vector<string> a = testCase.first;
-    //const string b = testCase.second;
+    const auto& testCase = testCasesPairInt[state.range(0)];
+    const auto a = testCase.first;
+    const auto b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = findDigitAmount(testCase);// a, b);
+        auto result = missingAngle(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
