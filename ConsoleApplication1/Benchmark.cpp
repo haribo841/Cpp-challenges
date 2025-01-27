@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "078 Missing Third Angle.cpp"
+#include "079 Array Containing a Given Number.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -51,11 +51,12 @@ const vector<pair<int, int>> testCasesPairInt = {
 };*/
 //<vector<int>, int>>
 const vector<pair<vector<int>, int>> testCasesPVII = {
-    {{1, 5, 3}, 5},
-    {{9, 8, 3}, 3},
-    {{1, 2, 3}, 4},
-    {{1, 5, 3, 10, 17, 20, -6}, 20},
-    {{1, 1, 1}, 1}
+    {{1, 2, 3, 4, 5}, 3},
+    {{1, 1, 2, 1, 1}, 3},
+    {{1, 1, 2, 1, 5, 4, 7}, 7},
+    {{1, 1, 2, 1, 5, 4, 7}, 8},
+    {{5, 5, 5, 6}, 5},
+    {{}, 5}
 };
 //<vector<string>, string>>
 const vector<pair<vector<string>, string>> testCasesPVSS = {
@@ -130,18 +131,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPairInt[state.range(0)];
-    const auto a = testCase.first;
-    const auto b = testCase.second;
+    const auto& testCase = testCasesPVII[state.range(0)];
+    const vector<int> a = testCase.first;
+    const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = missingAngle(a, b);
+        auto result = check(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesPVII.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

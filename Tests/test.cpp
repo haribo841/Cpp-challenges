@@ -78,6 +78,7 @@
 #include "..\ConsoleApplication1\076 Word Endings.cpp"
 #include "..\ConsoleApplication1\077 Find Digit Amount.cpp"
 #include "..\ConsoleApplication1\078 Missing Third Angle.cpp"
+#include "..\ConsoleApplication1\079 Array Containing a Given Number.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -912,5 +913,14 @@ TEST(test78, missingAngle) {
 	EXPECT_EQ("obtuse", missingAngle(45, 15));
 	EXPECT_EQ("acute", missingAngle(31, 100));
 	EXPECT_EQ("right", missingAngle(35, 55));
+	EXPECT_TRUE(true);
+}
+TEST(test79, check) {
+	EXPECT_EQ(true, check({ 1, 2, 3, 4, 5 }, 3));
+	EXPECT_EQ(false, check({ 1, 1, 2, 1, 1 }, 3));
+	EXPECT_EQ(true, check({ 1, 1, 2, 1, 5, 4, 7 }, 7));
+	EXPECT_EQ(false, check({ 1, 1, 2, 1, 5, 4, 7 }, 8));
+	EXPECT_EQ(true, check({ 5, 5, 5, 6 }, 5));
+	EXPECT_EQ(false, check({}, 5));
 	EXPECT_TRUE(true);
 }

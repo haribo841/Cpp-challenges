@@ -1,5 +1,6 @@
 #pragma once
-#ifndef Program077
-#define Program077
-int findDigitAmount(int num);
-#endif Program077
+#include <string>
+#ifndef Program078
+#define Program078
+std::string missingAngle(int angle1, int angle2);
+#endif Program078
