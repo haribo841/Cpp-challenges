@@ -79,6 +79,7 @@
 #include "..\ConsoleApplication1\077 Find Digit Amount.cpp"
 #include "..\ConsoleApplication1\078 Missing Third Angle.cpp"
 #include "..\ConsoleApplication1\079 Array Containing a Given Number.cpp"
+#include "..\ConsoleApplication1\080 Sum of Resistance in Series Circuits.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -922,5 +923,17 @@ TEST(test79, check) {
 	EXPECT_EQ(false, check({ 1, 1, 2, 1, 5, 4, 7 }, 8));
 	EXPECT_EQ(true, check({ 5, 5, 5, 6 }, 5));
 	EXPECT_EQ(false, check({}, 5));
+	EXPECT_TRUE(true);
+}
+TEST(test80, seriesResistance) {
+	EXPECT_EQ("15 ohms", seriesResistance(std::vector<double>{1, 5, 6, 3}));
+	EXPECT_EQ("0.9 ohm", seriesResistance(std::vector<double>{0.2, 0.3, 0.4}));
+	EXPECT_EQ("33 ohms", seriesResistance(std::vector<double>{10, 12, 1, 10}));
+	EXPECT_EQ("56.8 ohms", seriesResistance(std::vector<double>{10, 13, 3.8, 20, 10}));
+	EXPECT_EQ("1 ohm", seriesResistance(std::vector<double>{0.5, 0.5}));
+	EXPECT_EQ("72.8 ohms", seriesResistance(std::vector<double>{16, 30, 22.8, 4}));
+	EXPECT_EQ("69.5 ohms", seriesResistance(std::vector<double>{20, 15, 32.5, 2}));
+	EXPECT_EQ("124 ohms", seriesResistance(std::vector<double>{52, 22, 20, 30}));
+	EXPECT_EQ("140.9 ohms", seriesResistance(std::vector<double>{10, 12, 32, 4.9, 5, 6, 71}));
 	EXPECT_TRUE(true);
 }

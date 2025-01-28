@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "079 Array Containing a Given Number.h"
+#include "080 Sum of Resistance in Series Circuits.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -125,24 +125,35 @@ const vector<vector<int>> testCasesVI = {
     {10, 4, 1, 2, 8, 91},
     {-70, 43, 34, 54, 22}
 };
+const vector<vector<double>> testCasesVD = {
+    {1, 5, 6, 3},
+    {0.2, 0.3, 0.4},
+    {10, 12, 1, 10},
+    {10, 13, 3.8, 20, 10},
+    {0.5, 0.5},
+    {16, 30, 22.8, 4},
+    {20, 15, 32.5, 2},
+    {52, 22, 20, 30},
+    {10, 12, 32, 4.9, 5, 6, 71}
+};
 static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
     //int index = state.range(0);
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPVII[state.range(0)];
-    const vector<int> a = testCase.first;
-    const int b = testCase.second;
+    const auto& testCase = testCasesVD[state.range(0)];
+    //const vector<int> a = testCase.first;
+    //const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = check(a, b);
+        auto result = seriesResistance(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesPVII.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesVD.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
