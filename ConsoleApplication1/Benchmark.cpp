@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "080 Sum of Resistance in Series Circuits.h"
+#include "081 Reverse an Array.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -122,8 +122,12 @@ const vector<string> testCasesS = {
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
 const vector<vector<int>> testCasesVI = {
-    {10, 4, 1, 2, 8, 91},
-    {-70, 43, 34, 54, 22}
+    {1, 2, 3, 4},
+    {5, 6, 7},
+    {9, 9, 2, 3, 4},
+    {3, 3},
+    {-1, -1, -1},
+    {}
 };
 const vector<vector<double>> testCasesVD = {
     {1, 5, 6, 3},
@@ -142,18 +146,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesVD[state.range(0)];
+    const auto& testCase = testCasesVI[state.range(0)];
     //const vector<int> a = testCase.first;
     //const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = seriesResistance(testCase);// a, b);
+        auto result = reverse(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesVD.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesVI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

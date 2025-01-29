@@ -80,6 +80,7 @@
 #include "..\ConsoleApplication1\078 Missing Third Angle.cpp"
 #include "..\ConsoleApplication1\079 Array Containing a Given Number.cpp"
 #include "..\ConsoleApplication1\080 Sum of Resistance in Series Circuits.cpp"
+#include "..\ConsoleApplication1\081 Reverse an Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -935,5 +936,14 @@ TEST(test80, seriesResistance) {
 	EXPECT_EQ("69.5 ohms", seriesResistance(std::vector<double>{20, 15, 32.5, 2}));
 	EXPECT_EQ("124 ohms", seriesResistance(std::vector<double>{52, 22, 20, 30}));
 	EXPECT_EQ("140.9 ohms", seriesResistance(std::vector<double>{10, 12, 32, 4.9, 5, 6, 71}));
+	EXPECT_TRUE(true);
+}
+TEST(test81, reverse) {
+	EXPECT_EQ(std::vector<int>({ 4, 3, 2, 1 }), reverse(std::vector<int>{ 1, 2, 3, 4 }));
+	EXPECT_EQ(std::vector<int>({ 7, 6, 5 }), reverse(std::vector<int>{ 5, 6, 7 }));
+	EXPECT_EQ(std::vector<int>({ 4, 3, 2, 9, 9 }), reverse(std::vector<int>{ 9, 9, 2, 3, 4 }));
+	EXPECT_EQ(std::vector<int>({ 3, 3 }), reverse(std::vector<int>{ 3, 3 }));
+	EXPECT_EQ(std::vector<int>({ -1, -1, -1 }), reverse(std::vector<int>{ -1, -1, -1 }));
+	EXPECT_EQ(std::vector<int>({}), reverse(std::vector<int>{}));
 	EXPECT_TRUE(true);
 }
