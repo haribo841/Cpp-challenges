@@ -81,6 +81,7 @@
 #include "..\ConsoleApplication1\079 Array Containing a Given Number.cpp"
 #include "..\ConsoleApplication1\080 Sum of Resistance in Series Circuits.cpp"
 #include "..\ConsoleApplication1\081 Reverse an Array.cpp"
+#include "..\ConsoleApplication1\082 First and Last Elements in an Array.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -945,5 +946,54 @@ TEST(test81, reverse) {
 	EXPECT_EQ(std::vector<int>({ 3, 3 }), reverse(std::vector<int>{ 3, 3 }));
 	EXPECT_EQ(std::vector<int>({ -1, -1, -1 }), reverse(std::vector<int>{ -1, -1, -1 }));
 	EXPECT_EQ(std::vector<int>({}), reverse(std::vector<int>{}));
+	EXPECT_TRUE(true);
+}
+// Helper function to compare vectors containing std::any
+bool AnyVectorEqual(const std::vector<std::any>& a, const std::vector<std::any>& b) {
+	if (a.size() != b.size()) return false;
+
+	for (size_t i = 0; i < a.size(); ++i) {
+		if (!a[i].has_value() || !b[i].has_value()) {
+			if (!a[i].has_value() && !b[i].has_value()) continue; // Both are empty `std::any`
+			return false; // One is empty, one is not
+		}
+
+		if (a[i].type() != b[i].type()) {
+			if ((a[i].type() == typeid(const char*) && b[i].type() == typeid(std::string)) ||
+				(a[i].type() == typeid(std::string) && b[i].type() == typeid(const char*))) {
+				if (std::string(std::any_cast<const char*>(a[i])) != std::any_cast<std::string>(b[i])) return false;
+				continue;
+			}
+			return false;
+		}
+
+		if (a[i].type() == typeid(int)) {
+			if (std::any_cast<int>(a[i]) != std::any_cast<int>(b[i])) return false;
+		}
+		else if (a[i].type() == typeid(std::string)) {
+			if (std::any_cast<std::string>(a[i]) != std::any_cast<std::string>(b[i])) return false;
+		}
+		else if (a[i].type() == typeid(const char*)) {
+			if (std::string(std::any_cast<const char*>(a[i])) != std::string(std::any_cast<const char*>(b[i]))) return false;
+		}
+		else if (a[i].type() == typeid(bool)) {
+			if (std::any_cast<bool>(a[i]) != std::any_cast<bool>(b[i])) return false;
+		}
+		else {
+			return false; // Unsupported type
+		}
+	}
+	return true;
+}
+
+TEST(test82, FirstLast) {
+	
+	EXPECT_TRUE(AnyVectorEqual({ std::any(5), std::any(25) }, FirstLast(std::vector<std::any>{ 5, 10, 15, 20, 25 })));
+	EXPECT_TRUE(AnyVectorEqual({ "edabit", true }, FirstLast({ "edabit", 13, std::any{}, false, true })));
+	EXPECT_TRUE(AnyVectorEqual({ "", std::any{} }, FirstLast({ "", 4, "6", "hello", std::any{} })));
+	EXPECT_TRUE(AnyVectorEqual({ "hello", "com" }, FirstLast({ "hello", "edabit", "dot", "com" })));
+	EXPECT_TRUE(AnyVectorEqual({ std::any(3), std::any(1) }, FirstLast(std::vector<std::any>{ 3, 2, 1 })));
+	EXPECT_TRUE(AnyVectorEqual({ std::any(std::string("one")), std::any(std::string("two")) }, FirstLast(std::vector<std::any>{ "one", "two" })));
+	EXPECT_TRUE(AnyVectorEqual({ std::any(false), std::any(false) }, FirstLast(std::vector<std::any>{ false, false, true, false, false, true, false })));
 	EXPECT_TRUE(true);
 }
