@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "082 First and Last Elements in an Array.h"
+#include "083 No Conditionals.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -81,10 +81,6 @@ const vector<pair<string, string>> testCasesPairString = {
 };
 const vector<int> testCasesI = {
     1,
-    67,
-    123,
-    55551,
-    96456431,
     0
 };
 //<char>
@@ -121,16 +117,6 @@ const vector<string> testCasesS = {
 };
 //<double>
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
-//<vector<any>
-const vector<vector<std::any>> testCasesAny = {
-    std::vector<std::any>{5, 10, 15, 20, 25},
-    std::vector<std::any>{"edabit", 13, std::any{}, false, true},
-    std::vector<std::any>{"", 4, "6", "hello", std::any{}},
-    std::vector<std::any>{"hello", "edabit", "dot", "com"},
-    std::vector<std::any>{3, 2, 1},
-    std::vector<std::any>{"one", "two"},
-    std::vector<std::any>{false, false, true, false, false, true, false}
-};
 //<vector<int>
 const vector<vector<int>> testCasesVI = {
     {1, 2, 3, 4},
@@ -151,34 +137,24 @@ const vector<vector<double>> testCasesVD = {
     {52, 22, 20, 30},
     {10, 12, 32, 4.9, 5, 6, 71}
 };
-#include <vector>
-#include <any>
-
-// Convert int arrays to vectors of std::any
-std::vector<std::any> convertToAnyVector(int* arr, int size) {
-    std::vector<std::any> vec;
-    for (int i = 0; i < size; ++i) {
-        vec.push_back(arr[i]);
-    }
-    return vec;
-}
-
 static void BM(benchmark::State& state) {
-    size_t index = static_cast<size_t>(state.range(0));
-
-    assert(index < testCasesAny.size());
-
-    // Convert the test case to a vector of std::any
-    std::vector<std::any> testCase = convertToAnyVector(testCasesA[index], sizes[index]);
-
+    // Get the test case index from the benchmark range
+    //int index = state.range(0);
+    // Retrieve the array and size for the current test case
+    //int* array = testCases[index];
+    //int size = sizes[index];
+    const auto& testCase = testCasesI[state.range(0)];
+    //const vector<int> a = testCase.first;
+    //const int b = testCase.second;
+    //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
-        auto result = FirstLast(testCase);
-        benchmark::DoNotOptimize(result);
+        // Benchmark the function
+        auto result = flip(testCase);// a, b);
+        benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, 6);
-
+BENCHMARK(BM)->DenseRange(0, testCasesI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

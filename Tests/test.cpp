@@ -82,6 +82,7 @@
 #include "..\ConsoleApplication1\080 Sum of Resistance in Series Circuits.cpp"
 #include "..\ConsoleApplication1\081 Reverse an Array.cpp"
 #include "..\ConsoleApplication1\082 First and Last Elements in an Array.cpp"
+#include "..\ConsoleApplication1\083 No Conditionals.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -985,7 +986,6 @@ bool AnyVectorEqual(const std::vector<std::any>& a, const std::vector<std::any>&
 	}
 	return true;
 }
-
 TEST(test82, FirstLast) {
 	
 	EXPECT_TRUE(AnyVectorEqual({ std::any(5), std::any(25) }, FirstLast(std::vector<std::any>{ 5, 10, 15, 20, 25 })));
@@ -995,5 +995,10 @@ TEST(test82, FirstLast) {
 	EXPECT_TRUE(AnyVectorEqual({ std::any(3), std::any(1) }, FirstLast(std::vector<std::any>{ 3, 2, 1 })));
 	EXPECT_TRUE(AnyVectorEqual({ std::any(std::string("one")), std::any(std::string("two")) }, FirstLast(std::vector<std::any>{ "one", "two" })));
 	EXPECT_TRUE(AnyVectorEqual({ std::any(false), std::any(false) }, FirstLast(std::vector<std::any>{ false, false, true, false, false, true, false })));
+	EXPECT_TRUE(true);
+}
+TEST(test83, flip) {
+	EXPECT_EQ(1, flip(0));
+	EXPECT_EQ(0, flip(1));
 	EXPECT_TRUE(true);
 }
