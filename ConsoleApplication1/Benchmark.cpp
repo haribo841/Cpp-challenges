@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "083 No Conditionals.h"
+#include "084 Triangular number.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -80,8 +80,8 @@ const vector<pair<string, string>> testCasesPairString = {
     {"landowner", "landowner"}
 };
 const vector<int> testCasesI = {
-    1,
-    0
+    4, 13, 600, 392, 53, 897, 23, 1000, 738, 100,
+    925, 1, 999, 175, 111
 };
 //<char>
 /*const vector<char> testCases = {
@@ -149,7 +149,7 @@ static void BM(benchmark::State& state) {
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = flip(testCase);// a, b);
+        auto result = addUp(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }

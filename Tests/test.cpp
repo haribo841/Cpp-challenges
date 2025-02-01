@@ -83,6 +83,7 @@
 #include "..\ConsoleApplication1\081 Reverse an Array.cpp"
 #include "..\ConsoleApplication1\082 First and Last Elements in an Array.cpp"
 #include "..\ConsoleApplication1\083 No Conditionals.cpp"
+#include "..\ConsoleApplication1\084 Triangular number.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1000,5 +1001,23 @@ TEST(test82, FirstLast) {
 TEST(test83, flip) {
 	EXPECT_EQ(1, flip(0));
 	EXPECT_EQ(0, flip(1));
+	EXPECT_TRUE(true);
+}
+TEST(test84, addUp) {
+	EXPECT_EQ(10, addUp(4));
+	EXPECT_EQ(91, addUp(13));
+	EXPECT_EQ(180300, addUp(600));
+	EXPECT_EQ(77028, addUp(392));
+	EXPECT_EQ(1431, addUp(53));
+	EXPECT_EQ(402753, addUp(897));
+	EXPECT_EQ(276, addUp(23));
+	EXPECT_EQ(500500, addUp(1000));
+	EXPECT_EQ(272691, addUp(738));
+	EXPECT_EQ(5050, addUp(100));
+	EXPECT_EQ(428275, addUp(925));
+	EXPECT_EQ(1, addUp(1));
+	EXPECT_EQ(499500, addUp(999));
+	EXPECT_EQ(15400, addUp(175));
+	EXPECT_EQ(6216, addUp(111));
 	EXPECT_TRUE(true);
 }
