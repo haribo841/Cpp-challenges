@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "084 Triangular number.h"
+#include "085 Sum of Cubes.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -119,11 +119,14 @@ const vector<string> testCasesS = {
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
 //<vector<int>
 const vector<vector<int>> testCasesVI = {
-    {1, 2, 3, 4},
-    {5, 6, 7},
-    {9, 9, 2, 3, 4},
-    {3, 3},
-    {-1, -1, -1},
+    {1, 5, 9},
+    {3, 4, 5},
+    {1, 1, 1},
+    {2},
+    {5, 1, 2},
+    {32},
+    {5, 9, 4, 4, 9},
+    {0, 1, 2},
     {}
 };
 const vector<vector<double>> testCasesVD = {
@@ -143,18 +146,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesI[state.range(0)];
+    const auto& testCase = testCasesVI[state.range(0)];
     //const vector<int> a = testCase.first;
     //const int b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = addUp(testCase);// a, b);
+        auto result = sumOfCubes(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesVI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

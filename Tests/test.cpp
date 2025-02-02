@@ -84,6 +84,7 @@
 #include "..\ConsoleApplication1\082 First and Last Elements in an Array.cpp"
 #include "..\ConsoleApplication1\083 No Conditionals.cpp"
 #include "..\ConsoleApplication1\084 Triangular number.cpp"
+#include "..\ConsoleApplication1\085 Sum of Cubes.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1019,5 +1020,17 @@ TEST(test84, addUp) {
 	EXPECT_EQ(499500, addUp(999));
 	EXPECT_EQ(15400, addUp(175));
 	EXPECT_EQ(6216, addUp(111));
+	EXPECT_TRUE(true);
+}
+TEST(test85, sumOfCubes) {
+	EXPECT_EQ(855, sumOfCubes({ 1, 5, 9 }));
+	EXPECT_EQ(216, sumOfCubes({ 3, 4, 5 }));
+	EXPECT_EQ(3, sumOfCubes({ 1, 1, 1 }));
+	EXPECT_EQ(8, sumOfCubes({ 2 }));
+	EXPECT_EQ(134, sumOfCubes({ 5, 1, 2 }));
+	EXPECT_EQ(32768, sumOfCubes({ 32 }));
+	EXPECT_EQ(1711, sumOfCubes({ 5, 9, 4, 4, 9 }));
+	EXPECT_EQ(9, sumOfCubes({ 0, 1, 2 }));
+	EXPECT_EQ(0, sumOfCubes({}));
 	EXPECT_TRUE(true);
 }
