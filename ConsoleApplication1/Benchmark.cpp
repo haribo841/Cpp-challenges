@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "085 Sum of Cubes.h"
+#include "086 Concatenating Two Integer Arrays.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -57,6 +57,12 @@ const vector<pair<vector<int>, int>> testCasesPVII = {
     {{1, 1, 2, 1, 5, 4, 7}, 8},
     {{5, 5, 5, 6}, 5},
     {{}, 5}
+};
+//<vector<int>, <vector<int>
+const vector<pair<vector<int>, vector<int>>> testCasesPVIVI = {
+    {{1, 3, 5}, {2, 6, 8}},
+    {{7, 8}, {10, 9, 1, 1, 2}},
+    {{4, 5, 1}, {3, 3, 3, 3, 3}}
 };
 //<vector<string>, string>>
 const vector<pair<vector<string>, string>> testCasesPVSS = {
@@ -146,18 +152,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesVI[state.range(0)];
-    //const vector<int> a = testCase.first;
-    //const int b = testCase.second;
+    const auto& testCase = testCasesPVIVI[state.range(0)];
+    const auto& a = testCase.first;
+    const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = sumOfCubes(testCase);// a, b);
+        auto result = concat(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesVI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesPVIVI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

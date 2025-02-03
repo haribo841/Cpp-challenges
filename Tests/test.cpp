@@ -85,6 +85,7 @@
 #include "..\ConsoleApplication1\083 No Conditionals.cpp"
 #include "..\ConsoleApplication1\084 Triangular number.cpp"
 #include "..\ConsoleApplication1\085 Sum of Cubes.cpp"
+#include "..\ConsoleApplication1\086 Concatenating Two Integer Arrays.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1032,5 +1033,11 @@ TEST(test85, sumOfCubes) {
 	EXPECT_EQ(1711, sumOfCubes({ 5, 9, 4, 4, 9 }));
 	EXPECT_EQ(9, sumOfCubes({ 0, 1, 2 }));
 	EXPECT_EQ(0, sumOfCubes({}));
+	EXPECT_TRUE(true);
+}
+TEST(test86, concat) {
+	EXPECT_EQ(std::vector<int>({ 1, 3, 5, 2, 6, 8 }), concat({ 1, 3, 5 }, { 2, 6, 8 }));
+	EXPECT_EQ(std::vector<int>({ 7, 8, 10, 9, 1, 1, 2 }), concat({ 7, 8 }, { 10, 9, 1, 1, 2 }));
+	EXPECT_EQ(std::vector<int>({ 4, 5, 1, 3, 3, 3, 3, 3 }), concat({ 4, 5, 1 }, { 3, 3, 3, 3, 3 }));
 	EXPECT_TRUE(true);
 }
