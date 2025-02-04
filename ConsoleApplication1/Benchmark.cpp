@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "086 Concatenating Two Integer Arrays.h"
+#include "087 The Study of Wumbology.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -100,26 +100,9 @@ const vector<int> testCasesI = {
 };*/
 //<string>
 const vector<string> testCasesS = {
-    "edabit is amazing.",
-    "Mubashir is amazing.",
-    "Trump is amazing.",
-    "Infinity is amazing.",
-    "Mubashir and edabit are amazing.",
-    "Matt is amazing.",
-    "Helen is amazing.",
-    "Python and edabit are amazing.",
-    "C++ is amazing.",
-    "javascript is amazing.",
-    "java is amazing.",
-    "ruby is amazing.",
-    "SQL is amazing.",
-    "CSS is amazing.",
-    "Pakistan is amazing. edabit",
-    "You and edabit are amazing.",
-    "Matt and edabit are amazing.",
-    "Helen and edabit are amazing.",
-    "Everyone is amazing.",
-    "Swift and edabit are amazing."
+    "WHAT DO YOU MEAN WE'RE OUT OF MONEY",
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "1 WUMBO 2 WUMBO 3 WUMBO 4"
 };
 //<double>
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
@@ -152,18 +135,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesPVIVI[state.range(0)];
-    const auto& a = testCase.first;
-    const auto& b = testCase.second;
+    const auto& testCase = testCasesS[state.range(0)];
+    //const auto& a = testCase.first;
+    //const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = concat(a, b);
+        auto result = Wumbo(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesPVIVI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
