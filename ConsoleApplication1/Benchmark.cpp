@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "087 The Study of Wumbology.h"
+#include "088 Smash Factor.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -85,6 +85,12 @@ const vector<pair<string, string>> testCasesPairString = {
     {"motorist", "is"},
     {"landowner", "landowner"}
 };
+//<double, double>
+const std::vector<std::pair<double, double>> testCasesPDD = {
+    {139.4, 93.8},
+    {181.2, 124.5},
+    {154.7, 104.3}
+};
 const vector<int> testCasesI = {
     4, 13, 600, 392, 53, 897, 23, 1000, 738, 100,
     925, 1, 999, 175, 111
@@ -135,18 +141,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesS[state.range(0)];
-    //const auto& a = testCase.first;
-    //const auto& b = testCase.second;
+    const auto& testCase = testCasesPDD[state.range(0)];
+    const auto& a = testCase.first;
+    const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = Wumbo(testCase);// a, b);
+        auto result = smashFactor( a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesPDD.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
