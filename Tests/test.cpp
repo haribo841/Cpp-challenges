@@ -88,6 +88,7 @@
 #include "..\ConsoleApplication1\086 Concatenating Two Integer Arrays.cpp"
 #include "..\ConsoleApplication1\087 The Study of Wumbology.cpp"
 #include "..\ConsoleApplication1\088 Smash Factor.cpp"
+#include "..\ConsoleApplication1\089 True Count.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1053,5 +1054,21 @@ TEST(test88, smashFactor ) {
 	EXPECT_EQ(1.49, smashFactor(139.4, 93.8));
 	EXPECT_EQ(1.46, smashFactor(181.2, 124.5));
 	EXPECT_EQ(1.48, smashFactor(154.7, 104.3));
+	EXPECT_TRUE(true);
+}
+TEST(test89, countTrue) {
+	EXPECT_EQ(2, countTrue({ true, false, false, true, false }));
+	EXPECT_EQ(0, countTrue({ false, false, false, false }));
+	EXPECT_EQ(0, countTrue({}));
+	EXPECT_EQ(8, countTrue({ false, false, true, true, false, false, false, true, true, true, true, false, true, true, false }));
+	EXPECT_EQ(3, countTrue({ true, false, true, true, false, false, false, false, false }));
+	EXPECT_EQ(8, countTrue({ false, true, true, false, true, true, false, true, false, true, false, true, false, true, false }));
+	EXPECT_EQ(6, countTrue({ true, false, true, true, true, false, true, true, false, false }));
+	EXPECT_EQ(3, countTrue({ false, false, false, false, true, false, true, false, true, false, false }));
+	EXPECT_EQ(3, countTrue({ true, false, false, false, true, false, false, true, false, false, false }));
+	EXPECT_EQ(4, countTrue({ true, true, false, true, false, false, false, false, true, false }));
+	EXPECT_EQ(9, countTrue({ true, false, true, true, false, true, true, true, true, false, true, false, true, false }));
+	EXPECT_EQ(8, countTrue({ true, false, true, true, true, true, false, true, true, false, true, false, false, false, false }));
+	EXPECT_EQ(6, countTrue({ true, true, false, false, false, false, true, false, true, true, false, true }));
 	EXPECT_TRUE(true);
 }
