@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "089 True Count.h"
+#include "090 Arguments Count.cpp"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -112,6 +112,15 @@ const vector<string> testCasesS = {
 };
 //<double>
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
+//vector<any>
+const vector<vector<std::any>> testCasesVA = {
+   {string("tt") },
+   {string("lama"), string("tiger"), 6 },
+   {string("love") },
+   { 1, 3, 3 },
+   {vector<int>{1}, 3, string("ygg") }
+};
+
 //<vector<int>
 const vector<vector<int>> testCasesVI = {
     {1, 5, 9},
@@ -151,24 +160,34 @@ const vector<vector<double>> testCasesVD = {
     {52, 22, 20, 30},
     {10, 12, 32, 4.9, 5, 6, 71}
 };
+
+std::vector<std::any> convertToAnyVector(int* arr, int size) {
+    std::vector<std::any> vec;
+    for (int i = 0; i < size; ++i) {
+        vec.push_back(arr[i]);
+    }
+    return vec;
+}
 static void BM(benchmark::State& state) {
     // Get the test case index from the benchmark range
     //int index = state.range(0);
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesVB[state.range(0)];
+    size_t index = static_cast<size_t>(state.range(0));
+    assert(index < testCasesVA.size());
     //const auto& a = testCase.first;
     //const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
+    std::vector<std::any> testCase = convertToAnyVector(testCasesA[index], sizes[index]);
     for (auto _ : state) {
         // Benchmark the function
-        auto result = countTrue(testCase);// a, b);
+        auto result = NumArgs(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesVB.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesVA.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();

@@ -89,6 +89,7 @@
 #include "..\ConsoleApplication1\087 The Study of Wumbology.cpp"
 #include "..\ConsoleApplication1\088 Smash Factor.cpp"
 #include "..\ConsoleApplication1\089 True Count.cpp"
+#include "..\ConsoleApplication1\090 Arguments Count.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1071,4 +1072,23 @@ TEST(test89, countTrue) {
 	EXPECT_EQ(8, countTrue({ true, false, true, true, true, true, false, true, true, false, true, false, false, false, false }));
 	EXPECT_EQ(6, countTrue({ true, true, false, false, false, false, true, false, true, true, false, true }));
 	EXPECT_TRUE(true);
+}
+TEST(test90, Test1) {
+	EXPECT_EQ(1, NumArgs("tt"));
+}
+
+TEST(test90, Test2) {
+	EXPECT_EQ(3, NumArgs("lama", "tiger", 6));
+}
+
+TEST(test90, Test3) {
+	EXPECT_EQ(1, NumArgs("love"));
+}
+
+TEST(test90, Test4) {
+	EXPECT_EQ(3, NumArgs(1, 3, 3));
+}
+
+TEST(test90, Test5) {
+	EXPECT_EQ(3, NumArgs(std::vector<int>{1}, 3, "ygg"));
 }
