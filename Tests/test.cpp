@@ -90,6 +90,7 @@
 #include "..\ConsoleApplication1\088 Smash Factor.cpp"
 #include "..\ConsoleApplication1\089 True Count.cpp"
 #include "..\ConsoleApplication1\090 Arguments Count.cpp"
+#include "..\ConsoleApplication1\091 Yen to USD.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1091,4 +1092,10 @@ TEST(test90, Test4) {
 
 TEST(test90, Test5) {
 	EXPECT_EQ(3, NumArgs(std::vector<int>{1}, 3, "ygg"));
+}
+TEST(test91, yenToUsd) {
+	EXPECT_DOUBLE_EQ(0.01, yenToUsd(1));
+	EXPECT_DOUBLE_EQ(4.65, yenToUsd(500));
+	EXPECT_DOUBLE_EQ(6.04, yenToUsd(649));
+	EXPECT_DOUBLE_EQ(9.3, yenToUsd(1000));
 }

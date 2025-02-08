@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "090 Arguments Count.cpp"
+#include "091 Yen to USD.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -91,10 +91,7 @@ const std::vector<std::pair<double, double>> testCasesPDD = {
     {181.2, 124.5},
     {154.7, 104.3}
 };
-const vector<int> testCasesI = {
-    4, 13, 600, 392, 53, 897, 23, 1000, 738, 100,
-    925, 1, 999, 175, 111
-};
+const vector<int> testCasesI = { 1, 500, 649, 1000 };
 //<char>
 /*const vector<char> testCases = {
     ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 
@@ -174,20 +171,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    size_t index = static_cast<size_t>(state.range(0));
-    assert(index < testCasesVA.size());
+    const auto& testCase = testCasesI[state.range(0)];
     //const auto& a = testCase.first;
     //const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
-    std::vector<std::any> testCase = convertToAnyVector(testCasesA[index], sizes[index]);
     for (auto _ : state) {
         // Benchmark the function
-        auto result = NumArgs(testCase);// a, b);
+        auto result = yenToUsd(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesVA.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
