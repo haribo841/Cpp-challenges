@@ -91,6 +91,7 @@
 #include "..\ConsoleApplication1\089 True Count.cpp"
 #include "..\ConsoleApplication1\090 Arguments Count.cpp"
 #include "..\ConsoleApplication1\091 Yen to USD.cpp"
+#include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -287,12 +288,10 @@ TEST(test24, convert) {
 	EXPECT_EQ(1800, convert(0, 30));
 	EXPECT_TRUE(true);
 }
-TEST(test25, cubes) {
-	EXPECT_EQ(8, cubes(2));
-	EXPECT_EQ(27, cubes(3));
-	EXPECT_EQ(64, cubes(4));
-	EXPECT_EQ(125, cubes(5));
-	EXPECT_EQ(1000, cubes(10));
+TEST(test25, greeting) {
+	EXPECT_EQ("Hello, Matt!", greeting("Matt"));
+	EXPECT_EQ("Hello, Helen!", greeting("Helen"));
+	EXPECT_EQ("Hello, my Love!", greeting("Mubashir"));
 	EXPECT_TRUE(true);
 }
 TEST(test26, nextEdge) {
@@ -1098,4 +1097,11 @@ TEST(test91, yenToUsd) {
 	EXPECT_DOUBLE_EQ(4.65, yenToUsd(500));
 	EXPECT_DOUBLE_EQ(6.04, yenToUsd(649));
 	EXPECT_DOUBLE_EQ(9.3, yenToUsd(1000));
+}
+TEST(test101, cubes) {
+	EXPECT_EQ(8, cubes(2));
+	EXPECT_EQ(27, cubes(3));
+	EXPECT_EQ(64, cubes(4));
+	EXPECT_EQ(125, cubes(5));
+	EXPECT_EQ(1000, cubes(10));
 }

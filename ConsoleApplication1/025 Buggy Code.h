@@ -1,5 +1,6 @@
 #pragma once
+#include <string>
 #ifndef Program025
 #define Program025
-int cubes(int a);
+std::string greeting(std::string name);
 #endif Program025
