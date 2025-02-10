@@ -92,6 +92,7 @@
 #include "..\ConsoleApplication1\090 Arguments Count.cpp"
 #include "..\ConsoleApplication1\091 Yen to USD.cpp"
 #include "..\ConsoleApplication1\101 Buggy Code4.cpp"
+#include "..\ConsoleApplication1\092 Lowercase, Uppercase or Mixed.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1097,6 +1098,14 @@ TEST(test91, yenToUsd) {
 	EXPECT_DOUBLE_EQ(4.65, yenToUsd(500));
 	EXPECT_DOUBLE_EQ(6.04, yenToUsd(649));
 	EXPECT_DOUBLE_EQ(9.3, yenToUsd(1000));
+}
+TEST(test92, getCase) {
+	EXPECT_EQ("lower", getCase("whisper..."));
+	EXPECT_EQ("upper", getCase("SHOUT!"));
+	EXPECT_EQ("mixed", getCase("Indoor Voice"));
+	EXPECT_EQ("mixed", getCase("324324Indoor66453546Voice434"));
+	EXPECT_EQ("upper", getCase("!!!!SHOUT!!!!"));
+	EXPECT_EQ("lower", getCase("......313whisper2131232..."));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));

@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "025 Buggy Code.cpp"
+#include "092 Lowercase, Uppercase or Mixed.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -103,9 +103,12 @@ const vector<int> testCasesI = { 1, 500, 649, 1000 };
 };*/
 //<string>
 const vector<string> testCasesS = {
-    "Matt",
-    "Helen",
-    "Mubashir"
+    "whisper...",
+    "SHOUT!",
+    "Indoor Voice",
+    "324324Indoor66453546Voice434",
+    "!!!!SHOUT!!!!",
+    "......313whisper2131232..."
 };
 //<double>
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
@@ -177,7 +180,7 @@ static void BM(benchmark::State& state) {
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = greeting(testCase);// a, b);
+        auto result = getCase(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
