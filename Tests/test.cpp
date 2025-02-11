@@ -93,6 +93,7 @@
 #include "..\ConsoleApplication1\091 Yen to USD.cpp"
 #include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 #include "..\ConsoleApplication1\092 Lowercase, Uppercase or Mixed.cpp"
+#include "..\ConsoleApplication1\093 Number to Dashes.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1106,6 +1107,14 @@ TEST(test92, getCase) {
 	EXPECT_EQ("mixed", getCase("324324Indoor66453546Voice434"));
 	EXPECT_EQ("upper", getCase("!!!!SHOUT!!!!"));
 	EXPECT_EQ("lower", getCase("......313whisper2131232..."));
+}
+TEST(test93, Go) {
+	EXPECT_EQ("-", Go(1));
+	EXPECT_EQ("--", Go(2));
+	EXPECT_EQ("---", Go(3));
+	EXPECT_EQ("----", Go(4));
+	EXPECT_EQ("-----", Go(5));
+	EXPECT_EQ("------", Go(6));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));

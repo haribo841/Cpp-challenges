@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "092 Lowercase, Uppercase or Mixed.h"
+#include "093 Number to Dashes.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -91,7 +91,7 @@ const std::vector<std::pair<double, double>> testCasesPDD = {
     {181.2, 124.5},
     {154.7, 104.3}
 };
-const vector<int> testCasesI = { 1, 500, 649, 1000 };
+const vector<int> testCasesI = { 1, 2, 3, 4, 5, 6 };
 //<char>
 /*const vector<char> testCases = {
     ' ', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 
@@ -174,18 +174,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesS[state.range(0)];
+    const auto& testCase = testCasesI[state.range(0)];
     //const auto& a = testCase.first;
     //const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = getCase(testCase);// a, b);
+        auto result = Go(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesI.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
