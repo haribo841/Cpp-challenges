@@ -94,6 +94,7 @@
 #include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 #include "..\ConsoleApplication1\092 Lowercase, Uppercase or Mixed.cpp"
 #include "..\ConsoleApplication1\093 Number to Dashes.cpp"
+#include "..\ConsoleApplication1\094 Find the Index.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1115,6 +1116,11 @@ TEST(test93, Go) {
 	EXPECT_EQ("----", Go(4));
 	EXPECT_EQ("-----", Go(5));
 	EXPECT_EQ("------", Go(6));
+}
+TEST(test94, findIndex) {
+	EXPECT_EQ(3, findIndex({ "abc", "ghj", "banana", "grape" }, "grape"));
+	EXPECT_EQ(5, findIndex({ "a", "b", "c", "d", "e", "f" }, "f"));
+	EXPECT_EQ(1, findIndex({ "hi", "edabit.com", "testcase", "validstring" }, "edabit.com"));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));
