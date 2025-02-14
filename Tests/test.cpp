@@ -95,6 +95,7 @@
 #include "..\ConsoleApplication1\092 Lowercase, Uppercase or Mixed.cpp"
 #include "..\ConsoleApplication1\093 Number to Dashes.cpp"
 #include "..\ConsoleApplication1\094 Find the Index.cpp"
+#include "..\ConsoleApplication1\095 Back to Home.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1121,6 +1122,13 @@ TEST(test94, findIndex) {
 	EXPECT_EQ(3, findIndex({ "abc", "ghj", "banana", "grape" }, "grape"));
 	EXPECT_EQ(5, findIndex({ "a", "b", "c", "d", "e", "f" }, "f"));
 	EXPECT_EQ(1, findIndex({ "hi", "edabit.com", "testcase", "validstring" }, "edabit.com"));
+}
+TEST(test95, backToHome) {
+	EXPECT_EQ(false, backToHome("NNNN"));
+	EXPECT_EQ(true, backToHome("NENESSWW"));
+	EXPECT_EQ(false, backToHome("NEESSW"));
+	EXPECT_EQ(false, backToHome("EEWE"));
+	EXPECT_EQ(true, backToHome("NNSSEEEWWWEW"));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));
