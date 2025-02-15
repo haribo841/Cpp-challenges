@@ -96,6 +96,7 @@
 #include "..\ConsoleApplication1\093 Number to Dashes.cpp"
 #include "..\ConsoleApplication1\094 Find the Index.cpp"
 #include "..\ConsoleApplication1\095 Back to Home.cpp"
+#include "..\ConsoleApplication1\096 Word Count.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1129,6 +1130,14 @@ TEST(test95, backToHome) {
 	EXPECT_EQ(false, backToHome("NEESSW"));
 	EXPECT_EQ(false, backToHome("EEWE"));
 	EXPECT_EQ(true, backToHome("NNSSEEEWWWEW"));
+}
+TEST(test96, countWords) {
+	EXPECT_EQ(3, countWords("It's high noon"));
+	EXPECT_EQ(4, countWords("Is this easy mode"));
+	EXPECT_EQ(5, countWords("What an easy task, right"));
+	EXPECT_EQ(4, countWords("This is a test"));
+	EXPECT_EQ(6, countWords("Just an example here move along"));
+	EXPECT_EQ(4, countWords("How are you today?"));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));

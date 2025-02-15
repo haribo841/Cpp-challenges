@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "095 Back to Home.h"
+#include "096 Word Count.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -101,12 +101,12 @@ const vector<int> testCasesI = { 1, 2, 3, 4, 5, 6 };
 };*/
 //<string>
 const vector<string> testCasesS = {
-    "whisper...",
-    "SHOUT!",
-    "Indoor Voice",
-    "324324Indoor66453546Voice434",
-    "!!!!SHOUT!!!!",
-    "......313whisper2131232..."
+    "It's high noon",
+    "Is this easy mode",
+    "What an easy task, right",
+    "This is a test",
+    "Just an example here move along",
+    "How are you today?"
 };
 //<double>
 //const vector<double> testCases = { 0, 20.5, -250, -5, -3.14 };
@@ -178,7 +178,7 @@ static void BM(benchmark::State& state) {
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = backToHome(testCase);// a, b);
+        auto result = countWords(testCase);// a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
