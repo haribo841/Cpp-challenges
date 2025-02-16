@@ -91,12 +91,13 @@
 #include "..\ConsoleApplication1\089 True Count.cpp"
 #include "..\ConsoleApplication1\090 Arguments Count.cpp"
 #include "..\ConsoleApplication1\091 Yen to USD.cpp"
-#include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 #include "..\ConsoleApplication1\092 Lowercase, Uppercase or Mixed.cpp"
 #include "..\ConsoleApplication1\093 Number to Dashes.cpp"
 #include "..\ConsoleApplication1\094 Find the Index.cpp"
 #include "..\ConsoleApplication1\095 Back to Home.cpp"
 #include "..\ConsoleApplication1\096 Word Count.cpp"
+#include "..\ConsoleApplication1\097 Days in a Month.cpp"
+#include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
 	EXPECT_TRUE(true);
@@ -1138,6 +1139,23 @@ TEST(test96, countWords) {
 	EXPECT_EQ(4, countWords("This is a test"));
 	EXPECT_EQ(6, countWords("Just an example here move along"));
 	EXPECT_EQ(4, countWords("How are you today?"));
+}
+TEST(test97, days) {
+	EXPECT_EQ(31, days(1, 2018));
+	EXPECT_EQ(28, days(2, 2018));
+	EXPECT_EQ(31, days(3, 2018));
+	EXPECT_EQ(30, days(4, 2018));
+	EXPECT_EQ(31, days(5, 2018));
+	EXPECT_EQ(30, days(6, 2018));
+	EXPECT_EQ(31, days(7, 2018));
+	EXPECT_EQ(31, days(8, 2018));
+	EXPECT_EQ(30, days(9, 2018));
+	EXPECT_EQ(31, days(10, 2018));
+	EXPECT_EQ(30, days(11, 2018));
+	EXPECT_EQ(31, days(12, 2018));
+	EXPECT_EQ(29, days(2, 2004));  // Leap year
+	EXPECT_EQ(28, days(2, 1800));  // Not a leap year
+	EXPECT_EQ(29, days(2, 1600));  // Leap year
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));

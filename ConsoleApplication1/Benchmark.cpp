@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "096 Word Count.h"
+#include "097 Days in a Month.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -33,13 +33,22 @@ const vector<tuple<int, int, char>> testCasesIIC = {
 { 49, 5, '%' }
 };
 //<int, int>
-const vector<pair<int, int>> testCasesPairInt = {
-    {27, 59},
-    {135, 11},
-    {45, 45},
-    {45, 15},
-    {31, 100},
-    {35, 55}
+const vector<pair<int, int>> testCasesPII = {
+    {1, 2018},
+    {2, 2018},
+    {3, 2018},
+    {4, 2018},
+    {5, 2018},
+    {6, 2018},
+    {7, 2018},
+    {8, 2018},
+    {9, 2018},
+    {10, 2018},
+    {11, 2018},
+    {12, 2018},
+    {2, 2004},  // Leap year
+    {2, 1800},  // Not a leap year
+    {2, 1600}   // Leap year
 };
 //<int, bool>
 /*const vector<pair<int, bool>> testCases = {
@@ -172,18 +181,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesS[state.range(0)];
-    //const auto& a = testCase.first;
-    //const auto& b = testCase.second;
+    const auto& testCase = testCasesPII[state.range(0)];
+    const auto& a = testCase.first;
+    const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = countWords(testCase);// a, b);
+        auto result = days(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesPII.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
