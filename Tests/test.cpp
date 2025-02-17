@@ -97,6 +97,7 @@
 #include "..\ConsoleApplication1\095 Back to Home.cpp"
 #include "..\ConsoleApplication1\096 Word Count.cpp"
 #include "..\ConsoleApplication1\097 Days in a Month.cpp"
+#include "..\ConsoleApplication1\098 Syllables Count.cpp"
 #include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
@@ -1156,6 +1157,16 @@ TEST(test97, days) {
 	EXPECT_EQ(29, days(2, 2004));  // Leap year
 	EXPECT_EQ(28, days(2, 1800));  // Not a leap year
 	EXPECT_EQ(29, days(2, 1600));  // Leap year
+}
+TEST(test98, numberSyllables) {
+	EXPECT_EQ(2, numberSyllables("buf-fet"));
+	EXPECT_EQ(3, numberSyllables("beau-ti-ful"));
+	EXPECT_EQ(4, numberSyllables("mon-u-men-tal"));
+	EXPECT_EQ(6, numberSyllables("on-o-mat-o-poe-ia"));
+	EXPECT_EQ(3, numberSyllables("o-ver-ly"));
+	EXPECT_EQ(2, numberSyllables("pas-try"));
+	EXPECT_EQ(2, numberSyllables("flu-id"));
+	EXPECT_EQ(3, numberSyllables("syl-la-ble"));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));
