@@ -98,6 +98,7 @@
 #include "..\ConsoleApplication1\096 Word Count.cpp"
 #include "..\ConsoleApplication1\097 Days in a Month.cpp"
 #include "..\ConsoleApplication1\098 Syllables Count.cpp"
+#include "..\ConsoleApplication1\099 Hurdle Jump.cpp"
 #include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
@@ -1167,6 +1168,15 @@ TEST(test98, numberSyllables) {
 	EXPECT_EQ(2, numberSyllables("pas-try"));
 	EXPECT_EQ(2, numberSyllables("flu-id"));
 	EXPECT_EQ(3, numberSyllables("syl-la-ble"));
+}
+TEST(test99, hurdleJump) {
+	EXPECT_EQ(true, hurdleJump({ 1, 2, 3, 4, 5 }, 5));
+	EXPECT_EQ(false, hurdleJump({ 5, 5, 3, 4, 5 }, 3));
+	EXPECT_EQ(true, hurdleJump({ 5, 4, 5, 6 }, 10));
+	EXPECT_EQ(false, hurdleJump({ 1, 2, 1 }, 1));
+	EXPECT_EQ(true, hurdleJump({ 3, 3, 3 }, 4));
+	EXPECT_EQ(false, hurdleJump({ 4, 4 }, 3));
+	EXPECT_EQ(true, hurdleJump({}, 4));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));

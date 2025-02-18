@@ -1,6 +1,6 @@
 ﻿#include <benchmark/benchmark.h>
 #include "Benchmark.h"
-#include "098 Syllables Count.h"
+#include "099 Hurdle Jump.h"
 using namespace std;
 // Predefined test cases
 //<int[], int>
@@ -60,12 +60,13 @@ const vector<pair<int, int>> testCasesPII = {
 };*/
 //<vector<int>, int>>
 const vector<pair<vector<int>, int>> testCasesPVII = {
-    {{1, 2, 3, 4, 5}, 3},
-    {{1, 1, 2, 1, 1}, 3},
-    {{1, 1, 2, 1, 5, 4, 7}, 7},
-    {{1, 1, 2, 1, 5, 4, 7}, 8},
-    {{5, 5, 5, 6}, 5},
-    {{}, 5}
+    {{1, 2, 3, 4, 5}, 5},
+    {{5, 5, 3, 4, 5}, 3},
+    {{5, 4, 5, 6}, 10},
+    {{1, 2, 1}, 1},
+    {{3, 3, 3}, 4},
+    {{4, 4}, 3},
+    {{}, 4}
 };
 //<vector<int>, <vector<int>
 const vector<pair<vector<int>, vector<int>>> testCasesPVIVI = {
@@ -183,18 +184,18 @@ static void BM(benchmark::State& state) {
     // Retrieve the array and size for the current test case
     //int* array = testCases[index];
     //int size = sizes[index];
-    const auto& testCase = testCasesS[state.range(0)];
-    //const auto& a = testCase.first;
-    //const auto& b = testCase.second;
+    const auto& testCase = testCasesPVII[state.range(0)];
+    const auto& a = testCase.first;
+    const auto& b = testCase.second;
     //const auto& [a, b, c] = testCase;
     for (auto _ : state) {
         // Benchmark the function
-        auto result = numberSyllables(testCase);// a, b);
+        auto result = hurdleJump(a, b);
         benchmark::DoNotOptimize(result); // Prevent optimization of the result
     }
 }
 
 // Register the benchmark
-BENCHMARK(BM)->DenseRange(0, testCasesS.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
+BENCHMARK(BM)->DenseRange(0, testCasesPVII.size() - 1); //sizeof(testCases) / sizeof(testCases[0]) - 1);
 // Run the benchmark
 BENCHMARK_MAIN();
