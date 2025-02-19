@@ -99,6 +99,7 @@
 #include "..\ConsoleApplication1\097 Days in a Month.cpp"
 #include "..\ConsoleApplication1\098 Syllables Count.cpp"
 #include "..\ConsoleApplication1\099 Hurdle Jump.cpp"
+#include "..\ConsoleApplication1\100 Instances of a Character in a String.cpp"
 #include "..\ConsoleApplication1\101 Buggy Code4.cpp"
 TEST(test0, returnTrue) {
 	EXPECT_EQ(true, returnTrue());
@@ -1177,6 +1178,25 @@ TEST(test99, hurdleJump) {
 	EXPECT_EQ(true, hurdleJump({ 3, 3, 3 }, 4));
 	EXPECT_EQ(false, hurdleJump({ 4, 4 }, 3));
 	EXPECT_EQ(true, hurdleJump({}, 4));
+}
+TEST(test100, ShouldReturnCorrectCount) {
+	EXPECT_EQ(1, charCount('a', "edabit"));
+	EXPECT_EQ(4, charCount('b', "big fat bubble"));
+	EXPECT_EQ(7, charCount('f', "frank and his friends have offered five foxes for sale"));
+	EXPECT_EQ(25, charCount('s', "sssssssssssssssssssssssss"));
+}
+
+TEST(test100, ShouldBeCaseSensitive) {
+	EXPECT_EQ(1, charCount('c', "Chamber of secrets"));
+	EXPECT_EQ(6, charCount('a', "Adam and Eve bit the apple and found a snake"));
+}
+
+TEST(test100, ShouldWorkWithDigitsToo) {
+	EXPECT_EQ(2, charCount('7', "10795426697"));
+}
+
+TEST(test100, ShouldReturnZeroIfLetterDoesNotExist) {
+	EXPECT_EQ(0, charCount('x', "edabit"));
 }
 TEST(test101, cubes) {
 	EXPECT_EQ(8, cubes(2));
