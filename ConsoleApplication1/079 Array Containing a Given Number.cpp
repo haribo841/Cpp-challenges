@@ -1,8 +1,9 @@
 //Write a function to check if an array contains a particular number.
 #include "079 Array Containing a Given Number.h"
-bool check(std::vector<int> arr, int el) {
-	auto i = std::find(arr.begin(), arr.end(), el);
-	if (i != arr.end()) {
+#include <algorithm>
+bool check(const std::vector<int>& arr, int el) {
+	if (const auto found = std::ranges::find(arr, el); found != arr.end()) {
 		return true;
-	} return false;
+	}
+	return false;
 }

@@ -2,5 +2,5 @@
 #include <string>
 #ifndef Program098
 #define Program098
-int numberSyllables(std::string word);
+int numberSyllables(const std::string& word);
 #endif Program098

@@ -3,7 +3,7 @@
 int difference(std::vector<int> nums) {
 	int min = nums[0];
 	int max = min;
-	for (auto& i : nums)
+	for (const auto& i : nums)
 	{
 		if (i < min)min = i;
 		else if (i > max)max = i;

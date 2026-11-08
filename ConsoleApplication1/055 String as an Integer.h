@@ -2,5 +2,5 @@
 #include <string>
 #ifndef Program055
 #define Program055
-int StringInt(std::string str);
+int StringInt(const std::string& str);
 #endif Program055

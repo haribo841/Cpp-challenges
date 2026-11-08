@@ -2,5 +2,5 @@
 #include <string>
 #ifndef Program070
 #define Program070
-bool match(std::string str1, std::string str2);
+bool match(const std::string& str1, const std::string& str2);
 #endif Program070

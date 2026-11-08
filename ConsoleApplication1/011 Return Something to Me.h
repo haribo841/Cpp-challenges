@@ -2,5 +2,5 @@
 #pragma once
 #ifndef Program011
 #define Program011
-std::string giveMeSomething(std::string a);
+std::string giveMeSomething(const std::string& a);
 #endif Program011

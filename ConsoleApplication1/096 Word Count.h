@@ -4,5 +4,5 @@
 #include <cstring>
 #ifndef Program096
 #define Program096
-int countWords(std::string str);
+int countWords(const std::string& str);
 #endif Program096

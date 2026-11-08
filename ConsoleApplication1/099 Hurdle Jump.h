@@ -3,5 +3,5 @@
 #include <algorithm>
 #ifndef Program099
 #define Program099
-bool hurdleJump(std::vector<int> hurdles, int jumpHeight);
+bool hurdleJump(const std::vector<int>& hurdles, int jumpHeight);
 #endif Program099

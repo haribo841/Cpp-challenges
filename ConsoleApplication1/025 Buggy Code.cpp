@@ -3,7 +3,7 @@
 //She added a special case in her function, but she made a mistake.
 //Can you help her?
 #include "025 Buggy Code.h"
-std::string greeting(std::string name)
+std::string greeting(const std::string& name)
 {
     if (name == "Mubashir") {
         return "Hello, my Love!";

@@ -8,8 +8,7 @@ std::string amazingEdabit(std::string str) {
     }
 
     // Find the position of the word "amazing"
-    size_t pos = str.find("amazing");
-    if (pos != std::string::npos) {
+    if (const size_t pos = str.find("amazing"); pos != std::string::npos) {
         // Replace "amazing" with "not amazing"
         str.replace(pos, 7, "not amazing"); // 7 is the length of "amazing"
     }

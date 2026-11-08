@@ -2,5 +2,5 @@
 #include <string>
 #ifndef Program095
 #define Program095
-bool backToHome(std::string directions);
+bool backToHome(const std::string& directions);
 #endif Program095

@@ -1,5 +1,9 @@
 #include "pch.h"
+#include <array>
+#include <format>
+#include <ranges>
 #include <stdexcept>
+#include <string_view>
 #include "../ConsoleApplication1/000 True.cpp"
 #include "../ConsoleApplication1/001 Sum of Two Numbers.cpp"
 #include "../ConsoleApplication1/002 Minutes into Seconds.cpp"
@@ -222,7 +226,7 @@ TEST(test13, howManySeconds) {
 TEST(test14, Expectations) {
 	for (int y = 3; y <= 1000; ++y) {
 		int expected_sum = y * 180 - 180;
-		std::string x = "EXPECT_EQ(sumPolygon(" + std::to_string(y) + "), " + std::to_string(expected_sum) + ");";
+		std::string x = std::format("EXPECT_EQ(sumPolygon({}), {});", y, expected_sum);
 		EXPECT_EQ(sumPolygon(y), expected_sum) << x;
 	}
 }
@@ -336,7 +340,7 @@ TEST(test29, squaed) {
 	EXPECT_EQ(4761, squaed(69));
 	EXPECT_EQ(443556, squaed(666));
 	EXPECT_EQ(441, squaed(-21));
-	EXPECT_EQ(441, squaed(21));;
+	EXPECT_EQ(441, squaed(21));
 	EXPECT_TRUE(true);
 }
 TEST(test30, flipIntBool) {
@@ -496,7 +500,7 @@ TEST(test44, isEmpty) {
 	EXPECT_EQ(true, isEmpty(""));
 	EXPECT_EQ(false, isEmpty(" "));
 	EXPECT_EQ(false, isEmpty("            "));
-	EXPECT_EQ(false, isEmpty("38215"));;
+	EXPECT_EQ(false, isEmpty("38215"));
 	EXPECT_EQ(false, isEmpty("afjabsdf"));
 	EXPECT_EQ(false, isEmpty("!?@&"));
 	EXPECT_TRUE(true);
@@ -505,17 +509,17 @@ TEST(test45, comp) {
 	EXPECT_EQ(true, comp("AB", "CD"));
 	EXPECT_EQ(false, comp("ABC", "DE"));
 	EXPECT_EQ(false, comp("hello", "edabit"));
-	EXPECT_EQ(true, comp("meow", "woof"));;
+	EXPECT_EQ(true, comp("meow", "woof"));
 	EXPECT_EQ(false, comp("jrnvjrnnt", "cvjknfjvmfvnfjn"));
 	EXPECT_EQ(false, comp("jkvnjrt", "krnf"));
-	EXPECT_EQ(true, comp("Facebook", "Snapchat"));;
+	EXPECT_EQ(true, comp("Facebook", "Snapchat"));
 	EXPECT_TRUE(true);
 }
 TEST(test46, oddOrEven) {
 	EXPECT_EQ(true, oddOrEven("apples"));
 	EXPECT_EQ(true, oddOrEven("banana"));
 	EXPECT_EQ(true, oddOrEven("cherry"));
-	EXPECT_EQ(false, oddOrEven("mango"));;
+	EXPECT_EQ(false, oddOrEven("mango"));
 	EXPECT_EQ(false, oddOrEven("peach"));
 	EXPECT_EQ(false, oddOrEven("pears"));
 	EXPECT_TRUE(true);
@@ -721,17 +725,17 @@ TEST(test60, equalSlices) {
 	EXPECT_TRUE(true);
 }
 TEST(test61, getLastItem) {
-	int arr1[] = { 1, 2, 3 };
-	int arr2[] = { 1, 2, 3, 56, 87, 23, 65, 45 };
-	int arr3[] = { 1 };
-	int arr4[] = { 0 };
-	int arr5[] = { -1, 3, 4, -45, -10 };
+	const std::array arr1{ 1, 2, 3 };
+	const std::array arr2{ 1, 2, 3, 56, 87, 23, 65, 45 };
+	const std::array arr3{ 1 };
+	const std::array arr4{ 0 };
+	const std::array arr5{ -1, 3, 4, -45, -10 };
 
-	EXPECT_EQ(3, getLastItem(arr1, 3));
-	EXPECT_EQ(45, getLastItem(arr2, 8));
-	EXPECT_EQ(1, getLastItem(arr3, 1));
-	EXPECT_EQ(0, getLastItem(arr4, 1));
-	EXPECT_EQ(-10, getLastItem(arr5, 5));
+	EXPECT_EQ(3, getLastItem(arr1.data(), 3));
+	EXPECT_EQ(45, getLastItem(arr2.data(), 8));
+	EXPECT_EQ(1, getLastItem(arr3.data(), 1));
+	EXPECT_EQ(0, getLastItem(arr4.data(), 1));
+	EXPECT_EQ(-10, getLastItem(arr5.data(), 5));
 }
 TEST(test62, isPlural) {
 	EXPECT_EQ(true, isPlural("dudes"));
@@ -778,43 +782,43 @@ TEST(test65, mod) {
 	EXPECT_TRUE(true);
 }
 TEST(test66, findSmallestNum) {
-	int arr1[] = { 34, 15, 88, 2 };
-	int arr2[] = { 34, -345, -1, 100 };
-	int arr3[] = { -76, 345, 1, 0 };
-	int arr4[] = { 7, 7, 7 };
-	int arr5[] = { 4, 6, 1, 3, 4, 5, 5, 1 };
-	int arr6[] = { -4, -6, -8, -1 };
-	int arr7[] = { 54, 76, 23, 54 };
-	int arr8[] = { 100 };
-	int arr9[] = { 0, 1, 2, 3, 4, 5 };
+	const std::array arr1{ 34, 15, 88, 2 };
+	const std::array arr2{ 34, -345, -1, 100 };
+	const std::array arr3{ -76, 345, 1, 0 };
+	const std::array arr4{ 7, 7, 7 };
+	const std::array arr5{ 4, 6, 1, 3, 4, 5, 5, 1 };
+	const std::array arr6{ -4, -6, -8, -1 };
+	const std::array arr7{ 54, 76, 23, 54 };
+	const std::array arr8{ 100 };
+	const std::array arr9{ 0, 1, 2, 3, 4, 5 };
 
-	EXPECT_EQ(2, findSmallestNum(arr1, 4));
-	EXPECT_EQ(-345, findSmallestNum(arr2, 4));
-	EXPECT_EQ(-76, findSmallestNum(arr3, 4));
-	EXPECT_EQ(7, findSmallestNum(arr4, 3));
-	EXPECT_EQ(1, findSmallestNum(arr5, 8));
-	EXPECT_EQ(-8, findSmallestNum(arr6, 4));
-	EXPECT_EQ(23, findSmallestNum(arr7, 4));
-	EXPECT_EQ(100, findSmallestNum(arr8, 1));
-	EXPECT_EQ(0, findSmallestNum(arr9, 6));
+	EXPECT_EQ(2, findSmallestNum(arr1));
+	EXPECT_EQ(-345, findSmallestNum(arr2));
+	EXPECT_EQ(-76, findSmallestNum(arr3));
+	EXPECT_EQ(7, findSmallestNum(arr4));
+	EXPECT_EQ(1, findSmallestNum(arr5));
+	EXPECT_EQ(-8, findSmallestNum(arr6));
+	EXPECT_EQ(23, findSmallestNum(arr7));
+	EXPECT_EQ(100, findSmallestNum(arr8));
+	EXPECT_EQ(0, findSmallestNum(arr9));
 	EXPECT_TRUE(true);
 }
 TEST(test67, findLargestNum) {
-	int arr1[] = { 4, 5, 1, 3 };
-	int arr2[] = { 13, 27, 18, 26 };
-	int arr3[] = { 32, 35, 37, 39 };
-	int arr4[] = { 1000, 1001, 857, 1 };
-	int arr5[] = { 27364, 837363, 736736, 73635 };
-	int arr6[] = { 30, 2, 40, 3 };
-	int arr7[] = { 0, 1, 0, 0, -1 };
+	const std::array arr1{ 4, 5, 1, 3 };
+	const std::array arr2{ 13, 27, 18, 26 };
+	const std::array arr3{ 32, 35, 37, 39 };
+	const std::array arr4{ 1000, 1001, 857, 1 };
+	const std::array arr5{ 27364, 837363, 736736, 73635 };
+	const std::array arr6{ 30, 2, 40, 3 };
+	const std::array arr7{ 0, 1, 0, 0, -1 };
 
-	EXPECT_EQ(5, findLargestNum(arr1, 4));
-	EXPECT_EQ(27, findLargestNum(arr2, 4));
-	EXPECT_EQ(39, findLargestNum(arr3, 4));
-	EXPECT_EQ(1001, findLargestNum(arr4, 4));
-	EXPECT_EQ(837363, findLargestNum(arr5, 4));
-	EXPECT_EQ(40, findLargestNum(arr6, 4));
-	EXPECT_EQ(1, findLargestNum(arr7, 5));
+	EXPECT_EQ(5, findLargestNum(arr1));
+	EXPECT_EQ(27, findLargestNum(arr2));
+	EXPECT_EQ(39, findLargestNum(arr3));
+	EXPECT_EQ(1001, findLargestNum(arr4));
+	EXPECT_EQ(837363, findLargestNum(arr5));
+	EXPECT_EQ(40, findLargestNum(arr6));
+	EXPECT_EQ(1, findLargestNum(arr7));
 	EXPECT_TRUE(true);
 }
 TEST(test68, FirstLast) {
@@ -974,42 +978,39 @@ TEST(test81, reverse) {
 	EXPECT_EQ(std::vector<int>({}), reverse(std::vector<int>{}));
 	EXPECT_TRUE(true);
 }
-// Helper function to compare vectors containing std::any
-bool AnyVectorEqual(const std::vector<std::any>& a, const std::vector<std::any>& b) {
-	if (a.size() != b.size()) return false;
+bool IsTextValue(const std::any& value) {
+	return value.type() == typeid(std::string) || value.type() == typeid(const char*);
+}
 
-	for (size_t i = 0; i < a.size(); ++i) {
-		if (!a[i].has_value() || !b[i].has_value()) {
-			if (!a[i].has_value() && !b[i].has_value()) continue; // Both are empty `std::any`
-			return false; // One is empty, one is not
-		}
-
-		if (a[i].type() != b[i].type()) {
-			if ((a[i].type() == typeid(const char*) && b[i].type() == typeid(std::string)) ||
-				(a[i].type() == typeid(std::string) && b[i].type() == typeid(const char*))) {
-				if (std::string(std::any_cast<const char*>(a[i])) != std::any_cast<std::string>(b[i])) return false;
-				continue;
-			}
-			return false;
-		}
-
-		if (a[i].type() == typeid(int)) {
-			if (std::any_cast<int>(a[i]) != std::any_cast<int>(b[i])) return false;
-		}
-		else if (a[i].type() == typeid(std::string)) {
-			if (std::any_cast<std::string>(a[i]) != std::any_cast<std::string>(b[i])) return false;
-		}
-		else if (a[i].type() == typeid(const char*)) {
-			if (std::string(std::any_cast<const char*>(a[i])) != std::string(std::any_cast<const char*>(b[i]))) return false;
-		}
-		else if (a[i].type() == typeid(bool)) {
-			if (std::any_cast<bool>(a[i]) != std::any_cast<bool>(b[i])) return false;
-		}
-		else {
-			return false; // Unsupported type
-		}
+std::string_view AnyTextValue(const std::any& value) {
+	if (value.type() == typeid(std::string)) {
+		return std::any_cast<const std::string&>(value);
 	}
-	return true;
+	const char* text = std::any_cast<const char*>(value);
+	return text == nullptr ? std::string_view{} : std::string_view{text};
+}
+
+bool AnyValueEqual(const std::any& left, const std::any& right) {
+	if (left.has_value() != right.has_value()) {
+		return false;
+	}
+	if (!left.has_value()) {
+		return true;
+	}
+	if (left.type() == typeid(int) && right.type() == typeid(int)) {
+		return std::any_cast<int>(left) == std::any_cast<int>(right);
+	}
+	if (left.type() == typeid(bool) && right.type() == typeid(bool)) {
+		return std::any_cast<bool>(left) == std::any_cast<bool>(right);
+	}
+	if (IsTextValue(left) && IsTextValue(right)) {
+		return AnyTextValue(left) == AnyTextValue(right);
+	}
+	return false;
+}
+
+bool AnyVectorEqual(const std::vector<std::any>& a, const std::vector<std::any>& b) {
+	return a.size() == b.size() && std::ranges::equal(a, b, AnyValueEqual);
 }
 TEST(test82, FirstLast) {
 	
@@ -1076,19 +1077,20 @@ TEST(test88, smashFactor ) {
 	EXPECT_TRUE(true);
 }
 TEST(test89, countTrue) {
-	EXPECT_EQ(2, countTrue({ true, false, false, true, false }));
-	EXPECT_EQ(0, countTrue({ false, false, false, false }));
-	EXPECT_EQ(0, countTrue({}));
-	EXPECT_EQ(8, countTrue({ false, false, true, true, false, false, false, true, true, true, true, false, true, true, false }));
-	EXPECT_EQ(3, countTrue({ true, false, true, true, false, false, false, false, false }));
-	EXPECT_EQ(8, countTrue({ false, true, true, false, true, true, false, true, false, true, false, true, false, true, false }));
-	EXPECT_EQ(6, countTrue({ true, false, true, true, true, false, true, true, false, false }));
-	EXPECT_EQ(3, countTrue({ false, false, false, false, true, false, true, false, true, false, false }));
-	EXPECT_EQ(3, countTrue({ true, false, false, false, true, false, false, true, false, false, false }));
-	EXPECT_EQ(4, countTrue({ true, true, false, true, false, false, false, false, true, false }));
-	EXPECT_EQ(9, countTrue({ true, false, true, true, false, true, true, true, true, false, true, false, true, false }));
-	EXPECT_EQ(8, countTrue({ true, false, true, true, true, true, false, true, true, false, true, false, false, false, false }));
-	EXPECT_EQ(6, countTrue({ true, true, false, false, false, false, true, false, true, true, false, true }));
+	const auto countTrueInValues = static_cast<int(*)(const std::vector<bool>&)>(countTrue);
+	EXPECT_EQ(2, countTrueInValues(std::vector<bool>{ true, false, false, true, false }));
+	EXPECT_EQ(0, countTrueInValues(std::vector<bool>{ false, false, false, false }));
+	EXPECT_EQ(0, countTrueInValues(std::vector<bool>{}));
+	EXPECT_EQ(8, countTrueInValues(std::vector<bool>{ false, false, true, true, false, false, false, true, true, true, true, false, true, true, false }));
+	EXPECT_EQ(3, countTrueInValues(std::vector<bool>{ true, false, true, true, false, false, false, false, false }));
+	EXPECT_EQ(8, countTrueInValues(std::vector<bool>{ false, true, true, false, true, true, false, true, false, true, false, true, false, true, false }));
+	EXPECT_EQ(6, countTrueInValues(std::vector<bool>{ true, false, true, true, true, false, true, true, false, false }));
+	EXPECT_EQ(3, countTrueInValues(std::vector<bool>{ false, false, false, false, true, false, true, false, true, false, false }));
+	EXPECT_EQ(3, countTrueInValues(std::vector<bool>{ true, false, false, false, true, false, false, true, false, false, false }));
+	EXPECT_EQ(4, countTrueInValues(std::vector<bool>{ true, true, false, true, false, false, false, false, true, false }));
+	EXPECT_EQ(9, countTrueInValues(std::vector<bool>{ true, false, true, true, false, true, true, true, true, false, true, false, true, false }));
+	EXPECT_EQ(8, countTrueInValues(std::vector<bool>{ true, false, true, true, true, true, false, true, true, false, true, false, false, false, false }));
+	EXPECT_EQ(6, countTrueInValues(std::vector<bool>{ true, true, false, false, false, false, true, false, true, true, false, true }));
 	EXPECT_TRUE(true);
 }
 TEST(test90, Test1) {

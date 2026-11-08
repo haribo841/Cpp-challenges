@@ -2,5 +2,5 @@
 #include <string>
 #ifndef Program045
 #define Program045
-bool comp(std::string str1, std::string str2);
+bool comp(const std::string& str1, const std::string& str2);
 #endif Program045

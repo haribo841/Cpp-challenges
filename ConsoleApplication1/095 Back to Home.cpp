@@ -2,7 +2,7 @@
 //Given a string of directions (N=North, W=West, S=South, E=East), you will walk for one minute in each direction.
 //Determine whether a set of directions will lead you back to the starting position or not.
 #include "095 Back to Home.h"
-bool backToHome(std::string directions) {
+bool backToHome(const std::string& directions) {
 	int x = 0;
 	int y = 0;
 	for (char c : directions) {

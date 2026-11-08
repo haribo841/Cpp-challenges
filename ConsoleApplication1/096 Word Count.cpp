@@ -1,35 +1,31 @@
 //Create a function that takes a string and returns the word count.
 //The string will be a sentence.
 #include "096 Word Count.h"
-int countWords(std::string str) {
-	int n = str.length();
-    if (n == 0) {
-        return 0;
-    }
+#include <cctype>
+int countWords(const std::string& str) {
     int wordCount = 0;
-    int state = 0; // Initial state is OUT
+    bool inWord = false;
+    std::size_t index = 0;
 
-    // Traverse all characters of the input string
-    for (int i = 0; i < n; i++) {
-        // Check for backslash and single quote first
-        if (str[i] == '\\' || str[i] == '\'') {
-            i++; // Skip next character (after backslash)
+    while (index < str.size()) {
+        const char current = str[index];
+        if (current == '\\' || current == '\'') {
+            ++index;
+            if (index < str.size()) {
+                ++index;
+            }
             continue;
         }
 
-        // If the current character is a word character
-        if (isalnum(str[i])) {
-            // If previous state was OUT, increment word count and change state to IN
-            if (state == 0) {
+        if (std::isalnum(static_cast<unsigned char>(current))) {
+            if (!inWord) {
                 wordCount++;
-                state = 1;
+                inWord = true;
             }
+        } else {
+            inWord = false;
         }
-        // If the current character is not a word character
-        else {
-            // Change state to OUT
-            state = 0;
-        }
+        ++index;
     }
 
     return wordCount;
