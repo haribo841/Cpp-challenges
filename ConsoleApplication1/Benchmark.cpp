@@ -147,7 +147,8 @@ std::vector<std::any> convertToAnyVector(std::span<const int> values) {
 }
 static void BM(benchmark::State& state) {
     const auto& [a, b] = testCasesPCS[state.range(0)];
-    for (auto iteration = state.begin(); iteration != state.end(); ++iteration) {
+    for (auto iteration : state) {
+        static_cast<void>(iteration);
         auto result = charCount(a, b);
         benchmark::DoNotOptimize(result);
     }

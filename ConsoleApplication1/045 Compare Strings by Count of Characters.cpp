@@ -1,6 +1,6 @@
 //Create a function that takes two strings as arguments and return either true or false depending on whether the
 //total number of characters in the first string is equal to the total number of characters in the second string.
 #include "045 Compare Strings by Count of Characters.h"
-bool comp(const std::string& str1, const std::string& str2) {
+bool comp(std::string_view str1, std::string_view str2) {
     return str1.size() == str2.size();
 }

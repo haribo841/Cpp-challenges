@@ -1,6 +1,6 @@
 //Create a function that takes two strings and returns true if the first string ends with the second string; otherwise return false.
 #include "072 String Ending Matches.h"
-bool checkEnding(const std::string& str1, const std::string& str2) {
+bool checkEnding(std::string_view str1, std::string_view str2) {
     if (str2.size() > str1.size()) return false;
     return str1.compare(str1.size() - str2.size(), str2.size(), str2) == 0;
 }
